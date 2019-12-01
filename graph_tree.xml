@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-graph-tree" >
+	<title>Trees</title>
+
+<subsection>
+	<title>Terminology</title>
+
+<definition>
+	<title>Tree</title>
+	<statement><p>A graph is a <term>tree</term> if and only if it is connected and contains no cycles.</p></statement>
+</definition>
+
+<definition>
+	<title>Leaf</title>
+	<statement><p>A vertex in a tree is a <term>leaf</term> if and only if it has degree one.</p></statement>
+</definition>
+
+<definition>
+	<title>Spanning Tree</title>
+	<statement><p>A graph <m>G</m> is a <term>spanning tree</term> of a graph <term>H</term> if and only if <m>G</m> is a subgraph of <m>H</m> that contains all the vertices of <m>H</m> and is a tree.</p></statement>
+</definition>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>Determine which graphs in Figure <xref ref="isgraph1" /> are trees.</p></exercise>
+
+<exercise><p>Draw all non-isomorphic trees on 3 vertices.</p></exercise>
+
+<exercise><p>Prove that every tree with at least two vertices has at least one leaf.</p></exercise>
+
+<exercise><p>Draw a tree with 7 vertices. Determine for what <m>n</m> the tree is <m>n</m>-connected.</p></exercise>
+
+<exercise><p>Explain why for any tree removal of a leaf produces another tree.</p></exercise>
+
+<exercise><p>Find a spanning tree for every graph in <xref ref="graphs1" />.</p></exercise>
+
+</subsection>
+
+</section>

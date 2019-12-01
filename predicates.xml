@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-predicates" >
+<title>Predicate Logic</title>
+
+<subsection>
+	<title>Background</title>
+
+<p>In order to efficiently communicate logic statements we use predicates. These are simply functions with a codomain of <sq>true</sq> and <sq>false.</sq> For example <m>R(x)=x</m> is red. Thus <m>R(</m>stop sign<m>)=</m>true and <m>R(</m>Seawolf logo<m>)=</m>false. More complicated statements can be expressed as well. The following example converts the statement <q><m>n</m> is a positive, even number</q> into symbols using predicates.</p>
+
+<p>Define the following statements.
+<md>
+	<mrow>E(n) \amp = n \text{ is even.}</mrow>
+	<mrow>P(n) \amp = n>0.</mrow>
+</md>
+<m>E(n) \wedge P(n).</m>
+</p>
+
+</subsection>
+
+<subsection>
+	<title>Quantifiers</title>
+
+	<subsubsection>
+		<title>Terminology</title>
+
+		<p>For predicates we often ask the questions, <q>does any object satisfy the predicate (condition)</q> and <q>what is true of all objects that satisfy the predicate (condition).</q> The first we call <term>existential</term> and use the symbol <m>\exists</m> for <q>there exists.</q> The second we call <term>universal</term> and use the symbol <m>\forall</m> for <q>for all.</q> These two questions add <term>quantifiers</term> to logic. Another symbol used is <m>\ni</m> for <q>such that.</q></p>
+
+		<p>Consider the following predicates for examples of the notation.</p>
+
+		<p><md>
+			<mrow>E(n) = \amp n \text{ is even}</mrow>
+			<mrow>P(n) = \amp n \text{ is prime}</mrow>
+			<mrow>Q(n) = \amp n \text{ is a multiple of 4}</mrow>
+		</md></p>
+
+		<p>Using these predicates (symbols) we can express statements such as those in <xref ref="quantstate" /></p>
+
+<table xml:id="quantstate">
+	<title>Quantified Statements</title>
+	<tabular>
+		<row>
+			<cell>There is some number that is even and prime.</cell>
+			<cell><m>\exists n \ni E(n) \wedge P(n).</m></cell>
+		</row>
+		<row>
+			<cell>All multiples of four are even.</cell>
+			<cell><m>\forall n \: Q(n) \rightarrow E(n)</m></cell>
+		</row>
+	</tabular>
+</table>
+
+<exercise><p>Write the following statement using predicates and quantifiers. <q>All computer science majors must take <pubtitle>Introduction to Discrete Mathematics</pubtitle> and <pubtitle>Data Structures and Algorithms</pubtitle>.</q></p></exercise>
+
+</subsubsection>
+
+</subsection>
+
+<subsection>
+	<title>Negation</title>
+
+	<subsubsection>
+		<title>Negate a statement</title>
+
+	<p>One of the logical operations is negation. We can negate whole statements or parts of statements. A useful skill is to simplify the negation of a statement. This typically enables us to understand the meaning of the negation more easily and to optimize conditional statements.</p>
+
+	<p>The following is an example of more easily understanding the negation of a statement. Suppose the following claim is false.</p>
+
+	<p><q>Guido owns a sail boat and has either a type rating for the Cessna Citation X or likes to cook.</q></p>
+
+	<p><md>
+		<mrow>S(x) = \amp x \text{ owns a sail boat.}</mrow>
+		<mrow>C(x) = \amp x \text{ has a type rating for the Cessna Citation X.}</mrow>
+		<mrow>K(x) = \amp x \text{ likes to cook.}</mrow>
+	</md></p>
+
+	<p>Now we write the negation of this statement as</p>
+
+	<sidebyside><tabular>
+		<col width="40%" />
+		<col width="30%" />
+		<row><cell><m>\neg ( S(Guido) \wedge (C(Guido) \vee K(Guido) ) \leftrightarrow</m></cell> 
+		<cell><p>Using DeMorgan's Law we show this is the same as</p></cell></row>
+		<row><cell><m>\neg S(Guido) \vee \neg (C(Guido) \vee K(Guido) ) \leftrightarrow</m></cell> 
+		<cell><p>Then we apply the other DeMorgan's Law to show it is the same as</p></cell></row>
+		<row><cell><m>\neg S(Guido) \vee (\neg C(Guido) \wedge \neg K(Guido) ).</m></cell></row>
+	</tabular></sidebyside>
+
+	<p>Returning this to English gives us</p>
+
+	<p><q>Either Guido does not own a sailboat, or he does not have the Cessna Citation X type rating and he does not like to cook.</q></p>
+
+	</subsubsection>
+
+	<subsubsection>
+		<title>Discover</title>
+
+		<p>In addition to DeMorgan's Laws, the negations of the two quantifiers are needed. The negation of for all and there exists statements can be recognized from examples. Try the ones below.</p>
+
+<table>
+	<title>Friends</title>
+	<tabular>
+		<row bottom="medium"><cell>Name</cell> <cell>Hair</cell> <cell>Eye</cell></row>
+		<row><cell>Guido</cell> <cell>Brown</cell> <cell>Brown</cell></row>
+		<row><cell>Wolfgang</cell> <cell>Red</cell> <cell>Brown</cell></row>
+		<row><cell>Ludwig</cell> <cell>Brown</cell> <cell>Hazel</cell></row>
+		<row><cell>Franz</cell> <cell>Brown</cell> <cell>Brown</cell></row>
+		<row><cell>Maria</cell> <cell>Gray</cell> <cell>Brown</cell></row>
+	</tabular>
+</table>
+
+		<exercise><p>How would you show that the statement <q>All of the five friends have brown hair</q> is false?</p></exercise>
+
+		<exercise><p>How would you show that the statement <q>Some of the five friends have blue eyes</q> is false?</p></exercise>
+
+		<exercise><p>What is the negation of the following statement. <q>All Apple fanboys own an iPad.</q></p></exercise>
+
+		<exercise><p>What is the negation of the following statement. <q>Some chemist likes to cook.</q></p></exercise>
+
+	</subsubsection>
+
+	<subsubsection>
+		<title>Examples</title>
+
+		<example xml:id="negation1">
+		<p>We will write the statement: <q>Some flower is loved by all bees.</q> First we must define all the terms.</p>
+
+		<p><md>
+			<mrow>B(x) = \amp x \text{ is a bee.}</mrow>
+			<mrow>F(x) = \amp x \text{ is a flower.}</mrow>
+			<mrow>Y(x) = \amp x \text{ is yellow.}</mrow>
+			<mrow>L(x,y) = \amp x \text{ likes } y.</mrow>
+		</md></p>
+
+		<p>Now we can write the statement in symbols. <m>\exists y \: F(y) \ni ( \forall x \: B(x) \rightarrow L(x,y) ). </m></p>
+
+		<p>Next we will negate the statement. We will use knowledge of negating all/some and DeMorgan's laws.</p>
+		<p><md>
+			<mrow>\neg [\exists y \: F(y) \ni ( \forall x \: B(x) \rightarrow L(x,y) )] \amp \leftrightarrow</mrow>
+			<mrow>\forall y \: F(y) \rightarrow \neg ( \forall x \: B(x) \rightarrow L(x,y) ) \amp \leftrightarrow</mrow>
+			<mrow>\forall y \: F(y) \rightarrow ( \exists x \: B(x) \ni \neg L(x,y) ).</mrow>
+		</md></p>
+
+		<p>The negation is the statement: <q>Each flower is distasteful to some bee.</q></p>
+		</example>
+
+		<example xml:id="negation2">
+		<p>Next we will write the statement: <q>All red berries are loved by some bear.</q></p>
+
+		<p><md>
+			<mrow>U(x) = \amp x \text{ is a bear.}</mrow>
+			<mrow>B(x) = \amp x \text{ is a berry.}</mrow>
+			<mrow>R(x) = \amp x \text{ is red.}</mrow>
+			<mrow>L(x,y) = \amp x \text{ likes } y.</mrow>
+		</md></p>
+
+		<p><m>\forall y \: (B(y) \wedge R(y)) \rightarrow [\exists x \: U(x) \ni L(x,y)] </m></p>
+
+		<p>We can now negate the statement.</p>
+
+		<p><md>
+			<mrow>\neg (\forall y \: (B(y) \wedge R(y)) \rightarrow [\exists x \: U(x) \ni L(x,y)]) \amp \leftrightarrow</mrow>
+			<mrow>\exists y \: (B(y) \wedge R(y)) \ni \neg [\exists x \: U(x) \ni L(x,y)]) \amp \leftrightarrow</mrow>
+			<mrow>\exists y \: (B(y) \wedge R(y)) \ni [\forall x \: U(x) \rightarrow \neg L(x,y)]).</mrow>
+		</md></p>
+
+		<p>The negation is the statement: <q>Some red berry is not loved by any bear.</q></p>
+
+		<p>If you wonder why DeMorgan's law was not applied in the first step, look at the first example. When the <m>\exists</m> (first clause) is negated, the exists statement becomes a for all statement and the negation is passed over the condition to the next clause. The negation changes exists/for all but does not change their condition.</p>
+		</example>
+
+	</subsubsection>
+
+	<subsubsection>
+		<title>Practice</title>
+
+<exercise><p>Negate the statement: <q>Either the person is a math major, or the person is a computer science major and has taken MATH A265.</q></p></exercise>
+
+<exercise><p>Negate: <m>\forall n \: C(n) \rightarrow \left( \exists m T(m) \ni \left[ R(n,m) \vee S(n,m) \right] \right). </m> Meanings for the predicates are not required. </p></exercise>
+
+<exercise><p>Negate: <m>\forall x \: (A(x) \vee B(x)) \rightarrow \left( \exists y C(y) \ni \left[ D(x,y) \vee E(x,y) \right] \right). </m> Meanings for the predicates are not required. </p></exercise>
+
+	</subsubsection>
+</subsection>
+
+</section>

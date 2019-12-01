@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-functions" >
+<title>Functions</title>
+
+<subsection>
+	<title>Terminology</title>
+
+	<p>The idea of mapping one set of objects to another is basic to mathematics. <term>Mapping</term> and <term>correspondence</term> are undefined terms. We call the set mapped from the <term>domain</term> and the set mapped to the <term>codomain</term>. The <term>range</term> is the subset of the codomain to which a function is mapped.</p>
+
+<definition xml:id="definition-function">
+	<title>Function</title>
+	<statement><p>A mapping is a <term>function</term> if and only if each input is mapped to exactly one output.</p></statement>
+</definition>
+
+<definition xml:id="definition-onto">
+	<title>Onto</title>
+	<statement><p>A mapping is <term>onto</term> if and only if for each element of the codomain there exists some element of the domain mapped to it.</p>
+	<p><term>Onto</term> functions are also referred to as <term>surjections</term>.</p></statement>
+</definition>
+
+<definition xml:id="definition-one-to-one">
+	<title>One-to-One</title>
+	<statement><p>A mapping is <term>one-to-one</term> if and only if <m>f(x)=f(a)</m> implies <m>x=a.</m></p>
+	<p><term>One-to-one</term> functions are also referred to as <term>injections</term>.</p></statement>
+</definition>
+
+<definition xml:id="definition-bijection">
+	<title>Bijection</title>
+	<statement><p>A <term>bijection</term> is a function that is one-to-one (injective) and onto (surjective).</p></statement>
+</definition>
+
+<definition xml:id="definition-inverse-mapping">
+	<title>Inverse Mapping</title>
+	<statement><p>The <term>inverse mapping</term> for a mapping <m>f:D \to C</m> is the mapping <m>f^{-1}:C \to D</m> such that <m>f^{-1}(y)=x</m> if and only if <m>f(x)=y.</m></p></statement>
+</definition>
+
+	<p>Note that the inverse mapping of a function is also a function if and only if the function is one-to-one.</p>
+
+	<p>Consider the examples in <xref ref="example-functions" />. <m>D=\{1,2,3,4,5\}</m> <m>C=</m> <m>\{1,1/2,</m> <m>1/3,1/4,1/5,1/6,1/7\}.</m></p>
+
+	<table xml:id="example-functions">
+		<title>Functions</title>
+		<tabular top="medium">
+			<col width="5%" />
+			<col width="40%" />
+			<col width="15%" />
+			<col width="15%" />
+			<col width="15%" />
+			<row left="medium" bottom="medium">
+			<cell right="medium">Name</cell> <cell right="medium"></cell> <cell right="medium"> Function </cell> <cell right="medium">Onto </cell> <cell right="medium">1-1</cell>
+			</row>
+			<row left="medium" bottom="medium">
+			<cell right="medium"><m>f</m></cell> <cell right="medium"><p><m>f(1)=1</m>, <m>f(2)=1/2</m>, <m>f(3)=1/3</m>, <m>f(4)=1/4</m>, <m>f(5)=1/5</m></p></cell> <cell right="medium">Yes</cell> <cell right="medium">No</cell> <cell right="medium">Yes</cell>
+			</row>
+			<row left="medium" bottom="medium">
+			<cell right="medium"><m>g</m></cell> <cell right="medium"><p><m>g(1)=1</m>, <m>g(2)=1/2</m>, <m>g(3)=1/3</m>, <m>g(4)=1/2</m>, <m>g(5)=1/3</m></p></cell> <cell right="medium">Yes</cell> <cell right="medium">No</cell> <cell right="medium">No</cell>
+			</row>
+			<row left="medium" bottom="medium">
+			<cell right="medium"><m>h</m></cell> <cell right="medium"><p><m>h(1)=1</m>, <m>h(2)=1/2</m>, <m>h(3)=1/3</m>, <m>h(3)=1/6</m>, <m>h(4)=1/4</m>, <m>h(5)=1/5</m>, <m>h(5)=1/7</m></p></cell> <cell right="medium">No</cell> <cell right="medium">Yes</cell> <cell right="medium">No</cell>
+			</row>
+		</tabular>
+	</table>
+
+<p>Because many functions will have numbers as their domains and/or codomains we use shorthand notation for many common sets of numbers. We denote the integers with <m>\Z</m>.
+	<notation>
+		<usage>\Z</usage>
+		<description>The set of the integers</description>
+	</notation>
+We denote the real numbers with <m>\R</m>.
+	<notation>
+		<usage>\R</usage>
+		<description>The set of the real numbers</description>
+	</notation>
+If we want to refer to only positive numbers we use a + superscript. For example <m>\Z^+</m> refers to the positive integers (also known as the counting numbers).
+	<notation>
+		<usage>\Z^+</usage>
+		<description>The set of the positive integers</description>
+	</notation>
+Note as well that 0 is neither negative nor positive. If we want all the positive integers and zero we use <m>\Z^+ \cup \{0\}</m>.
+</p>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>Write a function from <m>D=\{-3,-2,-1,0,1,2,3\}</m> to <m>C=\{0,1,2,3,4,5,6,7,8,9,10\}.</m></p></exercise>
+
+<exercise><p>Is your function onto? 1-1?</p></exercise>
+
+<exercise><p>Write a 1-1 function from <m>D</m> to <m>C.</m></p></exercise>
+
+<exercise><p>Can you write a function from <m>D</m> onto <m>C</m>?</p></exercise>
+
+<exercise><p>Write a function from <m>\Z</m> onto <m>\{0,1\}.</m></p></exercise>
+
+</subsection>
+
+</section>

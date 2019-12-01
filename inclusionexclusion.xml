@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-inclusion" >
+<title>Combinatorics: Inclusion/Exclusion</title>
+
+<subsection>
+	<title>Terminology</title>
+
+<p>Sometimes to count possibilities it is easier to over count and then count how much the over count was and fix it. For example, consider the size of the union of two sets <m>A</m> and <m>B</m> as shown in <xref ref="venn2" />. Note that <m>|A|+|B|</m> over counts the size of the union by precisely <m>|A \cap B|.</m> Thus the correct count is <m>(|A|+|B|)-|A \cap B|.</m></p>
+
+<figure xml:id="venn2">
+<caption>Count Elements of 2 Sets</caption>
+<image width="50%" source="images/Venn2" />
+</figure>
+
+<p>This can be extended to three sets. See <xref ref="venn3" />. This time there are three pairs of sets that overlap. Thus the count starts <m>(|A|+|B|+|C|)-(|A \cap B|+|A \cap C|+|B \cap C|).</m> However this removes <m>|A \cap B \cap C|</m> three times. Thus the correct count is <m>(|A|+|B|+|C|)-(|A \cap B|+|A \cap C|+|B \cap C|)+|A \cap B \cap C|.</m></p>
+
+<figure xml:id="venn3">
+<caption>Count Elements of 3 Sets</caption>
+<image width="50%" source="images/Venn3" />
+</figure>
+
+<p>Because this process first includes (adds) everything, next excludes (subtracts) some things, then includes (adds) other things, the technique is called <term>inclusion/exclusion</term>.</p>
+
+<definition xml:id="derangement">
+	<title>Derangement</title>
+	<statement><p>A permutation is a <term>derangement</term> if no element is in its original position.</p></statement>
+</definition>
+
+<p>For example <q>het</q> is a derangement of <q>the</q>, but <q>teh</q> is not a derangement.</p>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>Write the formula for the number of elements in the union of four, distinct sets.</p></exercise>
+
+<exercise><p>Suppose you know that in the fall 2020 semester 37 distinct students took MATH A261, 25 distinct students took CSCE A311, and 11 distinct students took both. How many students total took either MATH A261 or CSCE A311 in the Fall 2020 semester?</p></exercise>
+
+<exercise><p>Count all derangements of <q>one</q>.</p></exercise>
+
+<exercise><p>Count all derangements of <q>four</q>.</p></exercise>
+
+<exercise><p>Count the number of positive multiples of 2,3,5 that are less than 100.</p></exercise>
+
+<exercise><p>If you know the following, what do you still need to know to determine the number of distinct students placing into MATH A054, WRTG A080, or having an SAT score below 1290?</p>
+<ol>
+	<li>Number of distinct students taking MATH A054.</li>
+	<li> Number of distinct students taking WRTG A080.</li>
+	<li> Number of distinct students with SAT score below 1290.</li>
+</ol>
+</exercise>
+
+</subsection>
+
+</section>

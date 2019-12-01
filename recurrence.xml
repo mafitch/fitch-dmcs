@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-recurrence-relations" >
+  <title>Linear Recurrence Relations</title>
+
+<subsection>
+	<title>A couple interesting illustrations</title>
+
+<p>Before defining terminology we will experiment with the following problems. Except where directed you should write code to perform the calculations so we concentrate on the results rather than the calculations.</p>
+
+<exercise><p>The following is called a continued radical.</p>
+<ol>
+<li>Evaluate using technology <m>a_1=\sqrt{2}</m> to produce an approximation.</li>
+<li>Take that result and calculate <m>a_2=\sqrt{2+a_1}.</m></li>
+<li>Take that result and calculate <m>a_3=\sqrt{2+a_2}.</m></li>
+<li>Repeat this seven (7) more times.</li>
+<li>Is there a pattern to the numbers? What do you think will happen if you continue this process?</li>
+</ol>
+</exercise>
+
+<exercise><p>The following is called a continued fraction.</p>
+<ol>
+<li>Let <m>a_1=1</m>.</li>
+<li>By hand calculate <m>a_2= \displaystyle \frac{1}{1+a_1}.</m></li>
+<li>By hand calculate <m>a_3= \displaystyle \frac{1}{1+a_2}.</m></li>
+<li>Repeat this seven (7) more times.</li>
+<li>Is there a pattern to the numbers? What do you think will happen if you continue this process?</li>
+<li>Ask the instructor to provide a number to compare.</li>
+</ol>
+</exercise>
+
+<p>Sometimes directly calculating the value of a function can be difficult. In the examples above each value of the function is based on the previous. The first example was <m>f(n)=\sqrt{2+f(n-1)}.</m> The second example was <m>g(n)=\frac{1}{1+g(n-1)}.</m> This is known as <term>recursive</term> definition.</p>
+
+</subsection>
+
+<subsection>
+	<title>Recurrence Relations</title>
+
+<example>
+	<title>Fibonacci Sequence</title>
+<p>A famous example comes from Fibonacci's <pubtitle>Liber Abaci</pubtitle>.</p>
+
+<p>The first month there was one pair of rabbits. The second month there was still one pair of rabbits. Starting the third month and continuing every month thereafter, the number of pairs of rabbits is the sum of the previous two months. Thus the third month there are <m>1+1=2</m> pairs of rabbits. The fourth month there are <m>1+2=3</m> pairs of rabbits. This produces the following sequence. 
+<me> 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, \ldots </me> The Fibonacci sequence in standard notation is <me> a_1=1, \; a_2=1, \; a_n=a_{n-1}+a_{n-2}. </me></p>
+</example>
+
+<example>
+	<title>Counting: Restricted Strings</title>
+
+<p>It is possible to count using recursive functions as well. Consider the number of words from the alphabet <m>\{</m>a,b,c,d,e<m>\}</m> with no two, consecutive a's. For words of length one there are no restrictions, so there are 5. For words of length two all combinations except <sq>aa</sq> are acceptable. Thus there are <m>25-1=24</m> words of length two. For words of length three all combinations except <sq>aaa</sq>, <sq>aaX,</sq> and <sq>Xaa</sq> are allowable. This removes <m>1+4+4=9</m> words leaving <m>5^3-9=116</m> acceptable words.</p>
+
+<p>For longer words of length <m>n</m>, note that removing the last letter produces an acceptable word of length <m>n-1.</m> Appending b,c,d,e to the end of these length <m>n-1</m> words produces another acceptable word. This constructs <m>4a_{n-1}</m> acceptable words of length <m>n.</m></p>
+
+<p>The only words to which an <sq>a</sq> can be appended are those that ended in b,c,d, or e. These could have been appended to any word of length <m>n-2.</m> Thus appending <sq>a</sq> constructs an additional <m>4a_{n-2}.</m></p>
+
+<p>Thus the total number of acceptable words of length <m>n</m> is <me> a_n=4a_{n-1}+4a_{n-2}. </me></p>
+</example>
+
+<p>While it is possible to produce a function that provides the <m>n</m>th term, this is generally not easy. For linear recurrence relations the technique demonstrated here will always work.</p>
+
+<p>Find a closed form for the recurrence relation <me> a_1=5, \; a_2=24, \;\; a_{n+2}=4a_{n+1}+4a_n. </me></p>
+
+<p><md>
+<mrow>a_{n+2}  = &amp; 4a_{n+1}+4a_n.</mrow>
+<mrow>a^{n+2}  = &amp; 4a^{n+1}+4a^n. \text{ Switch to polynomial.}</mrow>
+<mrow>a^2  = &amp; 4a+4. \text{ Factor out shared powers.}</mrow>
+<mrow>a^2- &amp; 4a-4  = 0.</mrow>
+<mrow>&amp;  \text{ Find the roots of polynomial.}</mrow>
+<mrow>a  = &amp; \frac{-(-4) \pm \sqrt{(-4)^2-4(1)(-4)}}{2(1)}</mrow>
+<mrow>  = &amp; \frac{4 \pm \sqrt{16+16}}{2}</mrow>
+<mrow>  = &amp; \frac{4 \pm 2\sqrt{2}}{2}</mrow>
+<mrow>  = &amp; 2 \pm \sqrt{2}.</mrow>
+<mrow>a_n  = &amp; C_1(2+\sqrt{2})^n+C_2(2-\sqrt{2})^n. \text{ Setup closed form.}</mrow>
+<mrow>&amp; \text{ Use known values to find coefficients.}</mrow>
+<mrow>a_1  = &amp; C_1(2+\sqrt{2})+C_2(2-\sqrt{2}).</mrow>
+<mrow>5  = &amp; C_1(2+\sqrt{2})+C_2(2-\sqrt{2}).</mrow>
+<mrow>a_2  = &amp; C_1(2+\sqrt{2})^2+C_2(2-\sqrt{2})^2.</mrow>
+<mrow>24  = &amp; C_1(6+4\sqrt{2})+C_2(6-4\sqrt{2}).</mrow>
+<mrow>C_1  = &amp; -1+\frac{9}{4}\sqrt{2}.</mrow>
+<mrow>C_2  = &amp; -1-\frac{9}{4}\sqrt{2}.</mrow>
+<mrow>a_n  = &amp; \left( -1+\frac{9}{4}\sqrt{2} \right)(2+\sqrt{2})^n+\left( -1-\frac{9}{4}\sqrt{2} \right)(2-\sqrt{2})^n.</mrow>
+</md></p>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>Guido is superstitious and will not take food from two, adjacent bins at a buffet. If the buffet is a line having <m>n</m> bins each containing distinct food, how many different combinations of food can he choose? Note he can eat as many items as he wants.</p></exercise>
+
+<exercise><p>Guido walks up stairs taking one or two steps at a time. Find a recursive formula for the number of ways he could end up at step <m>n.</m> Note he starts at step 0 (not on the stairs).</p></exercise>
+
+</subsection>
+
+</section>

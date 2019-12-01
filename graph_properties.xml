@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-graph-properties" >
+<title>Properties of Graphs</title>
+
+<subsection xml:id="subsection-graph-property-defs">
+<title>Definitions of Graph Properties</title>
+
+<definition>
+	<title>Adjacency</title>
+	<statement><p>Two vertices, <m>v_i</m> and <m>v_j,</m> in a graph <m>G</m> are <term>adjacent</term> if and only if <m>\{v_i,v_j\}</m> is an edge in <m>G.</m></p></statement>
+</definition>
+
+<example xml:id="graph-adjacent">
+	<title>Adjacent vertices</title>
+	<p>Vertices A and B are <term>adjacent</term> in the graph in <xref ref="regular1" /> because <m>\{A,B\}</m> is an edge.</p>
+</example>
+
+<definition>
+	<title>Incidence</title>
+	<statement><p>Two edges in a graph <m>G</m> are <term>incident</term> if and only if they share a vertex.</p></statement></definition>
+
+<example xml:id="graph-incidence">
+	<title>Incident Edges</title>
+	<p>Edges <m>\{A,B\}</m> and <m>\{B,G\}</m> are <term>incident</term> in the graph in <xref ref="regular1" /> because they share vertex B.</p>
+</example>
+
+<definition>
+	<title>Vertex/Edge Incidence</title>
+	<statement><p>A vertex <m>v</m> and an edge <m>e=\{v_i,v_j\}</m> in a graph <m>G</m> are <term>incident</term> if and only if <m> v \in e.</m></p></statement>
+</definition>
+
+<example xml:id="graph-incidence2">
+	<title>Vertex Incident with Edge</title>
+	<p>Vertex A is <term>incident</term> with edge <m>\{A,B\}</m> in the graph in <xref ref="regular1" />, that is, A is in the edge.</p>
+</example>
+
+<definition xml:id="vertex-degree">
+	<title>Degree</title>
+	<statement><p>The <term>degree</term> of a vertex <m>v</m> is the number of edges incident with <m>v.</m></p></statement>
+</definition>
+
+<example xml:id="example-vertex-degree">
+	<title>Vertex Degree</title>
+	<p>The degree of vertex A in the graph in <xref ref="regular1" /> has degree 4, because <m>\{A,B\}</m>, <m>\{A,L\}</m>, <m>\{A,K\}</m>, and <m>\{A,F\}</m> are edges incident with it.</p>
+</example>
+
+<p>The minimum degree of all vertices in a graph <m>G</m> is denoted <m>\delta(G)</m> and the maximum degree of all vertices in a graph <m>G</m> is denoted <m>\Delta(G).</m></p>
+
+<definition xml:id="graph-regular">
+	<title>Regular</title>
+	<statement><p>A graph <m>G</m> is <term>regular</term> if and only if the degree of all vertices are the same.</p></statement>
+</definition>
+
+<example xml:id="graph-example-regular">
+	<title>Regular Graph</title>
+	<p><xref ref="regular1" /> shows a regular graph.</p>
+</example>
+
+<figure xml:id="regular1">
+	<caption>Regular Graph</caption>
+	<image source="images/Graph2" width="50%" />
+</figure>
+
+<definition>
+	<title>Complete Graph</title>
+	<statement><p>A graph <m>G</m> is a <term>complete</term> graph, denoted <m>K_n,</m> if and only if <m>\{v_i,v_j\} \in E</m> for all <m>i \ne j.</m></p></statement>
+</definition>
+
+<example xml:id="graph-example-complete">
+	<title>Complete Graph</title>
+	<p><xref ref="k5" /> shows the complete graph, <m>K_5</m>.</p>
+</example>
+
+<figure xml:id="k5">
+	<caption>Complete Graph <m>K_5</m></caption>
+	<image source="images/isgraph3" width="50%" />
+</figure>
+
+<p>Note the <term>size</term> of a graph or subgraph is the number of vertices. Thus <m>K_5</m> has size 5.</p>
+
+<definition>
+	<title>Independent Set</title>
+	<statement><p>A subset <m>A</m> of vertices in a graph are <term>independent</term> if and only if no pair of vertices in <m>A</m> are adjacent.</p></statement>
+</definition>
+
+<example xml:id="graph-example-vertex-independent-set">
+	<title>Vertex Independence Set</title>
+	<p><m>A,C,E</m> is an independent set for the graph in <xref ref="regular1" />. Note no edge contains any two of these vertices.</p>
+</example>
+
+<definition xml:id="definition-bipartite">
+	<title>Bipartite Graph</title>
+	<statement><p>A graph <m>G</m> is <term>bipartite</term> if and only if the vertices can be partitioned into two sets such that no two vertices in the same partition are adjacent.</p></statement>
+</definition>
+
+<example xml:id="graph-example-bipartite">
+	<title>Understanding the bipartite definition</title>
+	<p>This video shows how to demonstrate a graph is bipartite.</p>
+	<sidebyside><video xml:id="graph-bipartite-video1" width="50%" youtube="nofkAoPl0X8" /></sidebyside>
+	<p>This video shows how to determine if a graph is bipartite.</p>
+	<sidebyside><video xml:id="graph-bipartite-video2" width="60%" youtube="14Nbi9VU6Os" /></sidebyside>
+	<p>This video shows how to demonstrate a graph is not bipartite.</p>
+	<sidebyside><video xml:id="graph-bipartite-video3" width="70%" youtube="D6th3EmQNtQ" /></sidebyside>
+</example>
+
+<definition xml:id="definition-complete-bipartite">
+	<title>Complete Biparite</title>
+	<statement><p>If each vertex in any partition of a bipartite graph is adjacent to all vertices in the other partition the graph is called <term>complete bipartite</term> and is denoted <m>K_{n,m}</m> where <m>n,m</m> are the sizes of the partitions.</p></statement>
+</definition>
+
+<example xml:id="graph-example-complete-bipartite">
+	<title>Complete Bipartite Graph</title>
+	<p>The third graph in <xref ref="graphs2" /> is a complete bipartite graph.</p>
+</example>
+
+<definition xml:id="definition-subgraph">
+	<title>Subgraph</title>
+	<statement><p>A graph <m>H=(V_H,E_H)</m> is a <term>subgraph</term> of a graph <m>G=(V_G,E_G)</m> if and only if <m>V_H \subseteq V_G</m> and <m>E_H \subseteq E_G.</m></p></statement>
+</definition>
+
+<example>
+	<title>Subgraph</title>
+	<p>The graph with vertex set <m>V_H=\{A,B,C,G,L\}</m> and edge set <m>E=\{\{A,B\}, \{A,L\}, \{L,G\}, \{B,C\}, \{C,G\} \}</m> is a subgraph of the graph in <xref ref="regular1" />.</p>
+</example>
+
+<definition xml:id="definition-induced-subgraph">
+	<title>Induced Subgraph</title>
+	<statement><p>A graph <m>H=(V_H,E_H)</m> is an <term>induced subgraph</term> of a graph <m>G=(V_G,E_G)</m> if and only if <m>V_H \subseteq V_G</m> and <m>E_H=\{(v_1,v_2) \in E_G : v_1,v_2 \in V_H\}</m> (the set of all edges from <m>G</m> using only vertices in <m>H</m>). </p></statement>
+</definition>
+
+<example>
+	<title>Subgraph</title>
+	<p>The graph with vertex set <m>V_H=\{A,B,C,G,L\}</m> and edge set <m>E=\{\{A,B\}, \{A,L\}, \{B,L\}, \{B,G\}, \{L,G\}, \{B,C\}, \{C,G\} \}</m> is the subgraph of the graph in <xref ref="regular1" /> induced by <m>V_H</m>.</p>
+</example>
+
+<definition>
+	<title>Graph Complement</title>
+	<statement><p>The <term>complement</term> of a graph <m>G=(V,E)</m> is the graph <m>H=(V,E_2)</m> such that <m>v_1,v_2</m> are adjacent in <m>H</m> if and only if they are not adjacent in <m>G.</m></p></statement>
+</definition>
+
+<example xml:id="example-graph-complement">
+	<title>A Graph and its Complement</title>
+
+<sidebyside>
+	<image source="images/graph_bowtie" width="30%" />
+
+	<image source="images/graph_bowtie_complement" width="30%" />
+</sidebyside>
+</example>
+
+<definition>
+	<title>Graph Dual</title>
+	<statement><p>The <term>dual</term> of a graph <m>G=(V,E)</m> is the graph <m>H=(E,E_2)</m> such that for two vertices (edges of <m>G</m>) are adjacent if they were incident in <m>G.</m></p></statement>
+</definition>
+
+<example xml:id="example-graph-dual">
+	<title>A Graph and its Dual</title>
+
+<sidebyside>
+	<image source="images/graph_bowtie" width="20%" />
+
+	<image source="images/graph_bowtie_dual" width="40%" />
+</sidebyside>
+</example>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>List the minimum and maximum degree of every graph in <xref ref="graphs1" /></p></exercise>
+
+<exercise><p>Determine which graphs in <xref ref="graphs1" /> are regular.</p></exercise>
+
+<p>Complete graphs are also known as <term>cliques</term>. The complete graph on five vertices, <m>K_5,</m> is shown in <xref ref="k5" />. The size of the largest clique in a graph is called the <term>clique number</term>, denoted <m>\Omega(G).</m></p>
+
+<exercise><p>Find <m>\Omega(G)</m> for every graph in <xref ref="graphs1" />.</p></exercise>
+
+<exercise><p>Prove that a complete graph is regular.</p></exercise>
+
+<exercise><p>Draw a graph with at least five vertices. Calculate the degree of each vertex. Add these degrees. Count the number of edges. Compare the sum of the degrees to the number of edges. Add an edge. Repeat the experiment. Conjecture a relationship.</p></exercise>
+
+<exercise><p>After the class confirms the result above prove that the number of vertices of odd degree is even.</p></exercise>
+
+<p>The size of the maximum independent set in a graph <m>G</m> is denoted <m>\alpha(G).</m></p>
+
+<exercise><p>Find <m>\alpha(G)</m> for every graph in <xref ref="graphs1" />.</p></exercise>
+
+<exercise><p>Re-write the definition of independent set exchanging vertices for edges. Note this is called a <term>matching</term>.</p></exercise>
+
+<exercise><p>Find the size of the maximum matching for each graph in <xref ref="graphs1" />.</p></exercise>
+
+<exercise><p>Determine which graphs in <xref ref="graphs1" /> are bipartite.</p></exercise>
+
+<exercise><p>Write a definition for tripartite graphs.</p></exercise>
+
+<exercise><p>Construct the graph complement of the bottom left graph in <xref ref="graphs2" />.</p></exercise>
+
+<exercise><p>Construct the graph complement of <m>K_4.</m></p></exercise>
+
+<exercise><p>Construct the dual graph of the bottom left graph in <xref ref="isgraph1" />.</p></exercise>
+
+<figure xml:id="graphs1">
+	<caption>Graph Set 1</caption>
+
+	<sbsgroup>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/Graph1" />
+		<image source="images/Graph2" />
+		<image source="images/Graph3" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/Graph7" />
+		<image source="images/Graph5" />
+		<image source="images/Graph6" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/Graph4" />
+		<image source="images/Graph8" />
+		<image source="images/Graph9" />
+	</sidebyside>
+	</sbsgroup>
+</figure>
+
+<figure xml:id="graphs2">
+	<caption>Graph Set 2</caption>
+
+	<sbsgroup>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/Graph10" />
+		<image source="images/Graph11" />
+		<image source="images/Graph12" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/Graph13" />
+		<image source="images/Graph14" />
+		<image source="images/Graph15" />
+	</sidebyside>
+	</sbsgroup>
+</figure>
+
+</subsection>
+
+</section>

@@ -1,0 +1,9 @@
+cd /d/Documents/kurse/math261/text/html/
+~/xsltproc/xsltproc.exe --xinclude ~/xsltproc/mathbook/xsl/mathbook-html.xsl ../discrete_cs.xml
+cd ../latex
+~/xsltproc/xsltproc.exe -o discrete_cs.tex --xinclude ~/xsltproc/mathbook/xsl/mathbook-latex.xsl ../discrete_cs.xml
+~/xsltproc/xsltproc.exe -o discrete_cs.tex -stringparam latex.print yes --xinclude ~/xsltproc/mathbook/xsl/mathbook-latex.xsl ../discrete_cs.xml
+
+/c/'Program Files'/Java/jdk-12.0.1/bin/java -classpath ~/xsltproc/jing-trang/build -Dorg.apache.xerces.xni.parser.XMLParserConfiguration=org.apache.xerces.parsers.XIncludeParserConfiguration -jar ~/xsltproc/jing-trang/build/jing.jar ~/xsltproc/mathbook/Schema/pretext.rng /d/Documents/kurse/math261/text/discrete_cs.xml >/d/Documents/kurse/math261/text/schemaerrors.txt
+
+for /L %G in (1,1,8) do "C:\Program Files\Inkscape\inkscape.exe" --without-gui --file=isitgraph%G.pdf --export-plain-svg=isitgraph%G.svg

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-set-database" >
+<title>Sets in Relational Database</title>
+
+<p>Databases consist of sets of data. Tables are sets of structured data. Each "row" contains entries for one or more fields; each field is a specific type of data such as a string, integer, or date. One of the uses of databases is to connect tables based on shared fields. For an example see <xref ref="appendix-database" />.</p>
+
+<p>The most common method for accessing databases, especially large, enterprise databases, is Structured Query Language (SQL pronounced <term>sequel</term>). Below is a very simple illustration of the format of SQL query statements.</p>
+
+<table>
+  <title>SQL query example</title>
+  <tabular>
+    <col width="40%" />
+    <col width="40%" />
+    <row>
+      <cell><p><c>SELECT [ list of fields ]</c></p></cell>
+      <cell><p>each field from each table desired</p></cell>
+    </row>
+    <row>
+      <cell><p><c>FROM [ 1st table ]</c></p></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell><p><c>(INNER/LEFT/RIGHT/OUTER)</c> <c>JOIN [ 2nd table ]</c></p></cell>
+      <cell><p>how to match rows of tables</p></cell>
+    </row>
+    <row>
+      <cell><p><c>WHERE &lt;condition></c></p></cell>
+      <cell><p>limits data used</p></cell>
+    </row>
+  </tabular>
+</table>
+
+<p>A specific example that shows the midterm grade and placement test score of all students on the roll is below.</p>
+
+<p><cd>SELECT Midterm.Section, Compare.[Student ID], 
+   Compare.[Placement Score 1], Compare.[Placement Score 2], 
+   Midterm.Score, Midterm.Letter
+FROM Compare 
+INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
+</cd></p>
+
+<p>Note that the JOIN statements determine what set operation to perform on the tables. For example a left join takes all rows from the 1st table regardless of whether there is a matching row in the second table. An inner join requires that there be a matching row in both tables. An outer join uses all rows from both tables regardless of whether there is a match.</p>
+
+<example xml:id="SQLleftjoin">
+  <title>SQL Left Join in Set Notation</title>
+<p><cd>SELECT [fields]
+  FROM Table A LEFT JOIN Table B
+  ON A.Key=B.Key</cd></p>
+<p>Set Notation: <m>A</m></p>
+<sidebyside width="50%" valign="top"><image source="images/VennSQL_A" /></sidebyside>
+</example>
+
+<example xml:id="SQLinnerjoin">
+  <title>SQL Inner Join in Set Notation</title>
+<p><cd>SELECT [fields]
+  FROM Table A INNER JOIN Table B
+  ON A.Key=B.Key</cd></p>
+<p>Set Notation: <m>A \cap B</m></p>
+<sidebyside width="50%"><image source="images/VennSQL_AintB" /></sidebyside>
+</example>
+
+<exercise xml:id="SQLrightjoin">
+  <statement>
+<p><cd>SELECT [fields]
+  FROM Table A RIGHT JOIN Table B
+  ON A.Key=B.Key</cd></p>
+<p>Set Notation: <fillin/></p>
+<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+  </statement>
+</exercise>
+
+<exercise xml:id="SQLleftjoinnull">
+  <statement>
+<p><cd>SELECT [fields]
+  FROM Table A LEFT JOIN Table B
+  ON A.Key=B.Key
+  WHERE B.Key IS NULL</cd></p>
+<p>Set Notation: <fillin/></p>
+<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+  </statement>
+</exercise>
+
+<exercise xml:id="SQLrightjoinnull">
+  <statement>
+<p><cd>SELECT [fields]
+  FROM Table A RIGHT JOIN Table B
+  ON A.Key=B.Key
+  WHERE A.Key IS NULL</cd></p>
+<p>Set Notation: <fillin/></p>
+<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+  </statement>
+</exercise>
+
+<exercise xml:id="SQLouterjoin">
+  <statement>
+<p><cd>SELECT [fields]
+  FROM Table A FULL OUTER JOIN Table B
+  ON A.Key=B.Key</cd></p>
+<p>Set Notation: <fillin/></p>
+<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+  </statement>
+</exercise>
+
+<exercise xml:id="SQLouterjoinnull">
+  <statement>
+<p><cd>SELECT [fields]
+  FROM Table A FULL OUTER JOIN Table B
+  ON A.Key=B.Key
+  WHERE A.Key IS NULL or B.Key IS NULL</cd></p>
+<p>Set Notation: <fillin/></p>
+<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+  </statement>
+</exercise>
+
+</section>

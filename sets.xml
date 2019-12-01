@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-sets" >
+<title>Sets</title>
+
+<subsection xml:id="section-sets-introduction">
+  <title>Understanding Sets</title>
+
+  <p>The most basic data structure is a set. Sets are defined by what is included or what is excluded. To understand what else this implies answer the following questions.</p>
+
+  <exercise>
+    <statement>
+      <p>For each of the following determine whether order matters or not.</p>
+      <p><ol>
+        <li> Members of congress (U.S. federal)</li>
+        <li> Finishers of the Tour de France</li>
+        <li> Students enrolled at UAA</li>
+        <li> People in line at a coffee kiosk</li>
+      </ol></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Given that sets indicate what is included and excluded what, if anything, is extraneous in the following sets?</p>
+      <p><ol>
+        <li> { green, gold, gold, green } (context: set of colors)</li>
+        <li> <m>\{ 1,2,3,4,5, \ldots \}</m> (context: set of integers)</li>
+        <li> <m>\{ 0, 1, 1 \times 1, 1 \times 0 \}</m> (context: set of integers)</li>
+        <li> students enrolled in MATH A261 (context: set of students)</li>
+      </ol></p>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ambiguous-sets">
+    <statement>
+      <p>Determine whether or not you are in the following sets.</p>
+      <p><ol>
+        <li> UAA students</li>
+        <li> Computer Science majors</li>
+        <li> millionaires</li>
+        <li> musicians</li>
+      </ol></p>
+    </statement>
+  </exercise>
+
+  <p>In mathematics concepts must be "well defined." This means there are no ambiguities. For sets this means that it must be possible to determine whether every object is in a set or not. Note this does not mean that any person necessarily knows the answer, rather that some means exists. For example every number is prime or it is not. However, no person knows or can list all the primes.</p>
+
+  <exercise><p>Are all of the sets above (<xref ref="ambiguous-sets" />) well defined?</p></exercise>
+
+</subsection>
+
+<subsection xml:id="subsection-set-terminology">
+    <title>Terminology</title>
+
+    <p>The terms <term>collection</term>, <term>set</term>, <term>member</term>, and <term>element</term> are undefined. <term>Collection</term> and <term>set</term> are synonyms. An element is an object that is included in a set. <term>Element</term> and <term>member</term> are synonyms. Because specific sets are defined by membership, sets do not have a concept of order of their elements.</p>
+
+    <p>The following are mathematical notations for defining sets.</p>
+
+<table>
+  <title>
+    Set Notations
+  </title>
+  <tabular top="medium">
+    <col width="50%" />
+    <col width="20%" />
+    <row  left="medium" bottom="medium">
+      <cell>
+        Set
+      </cell>
+      <cell right="medium">
+        Element
+      </cell>
+    </row>
+    <row left="medium">
+      <cell>
+        <m>T=\{true, false\}</m>
+      </cell>
+      <cell right="medium">
+        <m>true \in T</m>
+      </cell>
+    </row>
+    <row left="medium">
+      <cell>
+        <m>E=\{n | n=2k, k \not\in \mathbb{Z} \}</m>
+      </cell>
+      <cell right="medium">
+        <m>3 \not\in E</m>
+      </cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell><p>S is the set of students enrolled in MATH A261 in the fall 2019 semester</p>
+      </cell>
+      <cell right="medium">
+        Guido is not in S
+      </cell>
+    </row>
+  </tabular>
+</table>
+
+<definition>
+    <title>Subset</title>
+    <statement><p>A set <m>A</m> is a subset of a set <m>B</m>, denoted <m>A \subset B,</m> if and only if <m>a \in A</m> implies <m>a \in B.</m></p></statement>
+</definition>
+
+<p>For example <m> E \subset \mathbb{Z}.</m> Note when needed <m>X \subseteq Y</m> means <m>X</m> is a subset but might be equal to <m>Y</m> whereas <m>X \subset Y</m> means <m>X</m> is a subset and <m>Y</m> contains at least one element not in <m>X.</m> However, we rarely need to make this distinction in this class, so we will use <m>\subset</m> to mean <m>\subseteq.</m></p>
+
+</subsection>
+
+<subsection xml:id="subsection-sets-practice">
+  <title>Practice</title>
+
+<exercise>
+  <statement>
+    <p>Determine if the first set is a subset of the second set.</p>
+    <p><ol>
+      <li> even numbers, all integers</li>
+      <li> vowels, letters</li>
+      <li> colors, pastels</li>
+      <li> chairs, people</li>
+    </ol></p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>Determine if the object is an element of the given set.</p>
+    <p><ol>
+      <li>apple, fruit</li>
+      <li>spider, insects</li>
+      <li>bird shot (shotguns), things that float</li>
+      <li>bumble bees (living, healthy), things that can fly</li>
+    </ol></p>
+  </statement>
+</exercise>
+
+</subsection>
+
+</section>

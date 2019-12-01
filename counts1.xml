@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-counts1" >
+<title>Combinatorics: First Counts</title>
+
+<introduction>
+
+<p><term>Combinatorics</term> is the mathematics of counting.</p>
+
+</introduction>
+
+<subsection xml:id="subsection-counts1-terminology" >
+<title>Terminology</title>
+
+<p><term>Alphabet</term> is an undefined term referring to a set of objects typically thought of as symbols such as the alphabets used in western European languages, Cyrillic, digits of numbers, or emojis.</p>
+
+<definition>
+  <title>String/Word</title>
+  <statement><p>A <term>string</term> or <term>word</term> is an ordered set of characters from an alphabet.</p></statement>
+</definition>
+
+<p>A few words from the alphabet { a,b,c } are the following: c, abc, bc, cab, ccb, aaa. A few words from the alphabet <m>\{0,1,2,3,4,5,6,7,8,9\}</m> are 301, 112, 5.</p>
+
+<definition>
+  <title>Permutation</title>
+  <statement><p>A <term>permutation</term> of a string is any arrangement of the characters in that string including the same order.</p></statement>
+</definition>
+
+<p>A few of the permutations of the string <q>abc</q> are: abc, bac, cab.</p>
+
+</subsection>
+
+<subsection xml:id="subsection-counts1-practice">
+  <title>Practice</title>
+
+<exercise><p>Generate a list of all possible strings of length two from the alphabet <m>\{0,1\}.</m></p></exercise>
+
+<exercise><p>How many strings of length three are possible from the alphabet <m>\{0,1\}</m>? Do not use a formula.</p></exercise>
+
+<exercise><p>How many strings of length three are possible from the alphabet <m>\{0,1,2\}</m>? Do not use a formula.</p></exercise>
+
+<exercise xml:id="permutations"><p>Write all permutations of the string <q>mat</q>.</p></exercise>
+
+<exercise><p>How many permutations are there of the string <q>eat</q>.</p></exercise>
+
+<exercise><p>Write all permutations of the string <q>math</q>.</p></exercise>
+
+<exercise><p>How many permutations are there of the string <q>heat</q>.</p></exercise>
+
+<exercise><p>How many permutations are there of the string <q>great</q>.</p></exercise>
+
+</subsection>
+
+</section>

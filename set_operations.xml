@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-set-operations" >
+<title>Set Operations</title>
+
+<subsection>
+  <title>Terminology</title>
+
+  <p>Just as there are arithmetic operations on numbers, there are set operations on sets.</p>
+
+  <definition>
+    <title>Union</title>
+    <statement><p>The set <m>C</m> is the <term>union</term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cup B,</m> if and only if <m>C=\{ x | x \in A \mbox{ or } x \in B \}.</m></p></statement>
+  </definition>
+
+  <definition>
+    <title>Intersection</title>
+    <statement><p>The set <m>C</m> is the <term>intersection</term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cap B,</m> if and only if <m>C=\{ x | x \in A \mbox{ and } x \in B \}.</m></p></statement>
+  </definition>
+
+  <definition>
+    <title>Difference</title>
+    <statement><p> The set <m>C</m> is the <term>difference</term> between the sets <m>A</m> and <m>B</m>, denoted <m>A-B,</m> if and only if <m>C=\{ x | x \in A \mbox{ but } x \not\in B \}.</m></p></statement>
+  </definition>
+
+  <p>In many circumstance there is a <term>universal set</term> that is part of the context for a problem. For example the set of all integers may be the universal set for discussion of even and odd numbers.</p>
+
+  <definition>
+    <title>Complement</title>
+    <statement><p>The set <m>C</m> is the <term>complement</term> of the set <m>A</m> with respect to the universal set <m>U</m>, denoted <m>\neg A</m> or <m>\overline{A}</m>, if and only if <m>C=U-A.</m></p></statement>
+  </definition>
+
+  <definition>
+    <title>Power Set</title>
+    <statement><p>The set <m>P</m> is the <term>power set</term> of a set <m>A,</m> denoted <m>\Pow(A)</m> or <m>2^A,</m> if and only if <m>P</m> is the set of all subsets of <m>A.</m></p></statement>
+  </definition>
+
+  <p>For example if <m>A=\{0,1\}</m> then <m>\Pow(A)=\{ \emptyset, \{0\}, \{1\}, \{0,1\}\}.</m></p>
+
+  <definition>
+    <title>Cartesian Product</title>
+    <statement><p>The set <m>C</m> is the <term>Cartesian product</term> of the sets <m>A</m> and <m>B,</m> denoted <m>A \times B,</m> if and only if <m>C=\{(a,b) | a \in A \mbox{ and } b \in B. \}.</m></p></statement>
+  </definition>
+
+  <p>For example if <m>A=\{0,1\}</m> and <m>B=\{a,b\}</m> then <m>A \times B =</m> <m>\{(0,a), (0,b), (1,a),</m> <m>(1,b)\}.</m></p>
+
+  </subsection>
+
+  <subsection>
+    <title>Practice</title>
+
+    <figure xml:id="venn">
+      <caption>Typical Venn Diagram</caption>
+      <image width="50%" source="images/TypicalVenn" />
+    </figure>
+
+  <exercise>
+    <statement><p>Identify the following in the diagram above.</p>
+    <p><ol>
+      <li> <m>A \cup B</m></li>
+      <li> <m>A \cap B</m></li>
+      <li> <m>A-B</m></li>
+      <li> <m>B-A</m></li>
+      <li> <m>\neg A</m></li>
+      <li> <m>\neg B</m></li>
+    </ol></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement><p>Identify the following for the sets <m>A=\{n | n=6k </m> for some integer <m> k\}</m> and <m>B=\{n | n=10k </m> for some integer <m> k \}</m>. The universal set is all integers.</p>
+    <p><ol>
+      <li> <m>A \cup B</m></li>
+      <li> <m>A \cap B</m></li>
+      <li> <m>A-B</m></li>
+      <li> <m>B-A</m></li>
+      <li> <m>\neg A</m></li>
+      <li> <m>\neg B</m></li>
+    </ol></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement><p>Calculate the following for <m>A=\{0,1,2\}</m> and <m>B=\{0,1\}.</m></p>
+    <p><ol>
+      <li> <m>\Pow(A)</m></li>
+      <li> <m>A \times B</m></li>
+      <li> <m>B \times A</m></li>
+    </ol></p>
+    </statement>
+  </exercise>
+  </subsection>
+
+</section>

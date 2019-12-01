@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-relations" >
+<title>Mathematical Relations</title>
+
+<introduction>
+	<p>In order to organize data we need to recognize its underlying structure. <term>Relations</term> are one way of classifying structure.</p>
+</introduction>
+
+<subsection>
+	<title>Terminology</title>
+
+<definition xml:id="definition-relation">
+	<title>Relation</title>
+	<statement><p>A subset of a Cartesian product <m>R=S \times T</m> defines a <term>relation</term> from <m>S</m> to <m>T.</m></p></statement>
+</definition>
+
+<p>If <m>(s,t) \in R</m> then <m>s</m> is related to <m>t</m> or <m>sRt.</m> Other notations are used to denote elements which are related for specific types of relations as will be seen later. Note a relation can be from a set to itself (e.g., <m>R=S \times S</m>).</p>
+
+<p>For example consider the relation <m>R</m> on <m>\Z^2 \times \Z^2</m> (<m>\Z^2</m> means order pairs of integers) defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> Thus <m>(1,2)R(3,6)</m> because <m>1 \cdot 6 = 2 \cdot 3.</m> Also, <m>(5,3)R(20,12)</m> because <m>5 \cdot 12 = 3 \cdot 20.</m></p>
+
+<exercise><p>Find three elements related to <m>(2,5)</m> in this relation.</p></exercise>
+
+<p>Consider the set <m>\Pow(X)</m> (power set) for some non-empty set <m>X.</m> Let the relation <m>R</m> be defined by <m>A</m> is related to <m>B</m> if and only if <m>A \subseteq B.</m> Consider <m>\Pow(\{0,1\})=\{ \emptyset, \{0\}, \{1\}, \{0,1\} \}.</m> <m>\{0\}R\{0,1\}</m> because <m>\{0\} \subseteq \{0,1\}.</m> Also <m>\emptyset R \{0\}.</m></p>
+
+<exercise><p>Write <m>\Pow(\{a,b,c \}).</m></p></exercise>
+
+<exercise><p>Find all sets that are related to <m>\{a,b\}.</m></p></exercise>
+
+<exercise><p>Find all sets that to which <m>\{a,b\}</m> is related.</p></exercise>
+
+<definition xml:id="definition-relation-reflexive">
+	<title>Reflexive</title>
+	<statement><p>A relation <m>R</m> on a set <m>X</m> is <term>reflexive</term> if and only if <m>a \in X</m> implies <m>(a,a) \in R.</m></p></statement>
+</definition>
+
+<p>Consider the relation <m>R</m> on <m>\Z^2 \times \Z^2</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> For this relation to be reflexive <m>(a,b)</m> must be related to <m>(a,b).</m> For this relation that requires that <m>ab=ba.</m> This is true by commutativity of real arithmetic. Thus this relation is reflexive.</p>
+
+<p>Next consider the set <m>\Pow(X)</m> for some non-empty set <m>X.</m> Let the relation <m>R</m> be defined by <m>A</m> is related to <m>B</m> if and only if <m>A \subseteq B.</m> To show that this is reflexive <m>(A,A)</m> must be in <m>R</m> for all sets. In this case that means <m>A \subseteq A</m> for all <m>A \in \Pow(X).</m> Note by a previous theorem <m>A \subseteq A</m> for all sets, thus <m>R</m> is indeed reflexive.</p>
+
+<definition xml:id="definition-relation-symmetric">
+	<title>Symmetric</title>
+	<statement><p>A relation <m>R</m> on a set <m>X</m> is <term>symmetric</term> if and only if <m>(a,b) \in R</m> implies <m>(b,a) \in R.</m></p></statement>
+</definition>
+
+<p>Consider the relation <m>R</m> on <m>\Z^2 \times \Z^2</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> For this relation to be symmetric if <m>(a,b)R(c,d)</m> then <m>(c,d)R(a,b).</m> For this relation, <m>(a,b)R(c,d)</m> implies <m>ad=bc.</m> By commutativity of real multiplication <m>cb=da</m> which means <m>(c,d)R(a,b).</m> Thus this relation is symmetric.</p>
+
+<p>Consider the set <m>\Pow(X)</m> for the set <m>X=\{a,b,c\}.</m> Let the relation <m>R</m> be defined by <m>A</m> is related to <m>B</m> if and only if <m>A \subseteq B.</m> To be symmetric if <m>A \subseteq B</m> then <m>B \subseteq A.</m> However, note that <m>\emptyset  \subseteq \{a,b,c\}</m> so these are related. However <m>\{a,b,c\} \not\subseteq \emptyset</m> so this relation is not symmetric.</p>
+
+<definition xml:id="definition-relation-antisymmetric">
+	<title>Anti-Symmetric</title>
+	<statement><p>A relation <m>R</m> on a set <m>X</m> is <term>anti-symmetric</term> if and only if <m>(a,b), (b,a) \in R</m> implies <m>a=b.</m></p></statement>
+</definition>
+
+<p>Consider the relation <m>R</m> on <m>\Z^2 \times \Z^2</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> If this is anti-symmetric then there will be no non-trivial symmetric pairs. Consider that <m>(1,3)R(2,6)</m> and <m>(2,6)R(1,3)</m> because <m>1 \cdot 6 = 2 \cdot 3.</m> However <m>(1,3) \ne (2,6).</m> Thus this relation is not anti-symmetric.</p>
+
+<p>Consider the set <m>\Pow(X)</m> for the set <m>X=\{a,b,c\}.</m> Let the relation <m>R</m> be defined by <m>A</m> is related to <m>B</m> if and only if <m>A \subseteq B.</m> Note that if <m>A \subseteq B</m> and <m>B \subseteq A</m> then by definition of set equality <m>A=B.</m> Thus this relation is anti-symmetric.</p>
+
+<definition xml:id="definition-relation-transitive">
+	<title>Transitive</title>
+	<statement><p>A relation <m>R</m> on a set <m>X</m> is <term>transitive</term> if and only if <m>(a,b) \in R</m> and <m>(b,c) \in R</m> implies <m>(a,c) \in R.</m></p></statement>
+</definition>
+
+<p>Consider the relation <m>R</m> on <m>\Z^2 \times \Z^2</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> For this relation to be transitive <m>(a,b)R(c,d)</m> and <m>(c,d)R(e,f)</m> then <m>(a,b)R(e,f).</m> Note <m>(a,b)R(c,d)</m> means <m>ad=bc.</m> Also <m>(c,d)R(e,f)</m> means <m>cf=de.</m></p>
+
+<p><md>
+<mrow>ad &amp; = &amp; bc. </mrow>
+<mrow>\frac{ad}{b} &amp; = &amp; c. </mrow>
+<mrow>cf &amp; = &amp; de. </mrow>
+<mrow>\frac{ad}{b}f &amp; = &amp; de. </mrow>
+<mrow>adf &amp; = &amp; deb. </mrow>
+<mrow>af &amp; = &amp; eb </mrow>
+<mrow> &amp; = &amp; be.</mrow>
+</md></p>
+
+<p>This last implies that <m>(a,b)R(e,f).</m> Thus this relation is transitive.</p>
+
+<p>Consider the set <m>\Pow(X)</m> for the set <m>X=\{a,b,c\}.</m> Let the relation <m>R</m> be defined by <m>A</m> is related to <m>B</m> if and only if <m>A \subseteq B.</m> To show that this is transitive requires showing that if <m>(A,B), (B,C) \in R</m> then <m>(A,C) \in R.</m> For this relation this means that if <m>A \subseteq B</m> and <m>B \subseteq C</m> then <m>A \subseteq C.</m> This has been proven in a previous problem, thus the relation is transitive.</p>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a|b.</m> Using the definition of divides demonstrates that this relation is reflexive. You should be able to do it without specific numbers.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a \equiv b \pmod n.</m> Using the definition demonstrate that <m>R</m> is reflexive using <m>n=5.</m></p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of real numbers be defined by <m>aRb</m> if and only if <m>a &lt; b.</m> Prove that this relation is not reflexive.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a|b.</m> Determine whether this relation is symmetric.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a \equiv b \pmod n.</m> Determine whether this relation is symmetric.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of real numbers be defined by <m>aRb</m> if and only if <m>a \le b.</m> Determine whether this relation is symmetric.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a|b.</m> Determine whether this relation is anti-symmetric.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a \equiv b \pmod n.</m> Determine whether this relation is anti-symmetric.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of real numbers be defined by <m>aRb</m> if and only if <m>a \le b.</m> Determine whether this relation is anti-symmetric.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a|b.</m> Determine whether this relation is transitive.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a \equiv b \pmod n.</m> Determine whether this relation is transitive.</p></exercise>
+
+<exercise><p>Let the relation <m>R</m> on the set of real numbers be defined by <m>aRb</m> if and only if <m>a \le b.</m> Determine whether this relation is transitive.</p></exercise>
+
+</subsection>
+
+<subsection xml:id="relation-closure">
+	<title>Closure</title>
+
+<definition xml:id="definition-relation-closure">
+	<title>Closure</title>
+	<statement><p>The <term>closure</term> of a subset <m>X</m> of a cartesian product with respect to the symmetric or transitive property of a relation is the set <m>Y</m> such that <m>X \subseteq Y</m> and <m>Y</m> is symmetric or transitive.</p></statement>
+</definition>
+
+<example>
+	<title>Closure with respect to symmetry</title>
+	<statement><p>Find the symmetric closure of the relation <m>R</m> on the set <m>X</m>.</p>
+	<p><m>X=\{ 0,1,2,3,4 \}. </m> <m>R=\{ (0,0), (0,1), (1,2), (2,3), (3,4) \}</m></p>
+	</statement>
+	<solution><p><m>(0,1) \in R</m> requires adding <m>(1,0)</m></p>
+	<p><m>(1,2) \in R</m> requires adding <m>(2,1)</m></p>
+	<p><m>(2,3) \in R</m> requires adding <m>(3,2)</m></p>
+	<p><m>(3,4) \in R</m> requires adding <m>(4,3)</m></p>
+	<p>The symmetric closure of <m>R</m> is <m>\{ </m> (0,0), (0,1), (1,0), (1,2), (2,1), (2,3), (3,2), (3,4), (4,3) <m>\}</m></p>
+	</solution>
+</example>
+
+<example>
+	<title>Closure with respect to transitivity</title>
+	<statement><p>Find the transitive closure of the relation <m>R</m> on the set <m>X</m>.</p>
+	<p><m>X=\{ 0,1,2,3,4 \}. </m> <m>R=\{ (0,0), (0,1), (1,2), (2,3), (3,4) \}</m></p>
+	</statement>
+	<solution><p><m>(0,1), (1,2) \in R</m> requires adding <m>(0,2)</m></p>
+	<p><m>(0,2), (2,3) \in R</m> requires adding <m>(0,3)</m></p>
+	<p><m>(0,3), (3,4) \in R</m> requires adding <m>(0,4)</m></p>
+	<p><m>(1,2), (2,3) \in R</m> requires adding <m>(1,3)</m></p>
+	<p><m>(1,3), (3,4) \in R</m> requires adding <m>(1,4)</m></p>
+	<p><m>(2,3), (3,4) \in R</m> requires adding <m>(2,4)</m></p>
+	<p>The transitive closure of <m>R</m> is <m>\{ </m>(0,0), (0,1), (0,2), (0,3), (0,4), (1,2), (1,3), (1,4), (2,3), (2,4), (3,4) <m> \}</m></p>
+	</solution>
+</example>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+	<exercise><p>Construct the symmetric closure of the following relation. <m>X=\{a,b,c\}</m> <m>R=\{ (a,b), (b,c), (c,a) \}.</m></p></exercise>
+
+	<exercise><p>Construct the transitive closure of the following relation. <m>X=\{a,b,c\}</m> <m>R=\{ (a,b), (b,c), (c,a) \}.</m></p></exercise>
+
+	<exercise><p>Construct the closure under both symmetric and transtive properties of the following relation. <m>X=\{a,b,c\}</m> <m>R=\{ (a,b), (b,c), (c,a) \}.</m></p></exercise>
+
+	<exercise><p>Why do we not define the anti-symmetric closure of a relation?</p></exercise>
+
+</subsection>
+
+</section>

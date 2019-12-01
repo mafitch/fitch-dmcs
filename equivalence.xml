@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-equivalence-relation" >
+<title>Equivalence Relations</title>
+
+<introduction>
+<p>With modulo arithmetic any number that is equivalent to another can be substituted in arithmetic without changing the result. In an error correcting code any strings that are equivalent are interpreted as the same data. This section develops the properties that define equivalence in a general sense.</p>
+</introduction>
+
+<subsection xml:id="subsection-equivalence-relation-definition">
+	<title>Defined</title>
+
+	<definition>
+		<title>Equivalence Relation</title>
+		<statement><p>A relation is an <term>equivalence relation</term> if and only if the relation is reflexive, symmetric, and transitive.</p></statement>
+	</definition>
+
+<exercise><p>Determine whether the following relation is an equivalence relation. Consider the set <m>\Pow(X)</m> for the set <m>X=\{a,b,c\}.</m> Let the relation <m>R</m> be defined by <m>A</m> is related to <m>B</m> if and only if <m>A \subseteq B.</m> It may help to list all the elements of <m>\Pow(X)</m> first using the definition of power set.</p></exercise>
+
+<exercise><p>Determine whether the following relation is an equivalence relation. Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a \equiv b \pmod n.</m> Note the value of <m>n</m> is irrelevant here.</p></exercise>
+
+<exercise><p>Determine whether the following relation is an equivalence relation. Let the relation <m>R</m> on the set of integers be defined by <m>aRb</m> if and only if <m>a|b.</m></p></exercise>
+
+<exercise><p>Determine whether the following relation is an equivalence relation. Let the relation <m>R</m> on the set of real numbers be defined by <m>aRb</m> if and only if <m>a \le b.</m></p></exercise>
+
+</subsection>
+
+<subsection xml:id="subsection-equivalence-classes">
+	<title>Equivalence Classes</title>
+
+<definition>
+	<title>Equivalence Class</title>
+	<statement><p>For an equivalence relation <m>R</m>, a set of elements, denoted <m>[y]</m>, is an <term>equivalence class</term> if and only if <m>[y]=\{ x \: | \: xRy \}.</m></p>
+	</statement>
+</definition>
+
+<p>The two questions we ask are<ol><li>What are the equivalence classes?</li><li>What are the elements of an equivalence class.</li></ol></p>
+
+<p>Questions asking about elements of an equivalence class may be phrased any of the following ways.<ul><li>List elements from the equivalence class <m>[a]</m></li><li>Find elements of the equivalence class <m>[a]</m></li><li>Find the equivalence class <m>[a]</m></li></ul></p>
+
+<example xml:id="example-equivalence-class-elements-modulo">
+	<title>Find an Equivalence Class</title>
+	<statement><p>Consider the equivalence relation defined by <m>aRb</m> if and only if <m>a \cong b \pmod 5</m>. Find the equivalence class <m>[0]</m>. List at least four elements.</p></statement>
+	<solution><p><m>[0]</m> is the set of all integers <m>n</m> such that <m>n \cong 0 \pmod 5.</m> We calculated some of these before: <m>0,5,10,-5,\ldots</m> Thus <m>[0]=\{\ldots, -5, 0, 5, 10, \ldots \}.</m></p>
+	</solution>
+</example>
+
+<example xml:id="example-equivalence-class-elements-fraction">
+	<title>Find an Equivalence Class</title>
+	<statement><p>Consider the relation <m>R</m> on <m>\Z^+ \times \Z^+</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> Find the equivalence class <m>[(1,2)]. List at least four elements.</m></p></statement>
+	<solution><p>Based on previous calculations we know <m>(2,4)R(1,2),</m>, <m>(3,6)R(1,2),</m> and <m>(-1,-2)R(1,2).</m> Thus <m>[(1,2)]=\{\ldots, (-1,-2), (1,2), (2,4), (3,6), \ldots \}.</m></p></solution>
+</example>
+
+<example xml:id="example-equivalence-relation-classes-modulo">
+	<title>Find Distinct Equivalence Classes</title>
+	<statement><p>Consider the equivalence relation defined by <m>aRb</m> if and only if <m>a \cong b \pmod 5</m>. List multiple, distinct equivalence classes.</p></statement>
+	<solution><p>Note <m>5 \not| (1-0)</m> so <m>[0]</m> and <m>[1]</m> are distinct equivalence classes. Also <m>5 \not| (2-0)</m> and <m>5 \not|(2-1).</m> Thus <m>[2]</m> is a third, distinct equivalence class.</p></solution>
+</example>
+
+<example xml:id="example-equivalence-relation-classes-faction">
+	<title>Find Distinct Equivalence Classes</title>
+	<statement><p>Consider the relation <m>R</m> on <m>\Z^+ \times \Z^+</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> List multiple, distinct equivalence classes.</p></statement>
+	<solution><p>Consider (1,2) and (3,5). Note <m>1 \cdot 5 \ne 2 \cdot 3.</m> Thus <m>[(1,2)]</m> and <m>[(3,5)]</m> are distinct equivalence classes. Also consider (1,7). Note <m>1 \cdot 7 \ne 2 \cdot 4</m> and <m>3 \cdot 7 \ne 5 \cdot 4.</m> Thus <m>[(4,7)]</m> is a third, distinct equivalence class.</p></solution>
+</example>
+
+<exercise><p>Find the equivalence class of 0 and the class of 1 for the relation <m> a \equiv b \pmod 6. </m></p></exercise>
+
+<exercise><p>List every equivalence class for the relation <m> a \equiv b \pmod 6. </m></p></exercise>
+
+<exercise><p>Two five bit, binary code words are equivalent if they are distance two or less from one of the selected code words. List all the code words equivalent to 00000.</p></exercise>
+
+<exercise><p>For the code word problem above, what is the maximum number of equivalence classes possible?</p></exercise>
+
+<exercise>
+	<p>Consider the following equivalence relation. <m>X=\{mx+b \: | \: m,b \in \R \},</m> the set of all 2D lines. <m>R</m> is defined by <m>\ell_1(x)=m_1x+b_1 \equiv \ell_2(x)=m_2x+b_2</m> if and only if <m>m_1=m_2.</m></p>
+	<p>Find the equivalence class of <m>y=5x+3</m> and the class of <m>y=\frac{11}{7}x+\frac{13}{208}.</m></p>
+</exercise>
+
+<exercise>
+	<p>Consider the following equivalence relation. <m>X=\{mx+b \: | \: m,b \in \R \},</m> the set of all 2D lines. <m>R</m> is defined by <m>\ell_1(x)=m_1x+b_1 \equiv \ell_2(x)=m_2x+b_2</m> if and only if <m>m_1=m_2.</m></p>
+	<p>List four distinct equivalence classes for this relation.</p>
+</exercise>
+
+</subsection>
+
+<subsection xml:id="subsection-equivalence-characterize">
+	<title>Characterizing Equivalence Classes</title>
+
+	<p>The following questions draw attention to properties of equivalence classes</p>
+
+	<exercise><p>Suppose the equivalence class <m>[a]=\{a,c,e\}.</m> What is the equivalence class <m>[c]</m>?</p></exercise>
+
+	<exercise><p>Suppose the equivalence class <m>[a]</m> contains <m>a,c,e,g</m> and <m>[i]</m> contains <m>g</m>. What else do we know is in <m>[i]</m>.</p></exercise>
+
+	<exercise><p>If two equivalence classes share one element, how many elements do they share?</p></exercise>
+
+	<exercise><p>Prove no even number is odd.</p></exercise>
+
+	<exercise><p>Explain how even/odd defines an equivalence relation on the integers.</p></exercise>
+
+	<exercise><p>Why does major not define an equivalence relation on the set of current students at UAA?</p></exercise>
+
+</subsection>
+
+</section>

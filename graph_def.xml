@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-graph-def" >
+<title>Discovering Graphs</title>
+
+<p>Definitions are typically constructed after we work with new objects. The definition is constructed to match the properties we have observed and need. In this section we will practice this by developing a definition for a type of object known as a <term>graph</term>.</p>
+
+<figure xml:id="isgraph1">
+	<caption>Each of these is a graph</caption>
+
+	<sbsgroup>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/isgraph1" />
+		<image source="images/isgraph2" />
+		<image source="images/isgraph3" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/isgraph4" />
+		<image source="images/isgraph5" />
+		<image source="images/isgraph6" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%">
+		<image source="images/isgraph7" />
+		<image source="images/isgraph8" />
+	</sidebyside>
+	</sbsgroup>
+</figure>
+
+<figure xml:id="notgraph1">
+	<caption>None of these is a graph</caption>
+
+	<sbsgroup>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/notgraph1" />
+		<image source="images/notgraph2" />
+		<image source="images/notgraph3" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/notgraph4" />
+		<image source="images/notgraph5" />
+		<image source="images/notgraph6" />
+	</sidebyside>
+	<sidebyside widths="25%">
+		<image source="images/notgraph7" />
+	</sidebyside>
+	</sbsgroup>
+</figure>
+
+<exercise xml:id="checkgraph1">
+	<p>Based on the examples in <xref ref="isgraph1" /> and <xref ref="notgraph1" /> determine which of the following are graphs.</p>
+
+	<sbsgroup>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/isitgraph1" />
+		<image source="images/isitgraph2" />
+		<image source="images/isitgraph3" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%, 25%">
+		<image source="images/isitgraph4" />
+		<image source="images/isitgraph5" />
+		<image source="images/isitgraph6" />
+	</sidebyside>
+	<sidebyside widths="25%, 25%">
+		<image source="images/isitgraph7" />
+		<image source="images/isitgraph8" />
+	</sidebyside>
+	</sbsgroup>
+</exercise>
+
+<example xml:id="isgraph2">
+	<p>Each of these is a graph.</p>
+
+	<p><ol cols="2">
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3\}</mrow>
+			<mrow>Q \amp =\{q_1,q_2,q_3\}</mrow>
+			<mrow>q_1 \amp = \{p_1,p_2\}</mrow>
+			<mrow>q_2 \amp = \{p_1,p_3\}</mrow>
+			<mrow>q_3 \amp = \{p_2,p_3\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3,p_4\}</mrow>
+			<mrow>Q \amp =\emptyset</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3,p_4\}</mrow>
+			<mrow>Q \amp =\{q_1,q_2\}</mrow>
+			<mrow>q_1 \amp = \{p_1,p_3\}</mrow>
+			<mrow>q_2 \amp = \{p_2,p_4\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3,p_4,p_5\}</mrow>
+			<mrow>L \amp =\{\ell_1,\ell_2,\ell_3,\ell_4,\ell_5,\ell_6\}</mrow>
+			<mrow>\ell_1 \amp = \{p_2,p_3\}</mrow>
+			<mrow>\ell_2 \amp = \{p_1,p_4\}</mrow>
+			<mrow>\ell_3 \amp = \{p_4,p_5\}</mrow>
+			<mrow>\ell_4 \amp = \{p_1,p_5\}</mrow>
+			<mrow>\ell_5 \amp = \{p_2,p_4\}</mrow>
+			<mrow>\ell_6 \amp = \{p_2,p_5\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>V \amp =\{c,d,e,f\}</mrow>
+			<mrow>E \amp =\{\{c,d\}, \{d,e\}, \{e,f\},</mrow>
+			<mrow> \amp \{c,f\}\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+				<mrow>V \amp =\{v_1,v_2,v_3,v_4\}</mrow>
+				<mrow>E \amp =\{\{v_1,v_2\}, \{v_1,v_3\}, </mrow>
+				<mrow> \amp \{v_2,v_3\}, \{v_2,v_4\}\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p\}</mrow>
+			<mrow>Q \amp =\emptyset</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{q,r,s,t\}</mrow>
+			<mrow>Q \amp =\{\{q,r\}, \{r,t\}, \{q,t\}, \{r,s\}\}</mrow>
+			</md></p>
+		</li>
+	</ol></p>
+</example>
+
+<example xml:id="notgraph2">
+	<p>None of these is a graph.</p>
+
+	<p><ol cols="2">
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3\}</mrow>
+			<mrow>Q \amp =\{q_1,q_2\}</mrow>
+			<mrow>q_1 \amp = \{p_1,p_2\}</mrow>
+			<mrow>q_2 \amp = \{p_3,p_4\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2\}</mrow>
+			<mrow>Q \amp =\{q_1,q_2\}</mrow>
+			<mrow>q_1 \amp = \{p_1,p_2\}</mrow>
+			<mrow>q_2 \amp = \{p_1,p_2\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3\}</mrow>
+			<mrow>Q \amp =\{q_1,q_2,q_3\}</mrow>
+			<mrow>q_1 \amp = (p_1,p_2)</mrow>
+			<mrow>q_2 \amp = (p_1,p_3)</mrow>
+			<mrow>q_3 \amp = (p_2,p_3)</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>V \amp =\{x,y,z\}</mrow>
+			<mrow>E \amp =\{f,g,h\}</mrow>
+			<mrow>f \amp = (x,y)</mrow>
+			<mrow>g \amp = (y,x)</mrow>
+			<mrow>h \amp = (y,z)</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\emptyset</mrow>
+			<mrow>Q \amp =\emptyset</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{q,r,s,t\}</mrow>
+			<mrow>Q \amp =\{\{q,r\}, \{r,t\}, \{s\} \}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>V \amp =\{p_1,p_2,\ldots,p_n,\ldots\}</mrow>
+			<mrow>E \amp =\{\{p_1,p_2\}, \{p_2,p_4\}, \{p_1,p_3\}, \{p_4,p_6\}\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3\}</mrow>
+			<mrow>Q \amp =\{q_1,q_2,q_3\}</mrow>
+			<mrow>q_1 \amp = \{p_1,p_2\}</mrow>
+			<mrow>q_2 \amp = \{p_1,p_3\}</mrow>
+			</md></p>
+		</li>
+	</ol></p>
+</example>
+
+<exercise>
+	<p>Based on the examples in <xref ref="isgraph2" /> and <xref ref="notgraph2" /> determine which of the following are graphs.</p>
+
+	<p><ol cols="2">
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3\}</mrow>
+			<mrow>Q \amp =\{q_1\}</mrow>
+			<mrow>q_1 \amp = \{p_1,p_3\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3\}</mrow>
+			<mrow>Q \amp =\{q_1,q_2\}</mrow>
+			<mrow>q_1 \amp = \{p_1,p_2\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>V \amp =\{v_1,v_2,\ldots,v_n,\ldots\}</mrow>
+			<mrow>E \amp =\{e_1,e_2,\ldots,e_n,\ldots\}</mrow>
+			<mrow>e_1 \amp = (v_1,v_2)</mrow>
+			<mrow>\vdots</mrow>
+			<mrow>e_n \amp = (v_n,v_{n+1})</mrow>
+			<mrow>\vdots</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p,q,r\}</mrow>
+			<mrow>Q \amp =\{t,u,v\}</mrow>
+			<mrow>t \amp = \{p,q\}</mrow>
+			<mrow>u \amp = \{p,r\}</mrow>
+			<mrow>v \amp = \{q,r\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p_1,p_2,p_3\}</mrow>
+			<mrow>Q \amp =\emptyset</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>V \amp =\{u_1,u_2,u_3,u_4\}</mrow>
+			<mrow>E \amp =\{(u_1,u_2), (u_2,u_1),</mrow>
+			<mrow> \amp (u_3,u_4)\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>V \amp =\{v_1,v_2,v_3\}</mrow>
+			<mrow>E \amp =\{\{v_1,v_2\}, \{v_1,v_3\}, \{v_3\}\}</mrow>
+			</md></p>
+		</li>
+		<li><p><md>
+			<mrow>P \amp =\{p,q,r,s\}</mrow>
+			<mrow>Q \amp =\{\{p,q\}, \{p,r\}, \{p,s\},</mrow>
+			<mrow> \amp \{q,r\}, \{q,s\}, \{r,s\}\}</mrow>
+			</md></p>
+		</li>
+	</ol></p>
+
+</exercise>
+
+<exercise><p>In terms of the diagrams in <xref ref="isgraph1" /> list properties required and properties not allowed in graphs.</p></exercise>
+
+<exercise><p>In terms of the sets in <xref ref="isgraph2" /> list properties required and properties not allowed in graphs.</p></exercise>
+
+<exercise><p>Draw the diagram form of the first graph in <xref ref="isgraph2" /></p></exercise>
+
+<exercise><p>Write the set form of the fourth graph (bottom left) in <xref ref="isgraph1" /></p></exercise>
+
+</section>

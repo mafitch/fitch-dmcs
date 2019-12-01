@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-terminology" >
+<title>Terminology</title>
+
+<p>One of the concerns of mathematics is demonstrating the truth of statements. These demonstrations are called proofs and this topic will be studied later. For the moment note that in any finite logic system (this is what humans use), there must be the following categories of terms and statements.</p>
+
+<p>
+<ol>
+<li>Undefined terms</li>
+<li>Defined terms</li>
+<li>Axioms</li>
+<li>Theorems (lemmas, corollaries)</li>
+</ol>
+</p>
+
+<p>There must be undefined terms. If not then each term would be defined in terms of a previous one which would iterate infinitely. If the list is not infinite then some term is defined by one earlier in the list leading to a circular defition. This is just listing synonyms.</p>
+
+<p>Defined terms are defined using undefined terms and previously defined terms. Axiom are unproven statements that explain how undefined and defined objects work. These statements must be unproven for the same reason undefined terms must exist.</p>
+
+<p>Finally, new statements can be proved using undefined terms, defined terms, axioms, and previously proven theorems. Each section will begin with a list of undefined and defined terms. These must be memorized in order to understand statements made and solve problems using them.</p>
+
+</section>

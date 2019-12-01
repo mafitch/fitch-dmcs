@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-modulo" >
+<title>Modulo Arithmetic</title>
+
+<subsection>
+	<title>Terminology</title>
+
+<p>All numbers are said to be equivalent <term>mod</term> <m>n</m> to their remainder after dividing by <m>n</m>. For example <m> 9 \equiv 4 \pmod 5  </m> and <m> 13 \equiv 1 \pmod 2 . </m></p>
+
+<p>Below a function in <xref ref="modfunction" /> is evaluated <m>\pmod 5.</m></p>
+<table xml:id="modfunction">
+	<title>Function mod 5</title>
+	<tabular top="medium">
+	<row bottom="medium"><cell right="medium"><m>n</m></cell> <cell>0</cell> <cell>1</cell> <cell>2</cell> <cell>3</cell> <cell>4</cell></row>
+	<row bottom="medium"><cell right="medium"><m>n^2</m></cell> <cell>0</cell> <cell>1</cell> <cell>4</cell> <cell>4</cell> <cell>1</cell></row>
+	</tabular>
+</table>
+
+<p>The formal definition of modulo arithmetic requires two definitions.</p>
+
+<definition>
+	<title>Divides</title>
+	<statement><p><m>a</m> divides <m>b</m>, written <m>a|b,</m> if and only if there exists some <m>k \in \Z</m> such that <m>ak=b.</m></p></statement>
+</definition>
+
+<definition>
+	<title>Modulo</title>
+	<statement><p><m>a</m> is equivalent to <m>b</m> modulo <m>n</m>, written <m>a \equiv b \pmod n,</m> if and only if <m> n|b-a. </m></p></statement>
+</definition>
+
+<p>Note you may be familiar with the operation % in programming. That is an operation like + or <m>\times</m>. Here we are using a different number system like integers or reals. Avoid conflating the two. For example % has an order of operation. The question of order does not make sense with arithmetic mod <m>n</m> as will be demonstrated.</p>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<p>To address the issue of order of operation under modulo arithmetic consider the function <m>f(n)=n^2+3n+5 \pmod 7.</m></p>
+
+<p><md>
+<mrow>f(4) &amp; = &amp; 4^2+3(4)+5 \pmod 7.</mrow>
+<mrow>4^2 &amp; = &amp; 16 \equiv 2 \pmod 7.</mrow>
+<mrow>3(4) &amp; = &amp; 12 \equiv 5 \pmod 7.</mrow>
+<mrow>2+5+5 &amp; = &amp; 12 \equiv 5 \pmod 7.</mrow>
+<mrow>f(4) &amp; = &amp; 5 \pmod 7.</mrow>
+<mrow>f(4) &amp; = &amp; 4^2+3(4)+5 \pmod 7</mrow>
+<mrow> &amp; = &amp; 33 \pmod 7</mrow>
+<mrow> &amp; = &amp; 5 \pmod 7.</mrow>
+</md></p>
+
+<exercise><p>As in the example above calculate <m>f(2)</m> and <m>f(6)</m> both ways. Does it matter when you use an equivalent number in modulo arithmetic?</p></exercise>
+
+<exercise><p>Complete the table below calculating <m>\pmod 7.</m></p>
+<sidebyside>
+<tabular top="medium">
+<row left="medium" bottom="medium"><cell right="medium"><m>n</m></cell> <cell>0 </cell><cell> 1 </cell><cell> 2 </cell><cell> 3 </cell><cell> 4 </cell><cell> 5 </cell><cell right="medium"> 6 </cell></row>
+<row left="medium" bottom="medium"><cell right="medium"><m>n^2-3</m></cell> <cell> </cell><cell> </cell><cell> </cell><cell> </cell><cell> </cell><cell> </cell><cell right="medium"> </cell></row>
+</tabular>
+</sidebyside>
+</exercise>
+
+<exercise><p>Based on two numbers being equivalent modulo 5 if their remainders are the same after dividing by 5, list four (4) numbers that are equivalent to <m>3 \pmod 5.</m></p></exercise>
+
+<exercise><p>Find all solutions to the following equation modulo 5. <m>n^2-1=0 \pmod 5. </m></p></exercise>
+
+<exercise><p>Find all solutions to <m> 3n=0 \pmod 5. </m></p></exercise>
+
+<exercise><p>Complete the table below calculating modulo 8.</p>
+<sidebyside>
+<tabular top="medium">
+<row left="medium" bottom="medium"><cell right="medium"><m>n</m></cell> <cell>0 </cell><cell> 1 </cell><cell> 2 </cell><cell> 3 </cell><cell> 4 </cell><cell> 5 </cell><cell> 6 </cell><cell right="medium"> 7 </cell> </row>
+<row left="medium" bottom="medium"><cell right="medium"><m>4n</m></cell> <cell> </cell><cell> </cell><cell> </cell><cell> </cell><cell> </cell><cell> </cell><cell> </cell><cell right="medium"> </cell></row>
+</tabular>
+</sidebyside>
+</exercise>
+
+<exercise><p>Find all solutions to <m> 4n=0 \pmod 8. </m></p></exercise>
+
+<exercise><p>Find all solutions to <m> 5n=0 \pmod 8. </m></p></exercise>
+
+<exercise><p>Using the graph paper in <xref ref="modgraph" />, graph the function <m>p(n)=n^2-4n+3 \pmod 5.</m></p></exercise>
+
+<table xml:id="modgraph">
+	<title>Graph Paper for mod function</title>
+	<tabular top="medium">
+	<row left="medium" bottom="medium"><cell right="medium">4 </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium">  </cell></row>
+	<row left="medium" bottom="medium"><cell right="medium">3 </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium">  </cell></row>
+	<row left="medium" bottom="medium"><cell right="medium">2 </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium">  </cell></row>
+	<row left="medium" bottom="medium"><cell right="medium">1 </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium">  </cell></row>
+	<row left="medium" bottom="medium"><cell right="medium">0 </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium">  </cell></row>
+	<row left="medium" bottom="medium"><cell right="medium"> </cell> <cell right="medium"> 0 </cell><cell right="medium"> 1 </cell><cell right="medium"> 2 </cell><cell right="medium"> 3 </cell><cell right="medium"> 4 </cell></row>
+	</tabular>
+</table>
+
+</subsection>
+
+</section>

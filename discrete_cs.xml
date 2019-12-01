@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--********************************************************************
+Copyright 2019 Mark A. Fitch
+*********************************************************************-->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+    <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
+
+    <book xml:id="discrete-cs-book">
+        <title>Discrete Mathematics for Computer Science</title>
+
+        <xi:include href="./frontmatter.xml" />      <!-- Title Page, Preface, etc. -->
+
+        <chapter xml:id="chapter-sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Basics</title>
+
+            <xi:include href="./terms.xml" />         <!-- Explain undefined to theorems  -->
+
+            <xi:include href="./sets.xml" />         <!-- Basic set concepts  -->
+
+            <xi:include href="./set_operations.xml" />         <!-- Basic set operations  -->
+
+            <xi:include href="./set_database.xml" />         <!-- Set operations in SQL  -->
+
+            <xi:include href="./counts1.xml" />         <!-- Initial enumeration  -->
+
+            <xi:include href="./counts1b.xml" />         <!-- Initial enumeration, sorting  -->
+        </chapter>
+
+        <chapter xml:id="chapter-logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Logic</title>
+
+            <introduction>
+                <p>The previous chapter used words like <sq>and</sq> and <sq>or</sq> and required deciding what is true. This chapter presents a formal approach to these topics and ends by applying it to program and circuit logic.</p>
+            </introduction>
+
+            <xi:include href="./logic.xml" />         <!-- Intro logic  -->
+
+            <xi:include href="./circuits.xml" />         <!-- Intro logic  -->
+
+            <xi:include href="./predicates.xml" />         <!-- Quantifierers  -->
+
+        </chapter>
+
+        <chapter xml:id="chapter-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Functions</title>
+
+            <xi:include href="./functions.xml" />         <!-- Functions  -->
+
+            <xi:include href="./boolean_algebra.xml" />         <!-- Boolean algebra  -->
+
+            <xi:include href="./modulo.xml" />         <!-- Modulo arithmetic  -->
+
+            <xi:include href="./combinations.xml" />         <!-- Enumeration: combinations  -->
+
+        </chapter>
+
+        <chapter xml:id="chapter-relations" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Relations</title>
+
+            <xi:include href="./relation_intro.xml" />         <!-- Coding theory example  -->
+
+            <xi:include href="./relation_properties.xml" />         <!-- properties of relations  -->
+
+            <xi:include href="./equivalence.xml" />         <!-- equivalence relations  -->
+
+            <xi:include href="./posets.xml" />         <!-- Partially ordered sets  -->
+
+            <xi:include href="./inclusionexclusion.xml" />         <!-- Inclusion/Exclusion counting  -->
+        </chapter>
+
+        <chapter xml:id="chapter-graph-theory" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Graph Theory</title>
+
+            <xi:include href="./graph_def.xml" />         <!-- Defining simple graphs  -->
+
+            <xi:include href="./graph_properties.xml" />         <!-- Simple properties of graphs  -->
+
+            <xi:include href="./graph_isomorphism.xml" />         <!-- Graph isomorphism  -->
+
+            <xi:include href="./graph_path.xml" />         <!-- Paths  -->
+
+            <xi:include href="./graph_cycle.xml" />         <!-- Cycles  -->
+
+            <xi:include href="./graph_tree.xml" />         <!-- Trees  -->
+
+            <xi:include href="./recurrence.xml" />         <!-- Linear Recurrence Relations
+              -->
+
+        </chapter>
+
+        <backmatter>
+            <xi:include href="./appendix_database.xml" />         <!-- Definition of database  -->
+
+            <xi:include href="./glossary.xml" />         <!-- Definition of symbols  -->
+        </backmatter>
+
+    </book>
+
+</pretext>

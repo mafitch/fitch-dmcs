@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-graph-cycle" >
+	<title>Cycles</title>
+
+<subsection>
+	<title>Terminology</title>
+
+<definition>
+	<title>Circuit</title>
+	<statement><p>A graph is a <term>circuit</term>, or <term>closed walk</term>, if and only if the vertices can be labeled <m>v_0, v_1, \ldots, v_k</m> such that <m>\{v_j,v_{j+1}\}</m> is an edge for all <m>j</m> and <m>v_0=v_k.</m></p></statement>
+</definition>
+
+<definition>
+	<title>Cycle</title>
+	<statement><p>A graph is a <term>cycle</term> if and only if it is a circuit such that no vertex is used twice.</p></statement>
+</definition>
+
+<p>A cycle on <m>n</m> vertices is denoted <m>C_n.</m> Likes <term>walk</term> and <term>path</term> terminology for <term>cycles</term> vary widely.</p>
+
+<definition>
+	<title>Eulerian Circuit</title>
+	<statement><p>A circuit is <term>Eulerian</term> if and only if it uses every edge in the graph and no edge is used twice.</p></statement>
+</definition>
+
+<definition>
+	<title>Hamiltonian Circuit</title>
+	<statement><p>A circuit is <term>Hamiltonian</term> if and only if it uses every vertex in that graph and no edge is used twice.</p></statement>
+</definition>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>Draw a cycle of length 4. Note this is denoted <m>C_4.</m></p></exercise>
+
+<exercise><p>Draw a circuit that is not a cycle.</p></exercise>
+
+<exercise><p>Determine which graphs in Figure <xref ref="graphs1" /> have Eulerian circuits.</p></exercise>
+
+<exercise><p>Determine which graphs in Figure <xref ref="graphs1" /> have Hamiltonian circuits.</p></exercise>
+
+</subsection>
+
+</section>

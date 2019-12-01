@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-boolean-algebra" >
+<title>Boolean Algebra</title>
+
+<subsection>
+	<title>Terminology</title>
+
+	<p>It is possible to process logic concepts using arithmetic and algebra concepts. To do so the following arithmetic definitions are needed. The first table defines addition the second defines multiplication and the third defines complement.</p>
+
+<figure xml:id="boolean-operators">
+	<caption>Boolean Functions</caption>
+
+<sidebyside>
+<tabular>
+	<row bottom="medium"><cell right="medium">+</cell> <cell>0</cell> <cell>1</cell> </row>
+	<row><cell right="medium">0</cell> <cell>0</cell> <cell>1</cell> </row>
+	<row><cell right="medium">1</cell> <cell>1</cell> <cell>1</cell> </row>
+</tabular>
+
+<tabular>
+	<row bottom="medium"><cell right="medium"><m>\cdot</m></cell> <cell>0</cell> <cell>1</cell> </row>
+	<row><cell right="medium">0</cell> <cell>0</cell> <cell>0</cell> </row>
+	<row><cell right="medium">1</cell> <cell>0</cell> <cell>1</cell> </row>
+</tabular>
+
+<tabular>
+	<row><cell><m>\overline{0}</m></cell> <cell>=1</cell></row>
+	<row><cell><m>\overline{1}</m></cell> <cell>=0</cell></row>
+</tabular>
+
+</sidebyside>
+</figure>
+
+<exercise><p>Compare these three operations to the logical operations <m>\neg,</m> <m>\vee,</m> and <m>\wedge.</m></p></exercise>
+
+<p>Functions can be defined using boolean algebra as well. Consider the examples in <xref ref="boolean-function-examples" />.</p>
+
+<table xml:id="boolean-function-examples">
+	<title>Boolean functions</title>
+<tabular>
+	<col width="5%" />
+	<col width="5%" />
+	<col width="20%" />
+	<col width="20%" />
+	<col width="20%" />
+	<col width="20%" />
+<row left="medium" bottom="medium"><cell><m>x</m></cell> <cell right="medium"><m>y</m></cell> <cell right="medium"><p><m>f_1(x,y)=x+y</m></p></cell> <cell right="medium"><p><m>f_2(x,y)=xy</m></p></cell> <cell right="medium"><p><m>f_3(x,y)=x+x</m></p></cell> <cell right="medium"><p><m>f_4(x,y)=\overline{x}+y</m></p></cell> </row>
+<row left="medium"><cell>0</cell> <cell right="medium">0</cell> <cell right="medium">0</cell> <cell right="medium">0</cell> <cell right="medium">0</cell> <cell right="medium">1</cell> </row>
+<row left="medium"><cell>0</cell> <cell right="medium">1</cell> <cell right="medium">1</cell> <cell right="medium">0</cell> <cell right="medium">0</cell> <cell right="medium">1</cell> </row>
+<row left="medium"><cell>1</cell> <cell right="medium">0</cell> <cell right="medium">1</cell> <cell right="medium">0</cell> <cell right="medium">1</cell> <cell right="medium">0</cell> </row>
+<row left="medium"><cell>1</cell> <cell right="medium">1</cell> <cell right="medium">1</cell> <cell right="medium">1</cell> <cell right="medium">1</cell> <cell right="medium">1</cell> </row>
+</tabular>
+</table>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><statement>
+	<p>Evaluate the following boolean functions.</p>
+	<p><ol>
+		<li><m>f_1(x,y)=1+x</m></li>
+		<li><m>f_2(x,y)=\overline{xy}</m></li>
+		<li><m>f_3(x,y)=\overline{x}+\overline{y}</m></li>
+		<li><m>f_4(x,y)=xy+y</m></li>
+	</ol></p>
+</statement>
+</exercise>
+
+<exercise><p>A boolean function with two inputs, such as those above, has four input/output pairs. How many different boolean functions of two variables (inputs) exist? How many for a boolean function of three variables?</p></exercise>
+
+<exercise><p>Is the representation of a boolean function unique? This means for each of the functions counted above is there only one expression that produces that result?</p></exercise>
+
+<exercise><p>Find a function with the same input/output pattern as if <m>x</m> then <m>y.</m></p></exercise>
+
+<exercise><p>Figure out the value for <m>f(x)=\overbrace{x+x+x+\ldots}^{\shortstack{n}}</m> for all integers <m>n.</m></p></exercise>
+
+</subsection>
+
+<subsection>
+	<title>Representation</title>
+
+	<subsubsection>
+		<title>Terminology</title>
+
+		<p>In complicated statements such as those that arise in complicated circuits, it is possible to optimize some statements by finding equivalent sets of operations. Boolean function equivalence can be used for this purpose.</p>
+
+		<p>First we will consider how to represent arbitrary boolean combinations as boolean functions. First, consider the expression in <m>x,y,</m> and <m>z</m> with the value 1 when <m>x=y=1</m> and <m>z=0.</m> Because boolean multiplication is only 1 when all factors are one, this expression can be written as <m>xy\overline{z}.</m> Likewise an expression that is 1 when <m>x=y=z=0</m> is <m>\overline{x}\overline{y}\overline{z}.</m></p>
+
+		<p>Next consider a function <m>f(x,y,z)</m> defined by the following input/output table.</p>
+
+<table xml:id="boolean-algebra-simplify">
+	<title>Simplifying a boolean algebra</title>
+<tabular>
+<row><cell right="medium">x</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell> <cell>1</cell> <cell>1</cell> <cell>1</cell> <cell>1</cell></row>
+<row><cell right="medium">y</cell> <cell>0</cell> <cell>0</cell> <cell>1</cell> <cell>1</cell> <cell>0</cell> <cell>0</cell> <cell>1</cell> <cell>1</cell></row>
+<row bottom="medium"><cell right="medium">z</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell> <cell>1</cell></row>
+<row><cell right="medium">f(x,y,z)</cell> <cell>1</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell></row>
+</tabular>
+</table>
+
+		<p>Note that this function <m>f</m> is 1 exactly when one of the two expressions above (<m>xy\overline{z}</m> and <m>\overline{x}\overline{y}\overline{z}</m>) is one. Because <m>u+v</m> is 1 when either is one, <m>f(x,y,z)=xy\overline{z}+\overline{x}\overline{y}\overline{z}</m> is one way to represent this function.</p>
+
+		<p>While the mechanism presented above can be used to produce a boolean function or equivalent circuit for any desired combination of inputs and outputs, it does not necessarily produce the most efficient solution. The following example demonstrates how a boolean function can be simplified using the table of identities in <xref ref="boolident" />.</p>
+
+<table xml:id="boolident">
+	<title>Boolean Identities</title>
+<tabular>
+	<row><cell><m>x+x</m></cell> <cell>=</cell> <cell><m>x</m></cell></row>
+	<row><cell><m>x \cdot x</m></cell> <cell>=</cell> <cell><m>x</m></cell></row>
+	<row><cell><m>x+0</m></cell> <cell>=</cell> <cell><m>x</m></cell></row>
+	<row><cell><m>x+1</m></cell> <cell>=</cell> <cell><m>1</m></cell></row>
+	<row><cell><m>x+\overline{x}</m></cell> <cell>=</cell> <cell><m>1</m></cell></row>
+	<row><cell><m>x\overline{x}</m></cell> <cell>=</cell> <cell><m>0</m></cell></row>
+	<row><cell><m>x \cdot 0</m></cell> <cell>=</cell> <cell><m>0</m></cell></row>
+	<row><cell><m>x \cdot 1</m></cell> <cell>=</cell> <cell><m>x</m></cell></row>
+	<row><cell><m>x + y</m></cell> <cell>=</cell> <cell><m>y + x</m></cell></row>
+	<row><cell><m>xy</m></cell> <cell>=</cell> <cell><m>yx</m></cell></row>
+	<row><cell><m>x+(y+z)</m></cell> <cell>=</cell> <cell><m>(x+y)+z</m></cell></row>
+	<row><cell><m>x(yz)</m></cell> <cell>=</cell> <cell><m>(xy)z</m></cell></row>
+	<row><cell><m>x(y+z)</m></cell> <cell>=</cell> <cell><m>xy+xz</m></cell></row>
+	<row><cell><m>x+yz</m></cell> <cell>=</cell> <cell><m>(x+y)(x+z)</m></cell></row>
+	<row><cell><m>x+xy</m></cell> <cell>=</cell> <cell><m>x</m></cell></row>
+	<row><cell><m>x(x+y)</m></cell> <cell>=</cell> <cell><m>x</m></cell></row>
+	<row><cell><m>\overline{x+y}</m></cell> <cell>=</cell> <cell><m>\overline{x} \cdot \overline{y}</m></cell></row>
+	<row><cell><m>\overline{xy}</m></cell> <cell>=</cell> <cell><m>\overline{x} + \overline{y}</m></cell></row>
+</tabular>
+</table>
+
+		<p>The following example demonstrates one way to simplify this boolean function.</p>
+
+
+<p><md>
+<mrow>f(x,y) \amp = \amp x\overline{y} + xy + y\overline{x}</mrow>
+<mrow> \amp = \amp x\overline{y} + yx + y\overline{x}</mrow>
+<mrow> \amp = \amp x\overline{y} + y \cdot (x+\overline{x})</mrow>
+<mrow> \amp = \amp x\overline{y} + y \cdot 1</mrow>
+<mrow> \amp = \amp x\overline{y}+y</mrow>
+<mrow> \amp = \amp y+x\overline{y}</mrow>
+<mrow> \amp = \amp (y+x)(y+\overline{y})</mrow>
+<mrow> \amp = \amp (y+x) \cdot 1</mrow>
+<mrow> \amp = \amp y+x.</mrow>
+</md></p>
+
+</subsubsection>
+
+<subsubsection>
+	<title>Practice</title>
+
+	<exercise><p>Find an expression that is 1 when <m>x=z=1</m> and <m>y=0.</m> Use the technique above.</p></exercise>
+
+	<exercise><p>Find a representation of the boolean function in <xref ref="find-boolean" />.</p></exercise>
+
+<table xml:id="find-boolean">
+	<title>Inputs and Outputs for Boolean Function</title>
+<tabular>
+<row><cell right="medium">x</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell> <cell>1</cell> <cell>1</cell> <cell>1</cell> <cell>1</cell></row>
+<row><cell right="medium">y</cell> <cell>0</cell> <cell>0</cell> <cell>1</cell> <cell>1</cell> <cell>0</cell> <cell>0</cell> <cell>1</cell> <cell>1</cell></row>
+<row><cell right="medium">z</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell> <cell>1</cell></row>
+<row><cell right="medium">f(x,y,z)</cell> <cell>0</cell> <cell>1</cell> <cell>0</cell> <cell>1</cell> <cell>1</cell> <cell>0</cell> <cell>0</cell> <cell>0</cell></row>
+</tabular>
+</table>
+
+
+<exercise>
+	<statement>
+		<p>Remember that boolean functions can be represented as logic statements (and/or/negate) which can be represented as electrical circuits. Design the electrical circuit needed for a light with two switches using the following steps. Note the following supposes that the light is off when both switches are turned down (typical off).</p>
+		<p><ol>
+			<li>Using 0 for down and 1 for up, determine which combinations of up and down results in the light being off (0) and on (1).</li>
+			<li>Write a boolean function for this using the technique above.</li>
+			<li>Convert this boolean function into a logic statement (using <m>\neg</m>, <m>\vee,</m> and <m>\wedge</m>).</li>
+			<li>Convert this boolean function into a circuit diagram.</li>
+		</ol></p>
+	</statement>
+</exercise>
+
+<exercise><p>Reduce the boolean function <m>f(x,y,z)=xy\overline{z}+x\overline{y}\overline{z}+\overline{x}y\overline{z}.</m></p></exercise>
+
+</subsubsection>
+
+</subsection>
+
+</section>

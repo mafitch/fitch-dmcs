@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-graph-connected" >
+<title>Paths</title>
+
+<subsection xml:id="subsection-graph-path">
+	<title>Paths</title>
+
+<definition>
+	<title>Walk</title>
+	<statement><p>A graph is a <term>walk</term> if and only if the vertices can be labeled <m>v_0, v_1, \ldots, v_k</m> such that <m>v_i, v_{i+1}</m> is an edge.</p></statement>
+</definition>
+
+<definition><title>Trail</title>
+	<statement><p>A graph is a <term>trail</term> if and only if it is walk such that no edge is used twice.</p></statement>
+</definition>
+
+<definition><title>Path</title>
+	<statement><p>A graph is a <term>path</term> if and only if it is walk such that no vertex is used twice.</p></statement>
+</definition>
+
+<p>A path on <m>n</m> vertices is denoted <m>P_n.</m> Please note that these terms (<term>walk</term>, <term>trail</term>, and <term>path</term>) vary widely including reversing the names, so always check the definition in the article, book, or other material you are reading.</p>
+
+<definition><title>Eulerian Trail</title>
+	<statement><p>A trail is <term>Eulerian</term> if and only if it uses every edge in the graph.</p></statement>
+</definition>
+
+<definition><title>Hamiltonian Path</title>
+	<statement><p>A path is <term>Hamiltonian</term> if and only if it uses every vertex in that graph.</p></statement>
+</definition>
+
+</subsection>
+
+<subsection xml:id="subsection-graph-path-practice">
+	<title>Practice</title>
+
+<exercise><p>Draw a path of length 5. Note this is denoted <m>P_5.</m></p></exercise>
+
+<exercise><p>Draw a walk that is not a trail.</p></exercise>
+
+<exercise><p>Draw a trail that is not a path.</p></exercise>
+
+<exercise><p>Determine which graphs in <xref ref="graphs1" /> have Eulerian trails.</p></exercise>
+
+<exercise><p>Determine which graphs in <xref ref="graphs1" /> have Hamiltonian paths.</p></exercise>
+
+</subsection>
+
+<subsection xml:id="subsection-graph-connected">
+	<title>Connected</title>
+
+<definition>
+	<title>Vertex Connected</title>
+	<statement><p>A graph <m>G</m> is connected if and only if for every pair of vertices <m>v,w</m> there exists a path from <m>v</m> to <m>w.</m></p></statement>
+</definition>
+
+<definition>
+	<title>Vertex <m>n</m>-connected</title>
+	<statement><p>A graph <m>G</m> is <term><m>n</m>-connected</term> if and only if removing any <m>n-1</m> vertices does not disconnect the graph.</p></statement>
+</definition>
+
+</subsection>
+
+<subsection xml:id="subsection-graph-connected-practice">
+	<title>Practice</title>
+
+<exercise><p>Determine which of the graphs in <xref ref="isgraph1" /> are connected.</p></exercise>
+
+<exercise><p>Explain why every complete graph is connected.</p></exercise>
+
+<exercise><p>Explain why every complete bipartite graph is connected.</p></exercise>
+
+<exercise><p>Determine if every bipartite graph must be connected.</p></exercise>
+
+<exercise><p>For each of the graphs in <xref ref="graphs1" /> and <xref ref="graphs2" /> determine the maximum <m>n</m> for which the graph is <m>n</m>-connected.</p></exercise>
+
+<exercise><p>If a graph is <m>n</m>-connected what does this say about the minimum of the number of paths between any two vertices?</p></exercise>
+
+</subsection>
+
+</section>

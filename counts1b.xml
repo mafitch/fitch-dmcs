@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-counts1-sorting" >
+  <title>Sorting: Part 0</title>
+
+<introduction>
+
+<p>If an alphabet has an order, then the strings can be ordered. This is called <term>lexicographic</term> ordering. For words from a language we often call this alphabetical ordering. Because the order on the strings is determined by the order on the alphabet, we call the ordering <term>induced</term>.</p>
+
+</introduction>
+
+<subsection xml:id="subsection-counts1-practice2">
+  <title>Practice</title>
+
+<exercise><p>Write all the permutations of the string <q>mat</q>. List them in lexicographic order.</p></exercise>
+
+<exercise><p>The lexicographic order is just one of the orders. How many possible orders of the permutations of the string <q>mat</q> exist?</p></exercise>
+
+<exercise><p>How many possible orders of the permutations of the string <q>math</q> exist?</p></exercise>
+
+<exercise><p>As the length of the string increases, how much does the number of possible orders increase?</p></exercise>
+
+</subsection>
+
+</section>

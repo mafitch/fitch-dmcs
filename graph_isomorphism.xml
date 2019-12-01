@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-graph-isomorphism" >
+<title>Graph Isomorphism</title>
+
+<p>When calculating properties of the graphs in <xref ref="graphs1" /> and <xref ref="graphs2" />, you may have noted that some of the graphs shared many properties. It should also be apparent that a given graph can be drawn in many different ways given that the relative location of vertices and shape of edges is irrelevant. If two graphs are essentially the same, they are called <term>isomorphic</term>.</p>
+
+<definition xml:id="definition-graph-isomorphim">
+	<title>Graph Isomorphism</title>
+	<statement><p>Two graphs <m>G=(V_G,E_G)</m> and <m>H=(V_H,E_H)</m> are <term>isomorphic</term> if and only if there exists a <xref ref="definition-bijection" text="title" />, called the <term>isomorphism</term>, <m>f:V_G \to V_H</m> such that <m>\{v_1,v_2\} \in E_G</m> if and only if <m>\{f(v_1),f(v_2)\} \in E_H.</m></p></statement>
+</definition>
+
+<example xml:id="graphs-example-isomorphism">
+<title>Isomorphic Graphs</title>
+<p>The two graphs in <xref ref="isomorphic-graphs" /> are isomorphic. The isomorphism is
+<md>
+	<mrow>A \mapsto \amp I</mrow>
+	<mrow>B \mapsto \amp J</mrow>
+	<mrow>C \mapsto \amp L</mrow>
+	<mrow>D \mapsto \amp K</mrow>
+	<mrow>E \mapsto \amp M</mrow>
+	<mrow>F \mapsto \amp N</mrow>
+	<mrow>G \mapsto \amp P</mrow>
+	<mrow>H \mapsto \amp O</mrow>
+</md></p>
+        <interactive platform="geogebra" width="85%" aspect="4:3" preview="images/discrete-cs-graph-isomorphism.png">
+            <slate xml:id="medians" surface="geogebra" material="kydgs3by" aspect="4:3">
+                enableShiftDragZoom(true);
+            </slate>
+        	<instructions>
+        		<p>Drag the vertices of the graph on the left around until that graph looks like the graph on the right.</p>
+        	</instructions>
+         </interactive>
+
+</example>
+
+<figure xml:id="isomorphic-graphs">
+<caption>Two Isomorphic Graphs</caption>
+
+<sidebyside>
+	<image source="images/graph_iso1" width="30%" />
+
+	<image source="images/graph_iso2" width="30%" />
+</sidebyside>
+</figure>
+
+<exercise><p>Determine which graphs in <xref ref="graphs1" /> and <xref ref="graphs2" /> are isomorphic. State the isomorphism (i.e., explicitly give the function).</p></exercise>
+
+</section>

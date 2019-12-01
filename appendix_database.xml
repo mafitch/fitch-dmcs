@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="appendix-database" >
+    <title>University Database Example</title>
+
+<table>
+	<title>Person</title>
+	<tabular top="medium">
+	    <col width="30%" />
+		<col width="50%" />
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>ID</p></cell>
+			<cell right="medium"><p>8 digit integer, unique key</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>First Name</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Last Name</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Middle Name</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Birth Year</p></cell>
+			<cell right="medium"><p>integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Birth Month</p></cell>
+			<cell right="medium"><p>integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Birth Day</p></cell>
+			<cell right="medium"><p>integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Ethnicity</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+</tabular>
+</table>
+
+<table>
+	<title>Employee</title>
+	<tabular top="medium">
+	    <col width="30%" />
+		<col width="50%" />
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>ID</p></cell>
+			<cell right="medium"><p>8 digit integer, unique key</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Department</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Position</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Fund Source</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Wage Type</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+	</tabular>
+</table>
+
+<table>
+	<title>Student</title>
+	<tabular top="medium">
+	    <col width="30%" />
+		<col width="50%" />
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Enrolled</p></cell>
+			<cell right="medium"><p>date</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Admission Type</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Admission Status</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Class Standing</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Major 1</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Major 2</p></cell>
+			<cell right="medium"><p>string</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Catalog Year</p></cell>
+			<cell right="medium"><p>4 digit integer</p></cell>
+		</row>
+	</tabular>
+</table>
+
+<table>
+	<title>Course</title>
+	<tabular top="medium">
+	    <col width="30%" />
+		<col width="50%" />
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>CRN</p></cell>
+			<cell right="medium"><p> digit integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Year</p></cell>
+			<cell right="medium"><p>4 digit integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Semester</p></cell>
+			<cell right="medium"><p>integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Prefix</p></cell>
+			<cell right="medium"><p>string length 4</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Campus</p></cell>
+			<cell right="medium"><p>string length 1</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Course</p></cell>
+			<cell right="medium"><p>string length 4</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Section</p></cell>
+			<cell right="medium"><p>string length 3</p></cell>
+		</row>
+	</tabular>
+</table>
+
+<table>
+	<title>Transcript</title>
+	<tabular top="medium">
+	    <col width="30%" />
+		<col width="50%" />
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>ID</p></cell>
+			<cell right="medium"><p>8 digit integer, unique key</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>CRN</p></cell>
+			<cell right="medium"><p> digit integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Year</p></cell>
+			<cell right="medium"><p>4 digit integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Semester</p></cell>
+			<cell right="medium"><p>integer</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Grade</p></cell>
+			<cell right="medium"><p>string length 1</p></cell>
+		</row>
+		<row bottom="medium" left="medium">
+			<cell right="medium"><p>Last Day</p></cell>
+			<cell right="medium"><p>date</p></cell>
+		</row>
+	</tabular>
+</table>
+
+</appendix>

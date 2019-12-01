@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-posets" >
+<title>Partially Ordered Sets</title>
+
+<subsection>
+	<title>Terminology</title>
+
+<definition>
+	<title>Poset</title>
+	<statement><p>A relation is an <term>partially ordered set</term> (poset) if and only if the relation is reflexive, anti-symmetric, and transitive.</p></statement>
+</definition>
+
+	<p>Consider the following poset defined by listing the relations explicitly.</p>
+	<p>
+	<m>R=\{(a,a), </m> <m>(a,d), </m> <m>(a,f), </m> <m>(a,g), </m> <m>(a,h),</m>
+	<m>(b,b), </m> <m>(b,d), </m> <m>(b,e), </m> <m>(b,f), </m> <m>(b,g), </m> <m>(b,h),</m>
+	<m>(c,c), </m> <m>(c,d), </m> <m>(c,f), </m> <m>(c,g), </m> <m>(c,h),</m>
+	<m>(d,d), </m> <m>(d,f), </m> <m>(d,g), </m> <m>(d,h),</m>
+	<m>(e,e), </m> <m>(e,g), </m> <m>(e,h),</m>
+	<m>(f,f), </m> <m>(g,g), </m> <m>(h,h) \}.</m>
+	</p>
+	<p>Another way to define the elements of the relation is a Hasse diagram. <xref ref="hasse1" /> shows the Hasse diagram for <m>R.</m> The rules for constructing these diagrams are in <xref ref="hasserules" />.</p>
+
+	<figure xml:id="hasse1">
+		<caption>Hasse Diagram</caption>
+	    <image width="50%" source="images/hasse1" />
+	</figure>
+
+	<list xml:id="hasserules">
+		<title>Constructing a Hasse Diagram</title>
+		<ul>
+		<li>If <m>(a,b) \in R</m> then <m>a</m> is below <m>b</m> on the diagram.</li>
+		<li><p>If <m>(a,b) \in R</m> then there is a line from <m>a</m> to <m>b</m>
+		<ul>
+			<li>unless <m>a=b</m> (reflexive), or </li>
+			<li>unless <m>(a,c), (c,b) \in R</m> (transitive set).</li>
+		</ul></p></li>
+	</ul></list>
+	<p>Note that constructing a Hasse diagram requires sorting the elements of the set. Each level of the diagram in some sense is <q>before</q> the levels above it. Because of this ordering in posets we write <m>a \preceq b</m> to mean <m>aRb</m>.</p>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise><p>Determine whether the following relation is a poset. Let the relation <m>R</m> on the set of numbers <m>\{1,2,3,6\}</m> be defined by <m>aRb</m> if and only if <m>a|b.</m></p></exercise>
+
+<exercise><p>Determine whether the following relation is a poset. Let the relation <m>R</m> on the set of numbers <m>\{1,2,3,5,6,10,15,30\}</m> be defined by <m>aRb</m> if and only if <m>a|b.</m></p></exercise>
+
+<exercise><p>Determine whether the following relation is a poset. Let the relation <m>R</m> on the set of positive integers be defined by <m>aRb</m> if and only if <m>a|b.</m></p></exercise>
+
+<exercise><p>Determine whether the following relation is a poset. Let the relation <m>R</m> on the set of real numbers be defined by <m>aRb</m> if and only if <m>a \le b.</m></p></exercise>
+
+<exercise><p>Determine whether the following relation is a poset. Consider the set <m>\Pow(X)</m> for the set <m>X=\{a,b,c\}.</m> Let the relation <m>R</m> be defined by <m>A</m> is related to <m>B</m> if and only if <m>A \subseteq B</m>.</p></exercise>
+
+<exercise xml:id="hasseprob1"><p>Draw the Hasse diagrams for the following posets.
+<ol>
+<li> <m>\subseteq</m> on <m>\Pow(\{0,1\}).</m> Note it may help to list all the elements first.</li>
+<li> <m>|</m> (i.e., <m>aRb</m> iff <m>a|b</m>) on <m>\{1,2,3,6\}.</m></li>
+<li> <m>|</m> on <m>\{1,2,3,5,6,10,15,30\}.</m></li>
+<li> <m>X=\{  </m>(0,0,0),  (1,0,0),  (0,1,0),  (0,0,1), (0,1,1),  (1,0,1),  (1,1,0), (1,1,1) <m>\}</m> with the relation <m>(a_1,a_2,a_3) \preceq (b_1,b_2,b_3)</m> iff <m>a_i \le b_i</m> for all <m>i.</m></li>
+</ol></p>
+</exercise>
+
+</subsection>
+
+<subsection>
+	<title>Poset Properties</title>
+
+	<subsubsection>
+		<title>Terminology</title>
+
+<definition>
+	<title>Comparable</title>
+	<statement><p>Two elements <m>a,b</m> of a poset are <term>comparable</term> if and only if either <m>a \preceq b</m> or <m>b \preceq a.</m></p></statement>
+</definition>
+
+<definition>
+	<title>Total Ordering</title>
+	<statement><p>A partially ordered set is a <term>totally ordered set</term> if and only if all pairs of elements are comparable.</p></statement>
+</definition>
+
+<definition>
+	<title>Least Upper Bound</title>
+	<statement><p>An element <m>c</m> is a <term>least upper bound</term> of two elements <m>a</m> and <m>b</m>, denoted <m>a \wedge b</m>, if and only if <m>a \preceq c,</m> <m>b \preceq c</m> and if <m>a \preceq d,</m> <m>b \preceq d</m> for any other element then <m>c \preceq d.</m></p></statement>
+</definition>
+
+<definition>
+	<title>Greatest Lower Bound</title>
+	<statement><p>An element <m>c</m> is a <term>greatest lower bound</term> of two elements <m>a</m> and <m>b</m>, denoted <m>a \vee b</m>, if and only if <m>c \preceq a,</m> <m>c \preceq b</m> and if <m>d \preceq a,</m> <m>d \preceq b</m> for any other element then <m>d \preceq c.</m></p></statement>
+</definition>
+
+<definition>
+	<title>Maximal Element</title>
+	<statement><p>An element <m>a</m> in a poset is a <term>maximal element</term> if and only if there does not exist an element <m>b</m> such that <m>a \preceq b.</m></p></statement>
+</definition>
+
+<definition>
+	<title>Minimal Element</title>
+	<statement><p>An element <m>a</m> in a poset is a <term>minimal element</term> if and only if there does not exist an element <m>b</m> such that <m>b \preceq a.</m></p></statement>
+</definition>
+
+</subsubsection>
+
+<subsubsection>
+	<title>Practice</title>
+
+<exercise><p>Find two comparable elements in each of the relations in <xref ref="hasseprob1" />.</p></exercise>
+
+<exercise><p>Find two incomparable elements in each of the relations in <xref ref="hasseprob1" />.</p></exercise>
+
+<exercise><p>Find all minimal and maximal elements of the posets in Problem <xref ref="hasseprob1" />.</p></exercise>
+
+<exercise><p>Consider the poset given in <xref ref="hasse1" />.
+<ol>
+	<li>Find <m>f \vee h</m></li>
+	<li>Find <m>a \wedge e</m></li>
+	<li>Find <m>a \wedge d</m></li>
+	<li>Does <m>d \wedge e</m> exist?</li>
+	<li>Does <m>g \vee h</m> exist?</li>
+</ol>
+</p></exercise>
+
+<definition xml:id="lattice">
+	<title>Lattice</title>
+	<statement><p>A poset in which every pair of elements has both a least upper bound and a greatest lower bound is a <term>lattice</term></p></statement>
+</definition>
+
+<exercise><p>Which of the posets in <xref ref="hasseprob1" /> are lattices?</p></exercise>
+
+<exercise><p>Why is the name <q>lattice</q> appropriate?</p></exercise>
+
+</subsubsection>
+
+</subsection>
+
+</section>

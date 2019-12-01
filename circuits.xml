@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-circuits" >
+<title>Circuits</title>
+
+<subsection>
+	<title>Background</title>
+
+<p>Digital circuits are built by combining large numbers of pieces, called gates. Gates take one or two electrical inputs which are either low (0) or high (1) current and output a single current. The gates act like negation, and, and or.  <xref ref="logiccircuits" /> shows the symbols that are used on diagrams for these three gates.</p>
+
+<figure xml:id="logiccircuits">
+  <caption>Symbols for Circuits</caption>
+  <image width="90%" source="images/LogicCircuits" />
+</figure>
+
+<p>An example of combining gates to produce a more complicated circuit is shown in <xref ref="circuitif" /> for <sq>if.</sq></p>
+
+<figure xml:id="circuitif">
+  <caption>Circuit for If</caption>
+  <image width="50%" source="images/circuit_if" />
+</figure>
+
+</subsection>
+
+<subsection>
+  <title>Practice</title>
+
+  <exercise><p>Draw the circuit diagram that accepts three inputs <m>a,b,c</m> and outputs <m>a \wedge (\neg b \vee c).</m></p></exercise>
+
+</subsection>
+
+</section>

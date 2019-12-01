@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-codes" >
+<title>Example: Error Correcting Codes</title>
+
+<subsection>
+	<title>Illustrated</title>
+
+<p>In order to transfer data, that data must first be encoded in some fashion. For example letters are coded as numbers (Unicode). Every code is designed starting with the data and then assigning a code for each piece.</p>
+
+<p>Additionally a code can address errors in transmission. Any time data is transmitted there is the chance that noise is introduced changing some of the values. To ensure that the correct data can be read despite the introduction of noise, codes are constructed that can either detect error or correct some errors. To do this each piece of data is encoded with sufficient duplicate information so that limited noise cannot change one piece of data into another one. For these examples the data will be considered to be binary strings. Errors will be counted as the numbers of bits that change.</p>
+
+<p><term>Distance</term> can be formally defined, but for these examples we will use the specific distance defined by the distance between two binary strings is the number of digits that are different. For example <m>d(001,011)=1</m> and <m>d(000,110)=2.</m> This is known as the <term>taxi cab</term> metric, because it it the distance in blocks that must be traveled by a taxi. Figure <xref ref="cubecode" /> is a diagram showing all 3 digit binary strings with lines connecting those that are distance 1.</p>
+
+<figure xml:id="cubecode">
+	<caption>3 digit binary strings with distance one</caption>
+    <image width="50%" source="images/code_dist" />
+</figure>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+	<p>The goal is to design a code such that we can be certain two binary strings are different.</p>
+
+	<exercise><p>Find the distances between the following binary strings. 00, 01, 10, 11.</p></exercise>
+
+	<exercise><p>If a single bit of one of the above strings was changed (0 to 1 or 1 to 0) could you be certain whether a 00 or 11 had been sent?</p></exercise>
+
+	<exercise><p>Find the distances between the binary string 000 and the strings: 001, 010, 100.</p></exercise>
+
+	<exercise><p>What is the distance between 001 and 100?</p></exercise>
+
+	<exercise><p>Find the distances between the binary string 111 and the strings: 110, 101, 011.</p></exercise>
+
+	<exercise><p>If a single bit of one of the above strings was changed (0 to 1 or 1 to 0) could you be certain whether a 000 or 111 had been sent?</p></exercise>
+
+	<exercise><p>If two bits of one of the above strings was changed (0 to 1 or 1 to 0) could you be certain whether a 000 or 111 had been sent?</p></exercise>
+
+	<exercise><p>For the sake of reading data, two strings are considered equivalent if we are sure that they represent the same initial data. If anything distance one away is considered equivalent, what are the other representations for 000 in the code above? What are the other representations of 111 in the code above?</p></exercise>
+
+	<exercise><p>If 00, 01, 10, 11 are the possible binary strings, how many bits do we have to add in order to correct a single bit error?</p></exercise>
+</subsection>
+
+</section>

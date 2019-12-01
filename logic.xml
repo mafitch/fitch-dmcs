@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-logic" >
+<title>Formal Logic</title>
+
+<subsection>
+	<title>Terminology</title>
+
+	<p>The concept of <term>true</term> and <term>false</term> are undefined terms.</p>
+
+	<definition>
+		<title>Statement</title>
+		<statement><p>An expression is a <term>statement</term> if and only if it is either true or false.</p></statement>
+	</definition>
+
+	<p>The following are statements. <q>The sky is blue.</q> <q>George Washington was the first president of the United States.</q> The following are not statements. <q>Hello.</q> <q>Study hard.</q> <q>Is that true?</q> For convenience letters, such as A and B, are used to refer to statements. 0 represents false and 1 represents true.</p>
+
+	<p>Statements can be modified and combined. <xref ref="nao_def" /> gives the definitions for some of these logic operations. A <term>truth table</term> is a notation for listing all possible inputs to a statement and the resulting truth or lack thereof. Below are truth tables defining the basic logic operations.</p>
+
+<figure xml:id="nao_def">
+	<caption>Definition of Logic Operations</caption>
+
+<sbsgroup widths="30%, 30%">
+<sidebyside>
+<tabular top="medium">
+    <row bottom="medium" left="medium">
+      <cell colspan="3" right="medium">And</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">A</cell>
+      <cell right="medium">B</cell>
+      <cell right="medium">A and B</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+    </row>
+    <row bottom="medium"  left="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+  </tabular>
+
+<tabular top="medium">
+    <row bottom="medium" left="medium">
+      <cell colspan="3" right="medium">Or</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">A</cell>
+      <cell right="medium">B</cell>
+      <cell right="medium">A or B</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+    </row>
+    <row bottom="medium"  left="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+  </tabular>
+</sidebyside>
+
+<sidebyside>
+  <tabular top="medium">
+    <row left="medium" bottom="medium">
+      <cell colspan="2" right="medium">Not</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">A</cell>
+      <cell right="medium">not A</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+    </row>
+</tabular>
+
+<tabular top="medium">
+    <row bottom="medium" left="medium">
+      <cell colspan="3" right="medium">If</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">A</cell>
+      <cell right="medium">B</cell>
+      <cell right="medium">If A, then B</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row bottom="medium"  left="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+    </row>
+    <row bottom="medium" left="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+  </tabular>
+</sidebyside>
+</sbsgroup>
+</figure>
+
+	<p>For convenience the following symbols are used for these operations. As with arithmetic operations there is an order of operations. <xref ref="logicorder" /> lists the operators in first to last order.</p>
+
+<figure xml:id="logicorder">
+	<caption>Logic Order of Operations</caption>
+
+<sidebyside>
+<tabular>
+	<row>
+		<cell>highest</cell>
+		<cell>not</cell>
+		<cell><m>\neg</m></cell>
+	</row>
+	<row>
+		<cell></cell>
+		<cell>and</cell>
+		<cell><m>\wedge</m></cell>
+	</row>
+	<row>
+		<cell></cell>
+		<cell>or</cell>
+		<cell><m>\vee</m></cell>
+	</row>
+	<row>
+		<cell>lowest</cell>
+		<cell>if</cell>
+		<cell><m>\rightarrow</m></cell>
+	</row>
+</tabular>
+</sidebyside>
+</figure>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<exercise xml:id="sicc"><statement>
+  <p>Complete the following truth tables.</p>
+
+<sbsgroup widths="50%, 50%">
+<sidebyside>
+<tabular top="medium">
+<row left="medium" bottom="medium">
+  <cell right="medium"><m>A</m></cell>
+  <cell right="medium"><m>B</m></cell>
+  <cell right="medium"><m>A \rightarrow B</m></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+</row>
+</tabular>
+
+<tabular top="medium">
+<row left="medium" bottom="medium">
+  <cell right="medium"><m>A</m></cell>
+  <cell right="medium"><m>B</m></cell>
+  <cell right="medium"><m>B \rightarrow A</m></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+</row>
+</tabular>
+</sidebyside>
+
+<sidebyside>
+<tabular top="medium">
+<row left="medium" bottom="medium">
+  <cell right="medium"><m>A</m></cell>
+  <cell right="medium"><m>B</m></cell>
+  <cell right="medium"><m>\neg A</m></cell>
+  <cell right="medium"><m>(\neg A) \rightarrow B</m></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+</tabular>
+
+<tabular top="medium">
+<row left="medium" bottom="medium">
+  <cell right="medium"><m>A</m></cell>
+  <cell right="medium"><m>B</m></cell>
+  <cell right="medium"><m>\neg B</m></cell>
+  <cell right="medium"><m>(\neg B) \rightarrow A</m></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+</tabular>
+</sidebyside>
+
+<sidebyside>
+<tabular top="medium">
+<row left="medium" bottom="medium">
+  <cell right="medium"><m>A</m></cell>
+  <cell right="medium"><m>B</m></cell>
+  <cell right="medium"><m>\neg A</m></cell>
+  <cell right="medium"><m>(\neg A) \vee B</m></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+</tabular>
+
+<tabular top="medium">
+<row left="medium" bottom="medium">
+  <cell right="medium"><m>A</m></cell>
+  <cell right="medium"><m>B</m></cell>
+  <cell right="medium"><m>\neg A</m></cell>
+  <cell right="medium"><m>\neg B</m></cell>
+  <cell right="medium"><m>(\neg B) \rightarrow (\neg A)</m></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">0</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">0</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+<row left="medium" bottom="medium">
+  <cell right="medium">1</cell>
+  <cell right="medium">1</cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+  <cell right="medium"></cell>
+</row>
+</tabular>
+
+</sidebyside>
+</sbsgroup>
+
+</statement>
+</exercise>
+
+<exercise><statement>
+  <p>Complete the following truth table.</p>
+  <sidebyside>
+  <tabular top="medium">
+    <row left="medium" bottom="medium">
+      <cell right="medium"><m>A</m></cell>
+      <cell right="medium"><m>B</m></cell>
+      <cell right="medium"><m>C</m></cell>
+      <cell right="medium"><m>\neg B</m></cell>
+      <cell right="medium"><m>A \wedge B</m></cell>
+      <cell right="medium"><m>\neg B \wedge C</m></cell>
+      <cell right="medium"><m>(A \wedge B) \vee (\neg B \wedge C)</m></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+      <cell right="medium"></cell>
+    </row>
+  </tabular>
+</sidebyside>
+</statement>
+</exercise>
+
+	<p>Two, possibly compound, statements A and B are considered to be <term>equivalent</term> if they have the same truth value for all inputs. This is denoted <m>A \leftrightarrow B.</m> <xref ref="demorganand" /> and <xref ref="demorganor" /> provides truth tables that show two pairs of equivalent statements known as DeMorgan's Laws.</p>
+
+<figure xml:id="demorganand">
+<caption>DeMorgan's Law (and)</caption>
+
+<sidebyside>
+<tabular top="medium">
+  <row left="medium" bottom="medium">
+    <cell right="medium"><m>A</m></cell>
+    <cell right="medium"><m>B</m></cell>
+    <cell right="medium"><m>A \wedge B</m></cell>
+    <cell right="medium"><m>\neg (A \wedge B)</m></cell>
+    <cell right="medium"><m>\neg A</m></cell>
+    <cell right="medium"><m>\neg B</m></cell>
+    <cell right="medium"><m>\neg A \vee \neg B</m></cell>
+    <cell right="medium"><m>\neg (A \wedge B) \leftrightarrow \neg A \vee \neg B</m></cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+  </row>
+</tabular>
+</sidebyside>
+
+</figure>
+
+<figure xml:id="demorganor">
+<caption>DeMorgan's Law (or)</caption>
+
+<sidebyside>
+<tabular top="medium">
+  <row left="medium" bottom="medium">
+    <cell right="medium"><m>A</m></cell>
+    <cell right="medium"><m>B</m></cell>
+    <cell right="medium"><m>A \vee B</m></cell>
+    <cell right="medium"><m>\neg (A \vee B)</m></cell>
+    <cell right="medium"><m>\neg A</m></cell>
+    <cell right="medium"><m>\neg B</m></cell>
+    <cell right="medium"><m>\neg A \wedge \neg B</m></cell>
+    <cell right="medium"><m>\neg (A \vee B) \leftrightarrow \neg A \wedge \neg B</m></cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+  </row>
+  <row left="medium" bottom="medium">
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">1</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">0</cell>
+    <cell right="medium">1</cell>
+  </row>
+</tabular>
+</sidebyside>
+
+</figure>
+
+<exercise><p>Are any of the statements in <xref ref="sicc" /> equivalent?</p></exercise>
+
+</subsection>
+
+</section>

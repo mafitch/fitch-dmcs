@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-combinations" >
+<title>Combinatorics: Second Counts</title>
+
+<subsection>
+	<title>Terminology</title>
+
+<p>Permutations, presented in Section <xref ref="subsection-counts1-terminology" />, count the number of ways to permute, or rearrange, objects. Note that when permuting objects, some can be ignored. For example <xref ref="permutable" /> are all permutations of two characters from the alphabet <m>\{a,b,c\}.</m></p>
+
+<table xml:id="permutable">
+	<title>Permutations of <m>\{a,b,c\}.</m></title>
+	<tabular>
+		<row><cell></cell> <cell>ba</cell> <cell>ca</cell> </row>
+		<row><cell>ab</cell> <cell></cell> <cell>cb</cell> </row>
+		<row><cell>ac</cell> <cell>bc</cell> <cell></cell> </row>
+	</tabular>
+</table>
+
+<p>Sometimes the order of objects is unimportant. The number of outcomes can still be counted. These are called <term>combinations</term>. The combinations of two letters from the alphabet <m>\{a,b,c\}.</m> are ab, ac, bc.</p>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+<subsubsection>
+	<title>Discover a Method</title>
+
+<exercise><p>How many permutations of two letters from the alphabet <m>\{a,b,c\}.</m> are there? How many combinations of two letters from the alphabet <m>\{a,b,c\}.</m> are there? How do you get the combinations count from the permutations count? </p></exercise>
+
+<exercise><p>How many permutations are there of three letters from the alphabet <m>\{a,b,c,d\}</m>? Select three of these letters. How many ways can you order these three letters? How does this help count the number of combinations of three letters from this alphabet? </p></exercise>
+
+</subsubsection>
+
+<subsubsection>
+	<title>Use the Method</title>
+
+<exercise><p>How many permutations of three letters from the English alphabet (26 characters) are there?</p></exercise>
+
+<exercise><p>If 10 people participate in a race and only the first three places are recorded, how many possible results are there?</p></exercise>
+
+<exercise><p>How many permutations of the letters of the word <sq>greet</sq> are there?</p></exercise>
+
+<exercise><p>Suppose 10 people apply for three, identical jobs. How many permutations (ordered) of three selected out of ten are there?</p></exercise>
+
+<exercise><p>How many ways are there to permute three of three people?</p></exercise>
+
+<exercise><p>If the first problem counted the number of ways to order three (3) of ten (10) people and the second problem counted the number of ways any particular three can be ordered, how can these be combined to count the number of ways to select three (3) out of ten (10) people?</p></exercise>
+
+<exercise><p>How many ways are there to select two types of ice cream from a selection of 14?</p></exercise>
+
+<exercise><p>If a set has 15 elements, how many subsets of 4 elements exist?</p></exercise>
+
+</subsubsection>
+
+</subsection>
+
+</section>
