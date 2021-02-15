@@ -14,16 +14,10 @@ Copyright 2019 Mark A. Fitch
     <!-- this is the default, but supresses a warning -->
     <cross-references text="type-global" />
 
-    <!-- more invasive option is "structural" -->
-    <numbering>
-        <division part="decorative" />
-    </numbering>
-
-        <macros>
-        \newcommand{\R}{\mathbb{R}}
-        \newcommand{\Z}{\mathbb{Z}}
-        \newcommand{\Pow}{\mathcal{P}}
-        </macros>
-
+    <macros>
+    \newcommand{\R}{\mathbb{R}}
+    \newcommand{\Z}{\mathbb{Z}}
+    \newcommand{\Pow}{\mathcal{P}}
+    </macros>
 
 </docinfo>

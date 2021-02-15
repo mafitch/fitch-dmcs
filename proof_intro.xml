@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-proof-intro" >
+<title>Mathematical Proof</title>
+
+<introduction>
+	<p>Proof is an undefined term. It is also central to mathematics. Mathematicians, the group of people of whom you are currently part, think of proofs in two, related contexts. First proving a statement is about understanding that statement. When we can explain an idea based on already understood and accepted ideas, we understand the new statement. Second a proof is a means of communicating an understanding of a statement.</p>
+	<p>Note that the process of proving a statement is often inelegant and the result is often messy. At this point another trait of mathematicians comes into play: we love to produce better versions of things. We can take this messy result and clean it up to communicate it in a (more) elegant way.</p>
+</introduction>
+
+<subsection>
+	<title>First set proofs</title>
+
+	<p>Consider the statement: <m>A \cap B \subseteq A</m>. This statement is about being a subset. It begins with an intersection (<m>A \cap B</m>) and ends with another set (<m>A</m>). So we need to start with <m>x \in A \cap B</m> and end up with <m>x \in A</m>. To bridge we have only the definition of intersection. It says <m>x \in A \cap B</m> implies <m>x \in A</m> and <m>x \in B</m> The first part is all we need.</p>
+
+	<theorem xml:id="theorem-interesection-subset-set">
+		<title>An intersection is a subset of either set</title>
+		<statement><p>For any two sets <m>A</m> and <m>B</m>, <m>A \cap B \subseteq A</m>.</p></statement>
+		<proof>
+			<p>Proof: Let <m>x \in A \cap B.</m> By definition of intersection <m>x \in A \cap B</m> implies <m>x \in A</m>. Thus <m>x \in A \cap B</m> implies <m>x \in A</m>. This is the definition of subset, so <m>A \cap B \subseteq A</m>.</p>
+		</proof>
+	</theorem>
+
+	<p>Consider the statement: <m>A-B \subseteq \neg B</m>. This statement is also about being a subset. This begins with the set difference <m>A-B</m> and ends with the set complement <m>\neg B</m>. So we need to start with <m>x \in A-B</m> and end up with <m>x \in \neg B</m>. To bridge this we can use both the definition of set difference and the definition of set complement. The set difference definition tells us that <m>x \in A-B</m> means <m>x \in A</m> and <m>x \not\in B.</m> The second part looks like set complement. But that requires that <m>x \in U</m>. Thus this will only work if <m>A \subseteq U</m> (that is <m>A</m> and <m>B</m> have the same universal set).</p>
+
+		<theorem xml:id="theorem-difference-subset-complement">
+		<title>A set difference is part of the complement</title>
+		<statement><p>For any two sets <m>A, B \subseteq U</m>, <m>A-B \subseteq \neg B</m>.</p></statement>
+		<proof>
+			<p>Proof: Let <m>x \in A-B.</m> By definition of set difference <m>x \not\in B</m> Because <m>A \subseteq U</m>, <m>a \in U.</m> Combining these two produces <m>x \in U-B=\neg B</m>. Thus <m>x \in A-B</m> implies <m>x \in \neg B</m>. Hence <m>A-B \subseteq \neg B</m>.</p>
+		</proof>
+	</theorem>
+
+</subsection>
+
+<subsection>
+	<title>Practice</title>
+
+	<exercise><p>Prove <m>A \cap B \subseteq B.</m></p></exercise>
+	<exercise><p>Prove <m>A \cap B \subseteq A \cup B.</m></p></exercise>
+</subsection>
+
+</section>

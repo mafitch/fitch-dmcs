@@ -12,7 +12,6 @@
 			"settings":
 			{
 				"buffer_size": 4089,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -65,6 +64,22 @@
 	},
 	"file_history":
 	[
+		"/D/Documents/texts/discrete_cs/set_operations.xml",
+		"/D/Documents/kurse/math251/lessons/calculus1.ptx",
+		"/D/Documents/texts/discrete_cs/webwork-representations/webwork-representations.ptx",
+		"/D/Documents/texts/orcca_lane/src/section-domain-and-range.ptx",
+		"/D/Documents/texts/discrete_cs/publication.xml",
+		"/D/pretext/mathbook/examples/sample-book/publication.xml",
+		"/D/pretext/mathbook/examples/sample-article/sample-article.xml",
+		"/D/Documents/texts/orcca_lane/src/section-the-quadratic-formula.ptx",
+		"/D/Documents/texts/discrete_cs/logic.xml",
+		"/D/Documents/kurse/math261/examples/presentation_set_operations.tex",
+		"/D/Documents/texts/discrete_cs/sets.xml",
+		"/D/Documents/texts/discrete_cs/graph_isomorphism.xml",
+		"/D/Documents/texts/discrete_cs/appendix_database.xml",
+		"/D/Documents/kurse/math251/syllabus/syllabus_251.ptx",
+		"/D/Documents/texts/orcca/src/section-absolute-value-and-square-root.ptx",
+		"/D/Documents/texts/orcca/srcupd/orcca.ptx",
 		"/D/Documents/kurse/math261/text/equivalence.xml",
 		"/D/Documents/kurse/math261/text/graph_properties.xml",
 		"/D/Documents/kurse/math261/text/graph_isomorphism.xml",
@@ -126,7 +141,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -140,6 +155,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"youtube",
+			"<video",
 			"</m> <m>",
 			"\\mod",
 			"<image",
@@ -279,7 +296,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 485.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -290,7 +307,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -327,7 +344,7 @@
 	"project": "discrete_cs.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -97,11 +97,11 @@
 <example xml:id="graph-example-bipartite">
 	<title>Understanding the bipartite definition</title>
 	<p>This video shows how to demonstrate a graph is bipartite.</p>
-	<sidebyside><video xml:id="graph-bipartite-video1" width="50%" youtube="nofkAoPl0X8" /></sidebyside>
+	<video xml:id="graph-bipartite-video1" width="50%" youtube="nofkAoPl0X8" />
 	<p>This video shows how to determine if a graph is bipartite.</p>
-	<sidebyside><video xml:id="graph-bipartite-video2" width="60%" youtube="14Nbi9VU6Os" /></sidebyside>
+	<video xml:id="graph-bipartite-video2" width="60%" youtube="14Nbi9VU6Os" />
 	<p>This video shows how to demonstrate a graph is not bipartite.</p>
-	<sidebyside><video xml:id="graph-bipartite-video3" width="70%" youtube="D6th3EmQNtQ" /></sidebyside>
+	<video xml:id="graph-bipartite-video3" width="70%" youtube="D6th3EmQNtQ" />
 </example>
 
 <definition xml:id="definition-complete-bipartite">

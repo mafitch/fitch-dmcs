@@ -105,6 +105,8 @@
 
 <p>For example <m> E \subset \mathbb{Z}.</m> Note when needed <m>X \subseteq Y</m> means <m>X</m> is a subset but might be equal to <m>Y</m> whereas <m>X \subset Y</m> means <m>X</m> is a subset and <m>Y</m> contains at least one element not in <m>X.</m> However, we rarely need to make this distinction in this class, so we will use <m>\subset</m> to mean <m>\subseteq.</m></p>
 
+<p>Often we need to talk about a set that has no elements. This is called the <term>empty set</term> and is written as <m>\emptyset</m>.</p>
+
 </subsection>
 
 <subsection xml:id="subsection-sets-practice">

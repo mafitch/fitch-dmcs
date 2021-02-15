@@ -139,30 +139,28 @@
 <figure xml:id="logicorder">
 	<caption>Logic Order of Operations</caption>
 
-<sidebyside>
-<tabular>
-	<row>
-		<cell>highest</cell>
-		<cell>not</cell>
-		<cell><m>\neg</m></cell>
-	</row>
-	<row>
-		<cell></cell>
-		<cell>and</cell>
-		<cell><m>\wedge</m></cell>
-	</row>
-	<row>
-		<cell></cell>
-		<cell>or</cell>
-		<cell><m>\vee</m></cell>
-	</row>
-	<row>
-		<cell>lowest</cell>
-		<cell>if</cell>
-		<cell><m>\rightarrow</m></cell>
-	</row>
-</tabular>
-</sidebyside>
+  <tabular>
+  	<row>
+  		<cell>highest</cell>
+  		<cell>not</cell>
+  		<cell><m>\neg</m></cell>
+  	</row>
+  	<row>
+  		<cell></cell>
+  		<cell>and</cell>
+  		<cell><m>\wedge</m></cell>
+  	</row>
+  	<row>
+  		<cell></cell>
+  		<cell>or</cell>
+  		<cell><m>\vee</m></cell>
+  	</row>
+  	<row>
+  		<cell>lowest</cell>
+  		<cell>if</cell>
+  		<cell><m>\rightarrow</m></cell>
+  	</row>
+  </tabular>
 </figure>
 
 </subsection>
@@ -380,7 +378,6 @@
 
 <exercise><statement>
   <p>Complete the following truth table.</p>
-  <sidebyside>
   <tabular top="medium">
     <row left="medium" bottom="medium">
       <cell right="medium"><m>A</m></cell>
@@ -464,131 +461,129 @@
       <cell right="medium"></cell>
     </row>
   </tabular>
-</sidebyside>
 </statement>
 </exercise>
 
 	<p>Two, possibly compound, statements A and B are considered to be <term>equivalent</term> if they have the same truth value for all inputs. This is denoted <m>A \leftrightarrow B.</m> <xref ref="demorganand" /> and <xref ref="demorganor" /> provides truth tables that show two pairs of equivalent statements known as DeMorgan's Laws.</p>
 
 <figure xml:id="demorganand">
-<caption>DeMorgan's Law (and)</caption>
+  <caption>DeMorgan's Law (and)</caption>
 
-<sidebyside>
-<tabular top="medium">
-  <row left="medium" bottom="medium">
-    <cell right="medium"><m>A</m></cell>
-    <cell right="medium"><m>B</m></cell>
-    <cell right="medium"><m>A \wedge B</m></cell>
-    <cell right="medium"><m>\neg (A \wedge B)</m></cell>
-    <cell right="medium"><m>\neg A</m></cell>
-    <cell right="medium"><m>\neg B</m></cell>
-    <cell right="medium"><m>\neg A \vee \neg B</m></cell>
-    <cell right="medium"><m>\neg (A \wedge B) \leftrightarrow \neg A \vee \neg B</m></cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-  </row>
-</tabular>
-</sidebyside>
-
+  <tabular top="medium">
+    <row left="medium" bottom="medium">
+      <cell right="medium"><m>A</m></cell>
+      <cell right="medium"><m>B</m></cell>
+      <cell right="medium"><m>A \wedge B</m></cell>
+      <cell right="medium"><m>\neg (A \wedge B)</m></cell>
+      <cell right="medium"><m>\neg A</m></cell>
+      <cell right="medium"><m>\neg B</m></cell>
+      <cell right="medium"><m>\neg A \vee \neg B</m></cell>
+      <cell right="medium"><m>\neg (A \wedge B) \leftrightarrow \neg A \vee \neg B</m></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+    </row>
+  </tabular>
 </figure>
 
 <figure xml:id="demorganor">
-<caption>DeMorgan's Law (or)</caption>
+  <caption>DeMorgan's Law (or)</caption>
 
-<sidebyside>
-<tabular top="medium">
-  <row left="medium" bottom="medium">
-    <cell right="medium"><m>A</m></cell>
-    <cell right="medium"><m>B</m></cell>
-    <cell right="medium"><m>A \vee B</m></cell>
-    <cell right="medium"><m>\neg (A \vee B)</m></cell>
-    <cell right="medium"><m>\neg A</m></cell>
-    <cell right="medium"><m>\neg B</m></cell>
-    <cell right="medium"><m>\neg A \wedge \neg B</m></cell>
-    <cell right="medium"><m>\neg (A \vee B) \leftrightarrow \neg A \wedge \neg B</m></cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-  </row>
-  <row left="medium" bottom="medium">
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">1</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">0</cell>
-    <cell right="medium">1</cell>
-  </row>
-</tabular>
-</sidebyside>
-
+  <tabular top="medium">
+    <row left="medium" bottom="medium">
+      <cell right="medium"><m>A</m></cell>
+      <cell right="medium"><m>B</m></cell>
+      <cell right="medium"><m>A \vee B</m></cell>
+      <cell right="medium"><m>\neg (A \vee B)</m></cell>
+      <cell right="medium"><m>\neg A</m></cell>
+      <cell right="medium"><m>\neg B</m></cell>
+      <cell right="medium"><m>\neg A \wedge \neg B</m></cell>
+      <cell right="medium"><m>\neg (A \vee B) \leftrightarrow \neg A \wedge \neg B</m></cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+    </row>
+    <row left="medium" bottom="medium">
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">1</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">0</cell>
+      <cell right="medium">1</cell>
+    </row>
+  </tabular>
 </figure>
+
+<example><title>DeMorgan's Law</title>
+<statement><p>Consider the statement: Guido likes to hike and cycle. Under what conditions is this statement false?</p></statement>
+<solution><p>We want the negation. DeMorgan's Law tells us the negation is: Guido dislikes hiking or Guido dislikes cycling. This matches our expectation that a statement is false if any part of it is false.</p></solution>
+</example>
 
 <exercise><p>Are any of the statements in <xref ref="sicc" /> equivalent?</p></exercise>
 

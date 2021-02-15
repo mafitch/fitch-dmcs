@@ -8,13 +8,10 @@
 
 <p>In order to efficiently communicate logic statements we use predicates. These are simply functions with a codomain of <sq>true</sq> and <sq>false.</sq> For example <m>R(x)=x</m> is red. Thus <m>R(</m>stop sign<m>)=</m>true and <m>R(</m>Seawolf logo<m>)=</m>false. More complicated statements can be expressed as well. The following example converts the statement <q><m>n</m> is a positive, even number</q> into symbols using predicates.</p>
 
-<p>Define the following statements.
-<md>
-	<mrow>E(n) \amp = n \text{ is even.}</mrow>
-	<mrow>P(n) \amp = n>0.</mrow>
-</md>
-<m>E(n) \wedge P(n).</m>
-</p>
+<p>Define the following statements.</p>
+<p><m>E(n)</m> is the statement <m>n</m> is even.</p>
+<p><m>P(n)</m> is the statement <m>n>0</m>.</p>
+<p>The statement: <m>n</m> is a positive, even number can now be written as <m>P(n) \wedge E(n).</m></p>
 
 </subsection>
 
@@ -64,38 +61,36 @@
 
 	<p>One of the logical operations is negation. We can negate whole statements or parts of statements. A useful skill is to simplify the negation of a statement. This typically enables us to understand the meaning of the negation more easily and to optimize conditional statements.</p>
 
-	<p>The following is an example of more easily understanding the negation of a statement. Suppose the following claim is false.</p>
+	<example xml:id="exammple-negate-statement">
+		<p>This example demonstrates negating a statement involving conjunctions, but no quantifiers. Suppose the following claim is false.</p>
+		<p><q>Guido owns a sail boat and has either a type rating for the Cessna Citation X or likes to cook.</q></p>
+		<p>First we define predicates for each part of the statement.
+		<md>
+			<mrow>S(x) = \amp x \text{ owns a sail boat.}</mrow>
+			<mrow>C(x) = \amp x \text{ has a type rating for the Cessna Citation X.}</mrow>
+			<mrow>K(x) = \amp x \text{ likes to cook.}</mrow>
+		</md></p>
 
-	<p><q>Guido owns a sail boat and has either a type rating for the Cessna Citation X or likes to cook.</q></p>
-
-	<p><md>
-		<mrow>S(x) = \amp x \text{ owns a sail boat.}</mrow>
-		<mrow>C(x) = \amp x \text{ has a type rating for the Cessna Citation X.}</mrow>
-		<mrow>K(x) = \amp x \text{ likes to cook.}</mrow>
-	</md></p>
-
-	<p>Now we write the negation of this statement as</p>
-
-	<sidebyside><tabular>
-		<col width="40%" />
-		<col width="30%" />
-		<row><cell><m>\neg ( S(Guido) \wedge (C(Guido) \vee K(Guido) ) \leftrightarrow</m></cell> 
-		<cell><p>Using DeMorgan's Law we show this is the same as</p></cell></row>
-		<row><cell><m>\neg S(Guido) \vee \neg (C(Guido) \vee K(Guido) ) \leftrightarrow</m></cell> 
-		<cell><p>Then we apply the other DeMorgan's Law to show it is the same as</p></cell></row>
-		<row><cell><m>\neg S(Guido) \vee (\neg C(Guido) \wedge \neg K(Guido) ).</m></cell></row>
-	</tabular></sidebyside>
-
-	<p>Returning this to English gives us</p>
-
-	<p><q>Either Guido does not own a sailboat, or he does not have the Cessna Citation X type rating and he does not like to cook.</q></p>
+		<p>Now we write the negation of this statement as</p>
+		<tabular>
+			<col width="40%" />
+			<col width="30%" />
+			<row><cell><m>\neg ( S(Guido) \wedge (C(Guido) \vee K(Guido) ) \leftrightarrow</m></cell> 
+			<cell><p>Using DeMorgan's Law we show this is the same as</p></cell></row>
+			<row><cell><m>\neg S(Guido) \vee \neg (C(Guido) \vee K(Guido) ) \leftrightarrow</m></cell> 
+			<cell><p>Then we apply the other DeMorgan's Law to show it is the same as</p></cell></row>
+			<row><cell><m>\neg S(Guido) \vee (\neg C(Guido) \wedge \neg K(Guido) ).</m></cell></row>
+		</tabular>
+		<p>Returning this to English gives us</p>
+		<p><q>Either Guido does not own a sailboat, or he does not have the Cessna Citation X type rating and he does not like to cook.</q></p>
+	</example>
 
 	</subsubsection>
 
 	<subsubsection>
 		<title>Discover</title>
 
-		<p>In addition to DeMorgan's Laws, the negations of the two quantifiers are needed. The negation of for all and there exists statements can be recognized from examples. Try the ones below.</p>
+		<p>In addition to DeMorgan's Laws (negation of <term>and</term> and <term>or</term>), the negations of the two quantifiers are needed. The negation of for all and there exists statements can be recognized from examples. Try the ones below.</p>
 
 <table>
 	<title>Friends</title>
@@ -109,13 +104,18 @@
 	</tabular>
 </table>
 
-		<exercise><p>How would you show that the statement <q>All of the five friends have brown hair</q> is false?</p></exercise>
+		<exercise xml:id="exercise-neg-all"><p>How would you show that the statement <q>All of the five friends have brown hair</q> is false?</p></exercise>
 
-		<exercise><p>How would you show that the statement <q>Some of the five friends have blue eyes</q> is false?</p></exercise>
+		<exercise xml:id="exercise-neg-some"><p>How would you show that the statement <q>Some of the five friends have blue eyes</q> is false?</p></exercise>
 
 		<exercise><p>What is the negation of the following statement. <q>All Apple fanboys own an iPad.</q></p></exercise>
 
 		<exercise><p>What is the negation of the following statement. <q>Some chemist likes to cook.</q></p></exercise>
+
+		<exercise><task><p>For <xref ref="exercise-neg-all" /> how many entries in the table did you have to check?</p></task>
+		<task><p>For <xref ref="exercise-neg-some" /> how many entries in the table did you have to check?</p></task>
+		<task><p>What do your answers to these two questions tell you about the efficiency of the operators <term>and</term> and <term>or</term>?</p></task>
+		</exercise>
 
 	</subsubsection>
 
@@ -180,7 +180,107 @@
 
 <exercise><p>Negate: <m>\forall x \: (A(x) \vee B(x)) \rightarrow \left( \exists y C(y) \ni \left[ D(x,y) \vee E(x,y) \right] \right). </m> Meanings for the predicates are not required. </p></exercise>
 
+<exercise><introduction><p>We will negate a natural language statement in steps.</p></introduction>
+<task><p>Convert this statement to logic notation.</p>
+<p>All moose love some mountain ash.</p></task>
+<task><p>Negate the statement using the logic notation.</p></task>
+<task><p>Convert your negated logic statement back to natural language.</p></task>
+</exercise>
+
+<exercise>
+	<introduction><p>These demonstrate the full spectrum of what can happen and will require careful attention to grammar. Negate the following statements and re-write in English.<ul>
+		<li><m>B(x)</m>: x is a bee.</li>
+		<li><m>F(x)</m>: x is a flower.</li>
+		<li><m>Y(x)</m>: x is yellow.</li>
+		<li><m>L(x,y)</m>: x likes y.</li>
+	</ul></p>
+	</introduction>
+	<task>
+		<statement><p><m>\forall x \: B(x) \rightarrow ( \forall y \: F(y) \rightarrow L(x,y) ).</m></p></statement>
+		<answer><p><m>\exists x \: B(x) \ni ( \exists y \: F(y) \ni \neg L(x,y) ).</m></p>
+		<p>Some bee does not love some flower.</p></answer>
+	</task>
+	<task>
+		<statement><p><m> \forall x \: B(x) \rightarrow ( \exists y \: F(y) \ni L(x,y) ).</m></p></statement>
+		<answer><p><m> \exists x \: B(x) \ni ( \forall y \: F(y) \rightarrow \neg L(x,y) ).</m></p>
+		<p>Some bee hates all flowers.</p></answer>
+	</task>
+	<task>
+		<statement><p><m> \exists x \: B(x) \ni ( \forall y \: F(y) \rightarrow L(x,y) ).</m></p></statement>
+		<answer><p><m> \forall x \: B(x) \rightarrow ( \exists y \: F(y) \ni \neg L(x,y) ).</m></p>
+		<p>Every bee dislikes some flower.</p></answer>
+	</task>
+	<task>
+		<statement><p><m> \exists x \: B(x) \ni ( \forall y \: F(y) \rightarrow \neg L(x,y) ).</m></p></statement>
+		<answer><p><m> \forall x \: B(x) \rightarrow ( \exists y \: F(y) \ni L(x,y) ).</m></p>
+		<p>Every bee loves some flower.</p></answer>
+	</task>
+	<task>
+		<statement><p><m> \exists x \: B(x) \ni ( \forall y \: [F(y) \wedge Y(y)] \rightarrow \neg L(x,y) ).</m></p></statement>
+		<answer><p><m> \forall x \: B(x) \rightarrow ( \exists y \: [F(y) \wedge Y(y)] \ni L(x,y) ).</m></p>
+		<p>Every bee loves some yellow flower.</p></answer>
+	</task>
+</exercise>
+
+<exercise>
+	<statement><p>The following two statements are not logically equivalent. Demonstrate why by finding a case that is true for one statement but false for the other statement.<ul>
+		<li>Some tree is loved by all moose.</li>
+		<li>Every moose loves some tree.</li>
+	</ul></p>
+	</statement>
+	<hint><p>Consider whether each moose has to love the same tree.</p></hint>
+</exercise>
+
 	</subsubsection>
 </subsection>
+
+<exercises>
+<exercisegroup>
+	<introduction><p>Use the following predicates below. <ul>
+		<li><m>M(x)</m>: x is a moose.</li>
+		<li><m>G(x)</m>: x is a patch of grass.</li>
+		<li><m>N(x)</m>: x is new.</li>
+		<li><m>E(x,y)</m>: x eats y.</li>
+	</ul></p>
+	</introduction>
+
+	<exercise><p>Write the following statements using predicate notation.<ol>
+		<li>All moose eat some patch of new grass.</li>
+		<li>Some moose eats all patches of new grass.</li>
+		<li>Some moose eats no patch of new grass.</li>
+		<li>All moose do not eat some patch of new grass.</li>
+	</ol></p>
+	</exercise>
+
+	<exercise><p>Negate the following statements using predicate notation.<ol>
+		<li>All moose eat some patch of new grass.</li>
+		<li>Some moose eats all patches of new grass.</li>
+		<li>Some moose eats no patch of new grass.</li>
+		<li>All moose do not eat some patch of new grass.</li>
+	</ol></p>
+	</exercise>
+
+	<exercise><p>Write the negations of the following statements in English.<ol>
+		<li>All moose eat some patch of new grass.</li>
+		<li>Some moose eats all patches of new grass.</li>
+		<li>Some moose eats no patch of new grass.</li>
+		<li>All moose do not eat some patch of new grass.</li>
+	</ol></p>
+	</exercise>
+</exercisegroup>
+
+<exercise><p>What must you show to prove the following true? <ol>
+	<li>All moose eat some patch of new grass.</li>
+	<li>Some moose eats all patches of new grass.</li>
+</ol></p>
+</exercise>
+
+<exercise><p>What must you show to prove the following false? <ol>
+	<li>Some patch of new grass is eaten by no moose.</li>
+	<li>No moose does not eat some patch of grass.</li>
+</ol></p>
+</exercise>
+
+</exercises>
 
 </section>

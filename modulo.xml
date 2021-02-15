@@ -6,16 +6,16 @@
 <subsection>
 	<title>Terminology</title>
 
-<p>All numbers are said to be equivalent <term>mod</term> <m>n</m> to their remainder after dividing by <m>n</m>. For example <m> 9 \equiv 4 \pmod 5  </m> and <m> 13 \equiv 1 \pmod 2 . </m></p>
+<p>All integers are said to be equivalent <term>mod</term> <m>n</m> to their remainder after dividing by <m>n</m>. For example <m> 9 \equiv 4 \pmod 5  </m> because <m>9/5</m> has remainder 4. Similarly <m>13 \equiv 1 \pmod 2 </m> because <m>13/2</m> has remainder 1.</p>
 
-<p>Below a function in <xref ref="modfunction" /> is evaluated <m>\pmod 5.</m></p>
-<table xml:id="modfunction">
+<p><xref ref="modfunction" /> shows a function evaluated <m>\pmod 5.</m></p>
+<example xml:id="modfunction">
 	<title>Function mod 5</title>
 	<tabular top="medium">
 	<row bottom="medium"><cell right="medium"><m>n</m></cell> <cell>0</cell> <cell>1</cell> <cell>2</cell> <cell>3</cell> <cell>4</cell></row>
 	<row bottom="medium"><cell right="medium"><m>n^2</m></cell> <cell>0</cell> <cell>1</cell> <cell>4</cell> <cell>4</cell> <cell>1</cell></row>
 	</tabular>
-</table>
+</example>
 
 <p>The formal definition of modulo arithmetic requires two definitions.</p>
 
@@ -38,18 +38,34 @@
 
 <p>To address the issue of order of operation under modulo arithmetic consider the function <m>f(n)=n^2+3n+5 \pmod 7.</m></p>
 
-<p><md>
-<mrow>f(4) &amp; = &amp; 4^2+3(4)+5 \pmod 7.</mrow>
-<mrow>4^2 &amp; = &amp; 16 \equiv 2 \pmod 7.</mrow>
-<mrow>3(4) &amp; = &amp; 12 \equiv 5 \pmod 7.</mrow>
-<mrow>2+5+5 &amp; = &amp; 12 \equiv 5 \pmod 7.</mrow>
-<mrow>f(4) &amp; = &amp; 5 \pmod 7.</mrow>
-<mrow>f(4) &amp; = &amp; 4^2+3(4)+5 \pmod 7</mrow>
-<mrow> &amp; = &amp; 33 \pmod 7</mrow>
-<mrow> &amp; = &amp; 5 \pmod 7.</mrow>
-</md></p>
+<example xml:id="example-mod-calculate1">
+	<title>Calculate function modulo n, stepwise</title>
+	<p><md>
+		<mrow>f(4) = &amp; 4^2+3(4)+5 \pmod 7.</mrow>
+		<mrow>&amp; \text{First we calculate each term above} \pmod 7.</mrow>
+		<mrow>4^2 = &amp; 16 \equiv 2 \pmod 7.</mrow>
+		<mrow>3(4) = &amp; 12 \equiv 5 \pmod 7.</mrow>
+		<mrow>5 = &amp; 5 \equiv 5 \pmod 7.</mrow>
+		<mrow>&amp; \text{Next we add the terms} \pmod 7.</mrow>
+		<mrow>2+5+5 = &amp; 12 \equiv 5 \pmod 7.</mrow>
+		<mrow>&amp; \text{Thus}</mrow>
+		<mrow>f(4) = &amp; 5 \pmod 7.</mrow>
+	</md></p>
+</example>
 
-<exercise><p>As in the example above calculate <m>f(2)</m> and <m>f(6)</m> both ways. Does it matter when you use an equivalent number in modulo arithmetic?</p></exercise>
+<example xml:id="example-mod-calculate2">
+	<title>Calculate function modulo n, once</title>
+	<p><md>
+		<mrow>f(4) &amp; = &amp; 4^2+3(4)+5 \pmod 7</mrow>
+		<mrow> &amp; = &amp; 33 \pmod 7</mrow>
+		<mrow> &amp; \equiv &amp; 5 \pmod 7.</mrow>
+	</md></p>
+</example>
+
+<exercise>
+	<task><p>Calculate <m>f(2)</m> and <m>f(6)</m> twice; once using <xref ref="example-mod-calculate1"/> and once using <xref ref="example-mod-calculate2"/>.</p></task>
+	<task><p>Does it matter whether we mod each term or only once at the end?</p></task>
+</exercise>
 
 <exercise><p>Complete the table below calculating <m>\pmod 7.</m></p>
 <sidebyside>
@@ -82,7 +98,7 @@
 <exercise><p>Using the graph paper in <xref ref="modgraph" />, graph the function <m>p(n)=n^2-4n+3 \pmod 5.</m></p></exercise>
 
 <table xml:id="modgraph">
-	<title>Graph Paper for mod function</title>
+	<title>Graph Paper for function mod 5</title>
 	<tabular top="medium">
 	<row left="medium" bottom="medium"><cell right="medium">4 </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium">  </cell></row>
 	<row left="medium" bottom="medium"><cell right="medium">3 </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium"> </cell><cell right="medium">  </cell></row>

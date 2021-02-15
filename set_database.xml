@@ -48,7 +48,7 @@ INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
   FROM Table A LEFT JOIN Table B
   ON A.Key=B.Key</cd></p>
 <p>Set Notation: <m>A</m></p>
-<sidebyside width="50%" valign="top"><image source="images/VennSQL_A" /></sidebyside>
+<image source="images/VennSQL_A"  width="50%" />
 </example>
 
 <example xml:id="SQLinnerjoin">
@@ -57,7 +57,7 @@ INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
   FROM Table A INNER JOIN Table B
   ON A.Key=B.Key</cd></p>
 <p>Set Notation: <m>A \cap B</m></p>
-<sidebyside width="50%"><image source="images/VennSQL_AintB" /></sidebyside>
+<image source="images/VennSQL_AintB"  width="50%"/>
 </example>
 
 <exercise xml:id="SQLrightjoin">
@@ -66,7 +66,7 @@ INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
   FROM Table A RIGHT JOIN Table B
   ON A.Key=B.Key</cd></p>
 <p>Set Notation: <fillin/></p>
-<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+<image source="images/VennSQL"  width="50%"/>
   </statement>
 </exercise>
 
@@ -77,7 +77,7 @@ INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
   ON A.Key=B.Key
   WHERE B.Key IS NULL</cd></p>
 <p>Set Notation: <fillin/></p>
-<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+<image source="images/VennSQL"  width="50%"/>
   </statement>
 </exercise>
 
@@ -88,7 +88,7 @@ INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
   ON A.Key=B.Key
   WHERE A.Key IS NULL</cd></p>
 <p>Set Notation: <fillin/></p>
-<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+<image source="images/VennSQL"  width="50%"/>
   </statement>
 </exercise>
 
@@ -98,7 +98,7 @@ INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
   FROM Table A FULL OUTER JOIN Table B
   ON A.Key=B.Key</cd></p>
 <p>Set Notation: <fillin/></p>
-<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+<image source="images/VennSQL"  width="50%"/>
   </statement>
 </exercise>
 
@@ -109,7 +109,7 @@ INNER JOIN Midterm ON Compare.[Student ID] = Midterm.ID;
   ON A.Key=B.Key
   WHERE A.Key IS NULL or B.Key IS NULL</cd></p>
 <p>Set Notation: <fillin/></p>
-<sidebyside width="50%"><image source="images/VennSQL" /></sidebyside>
+<image source="images/VennSQL"  width="50%"/>
   </statement>
 </exercise>
 

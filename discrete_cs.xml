@@ -41,6 +41,8 @@ Copyright 2019 Mark A. Fitch
 
             <xi:include href="./predicates.xml" />         <!-- Quantifierers  -->
 
+            <xi:include href="./proof_intro.xml" />         <!-- Direct proofs  -->
+
         </chapter>
 
         <chapter xml:id="chapter-functions" xmlns:xi="http://www.w3.org/2001/XInclude">

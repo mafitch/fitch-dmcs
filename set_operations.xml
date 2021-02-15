@@ -13,17 +13,59 @@
     <statement><p>The set <m>C</m> is the <term>union</term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cup B,</m> if and only if <m>C=\{ x | x \in A \mbox{ or } x \in B \}.</m></p></statement>
   </definition>
 
+  <example>
+      <title>Union</title>
+      <p>Consider <m>A=\{a,l,k,s\}</m> and <m>B=\{a,c,l,k\}</m>. <m>A \cup B = \{a,c,l,k,s \}</m> because <m>a \in A,</m>, <m>c \in B,</m>, <m>l \in A,</m>, <m>k \in A,</m>, and <m>s \in B</m>. Note it does not matter if we say because <m>a \in A</m> or because <m>a \in B</m>. This is further discussed in <xref ref="section-logic" /></p>
+  </example>
+
+  <exercise>
+    <title>Compare/Contrast</title>
+    <statement><p>Union can be thought of as taking the elements of the first set and adding any elements of the second set that are different. Our question is how does <term>union</term> differ from <term>addition</term>?</p></statement>
+    <hint><p>Try unions of <m>A=\{1,2,3\}</m> with the following sets <m>B_1=\{4,5,7\}</m>, <m>B_2=\{3,4,5\}</m>, and <m>B_3=\{2,3\}</m>.</p></hint>
+  </exercise>
+
   <definition>
     <title>Intersection</title>
     <statement><p>The set <m>C</m> is the <term>intersection</term> of the sets <m>A</m> and <m>B</m>, denoted <m>A \cap B,</m> if and only if <m>C=\{ x | x \in A \mbox{ and } x \in B \}.</m></p></statement>
   </definition>
+
+  <p>Watch the video in <xref ref="video-set-intersection-def" /> demonstrating reading the set intersection definition twice. The first time think about what set intersection is. The second time think about how it illustrates reading and understanding a definition.</p>
+
+  <figure xml:id="video-set-intersection-def">
+    <caption>Understanding the set intersection definition</caption>
+    <video youtube="raWa9Okrnd4" />
+  </figure>
 
   <definition>
     <title>Difference</title>
     <statement><p> The set <m>C</m> is the <term>difference</term> between the sets <m>A</m> and <m>B</m>, denoted <m>A-B,</m> if and only if <m>C=\{ x | x \in A \mbox{ but } x \not\in B \}.</m></p></statement>
   </definition>
 
-  <p>In many circumstance there is a <term>universal set</term> that is part of the context for a problem. For example the set of all integers may be the universal set for discussion of even and odd numbers.</p>
+  <exercise>
+    <title>Compare/Contrast</title>
+    <statement><p>Just as we considered how union is like addition we can compare and contrast <term>set difference</term> with <term>subtraction</term>.</p></statement>
+    <hint><p>Try the set difference of <m>A=\{1,2,3\}</m> with the following sets <m>B_3=\{2,3\}</m>, <m>B_2=\{3,4,5\}</m>, and <m>B_1=\{4,5,7\}</m>.</p></hint>
+  </exercise>
+
+  <exercise>
+    <title>Algorithmic complexity</title>
+    <introduction><p>A programmer must consider how to implement an operation like set difference.</p></introduction>
+    <task><p>Find <m>A-B</m> for <m>A=\{1,3,5,7,9\}</m> and <m>B=\{1,3,9\}</m>.</p></task>
+    <task><p>Set difference must remove from <m>A</m> every element in <m>B</m>. Consider the following psuedo-code.</p>
+    <p><cd>for x in A do
+  for y in B do
+     if y==x then
+       remove(A,x)
+       exit inner for loop
+      end if
+  end for
+end for</cd></p>
+    <p>How many times will the comparison (<c>if x==y</c> line) be run for these sets <m>A</m> and <m>B</m>.</p></task>
+    <task><p>If the psuedo-code algorithm were reversed so the outside loop were for <m>B</m> and the inside loop for <m>A</m> would it change the number of comparisons?</p></task>
+    <task><p>Can you think of any optimizations of this algorithm?</p></task>
+  </exercise>
+
+  <p>In many circumstance there is a <term>universal set</term> that is part of the context for a problem. It may or may not be explicitly stated. For example the set of all integers may be the universal set for discussion of even and odd numbers.</p>
 
   <definition>
     <title>Complement</title>
@@ -37,12 +79,45 @@
 
   <p>For example if <m>A=\{0,1\}</m> then <m>\Pow(A)=\{ \emptyset, \{0\}, \{1\}, \{0,1\}\}.</m></p>
 
+  <exercise>
+    <title>Developing Power Sets</title>
+    <introduction><p>Power sets are sets. This means they are unordered. However, to generate them it helps us list all subsets if we impose some convenient order. The following suggest parts of a heuristic for listing elements of power sets. We consider the power set of <m>S=\{a,b,c\}</m>.</p></introduction>
+    <task><p>There are subsets of <m>S</m> of size 0,1,2, and 3. What is the only subset of size 0? What is the only subset of size 3?</p></task>
+    <task><p>List all subsets of size 1.</p></task>
+    <task><p>List all subsets of size 2.</p></task>
+    <task><p>There are an equal number of subsets of size 1 and size 2 for <m>S</m>. Find a logical correspondence between the subsets of size 1 and size 2 (pair each subset of size 1 with a subset of size 2).</p></task>
+    <task><p>In general for a set of size <m>n</m> how could one generate all subsets? Note the steps above only suggest two parts of an algorithm.</p></task>
+  </exercise>
+
   <definition>
     <title>Cartesian Product</title>
     <statement><p>The set <m>C</m> is the <term>Cartesian product</term> of the sets <m>A</m> and <m>B,</m> denoted <m>A \times B,</m> if and only if <m>C=\{(a,b) | a \in A \mbox{ and } b \in B. \}.</m></p></statement>
   </definition>
 
   <p>For example if <m>A=\{0,1\}</m> and <m>B=\{a,b\}</m> then <m>A \times B =</m> <m>\{(0,a), (0,b), (1,a),</m> <m>(1,b)\}.</m></p>
+
+  <p>Note for a set <m>A</m> and positive integer <m>n \ge 1</m> we use the notation <m>A^n</m> to mean <m>n</m> copies of <m>A</m> in a Cartesian product. For example, <m>A^3 = A \times A \times A</m>.</p>
+
+  <definition>
+    <title>Size of</title>
+    <statement><p>We define the <term>size of</term> a finite set <m>A</m>, denote <m>|A|</m> to be the number of elements it contains.</p></statement>
+  </definition>
+
+  <p>For example if <m>A=\{a,b,c\}</m> then <m>|A|=3.</m> There are ways to define the size of infinite sets, but those must wait for later classes.</p>
+
+  <exercise>
+    <webwork>
+      <statement>
+        <p>Suppose that <m>A=\{a,b,c\}</m> and <m>B=\{c,d,e,f\}</m>.</p>
+        <p>What is <m>|A \cup B|</m>? <var name="'6'" width="5" /></p>
+        <p>What is <m>|A \times B|</m>? <var name="'12'" width="5" /></p>
+        <p>What is <m>|2^A|</m>? <var name="'8'" width="5" /></p>
+      </statement>
+      <solution>
+        <p>Because <m>A</m> and <m>B</m> share one element the size of their union is <m>3+4-1=6.</m>. Elements of <m>A \times B</m> look like <m>(a,b)</m> with 3 options for <m>a</m> and four options for <m>b</m>. This produces <m>3 \times 4=12</m> elements. Every element of <m>A</m> is either in or out of each subset. Thus for the each of the three elements there are two choices of <m>2 \cdot 2 \cdot 2 = 8</m> subsets.</p>
+      </solution>
+    </webwork>
+  </exercise>
 
   </subsection>
 
@@ -68,10 +143,29 @@
   </exercise>
 
   <exercise>
-    <statement><p>Identify the following for the sets <m>A=\{n | n=6k </m> for some integer <m> k\}</m> and <m>B=\{n | n=10k </m> for some integer <m> k \}</m>. The universal set is all integers.</p>
+    <statement><p>Calculate the following for <m>A=\{0,1,2\}</m> and <m>B=\{0,1\}.</m></p>
+    <p><ol>
+      <li> <m>\Pow(A)</m></li>
+      <li> <m>A \times B</m></li>
+      <li> <m>B \times A</m></li>
+      <li> <m>A-B</m></li>
+      <li> <m>B-A</m></li>
+    </ol></p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement><p>Perform the set operations indicated on the sets below. The universal set is all integers.
+      <ul>
+        <li><m>A=\{n | n=2k </m> for some integer <m> k\}</m></li>
+        <li><m>B=\{n | n=5k </m> for some integer <m> k\}</m></li>
+        <li><m>C=\{n | n=6k </m> for some integer <m> k\}</m></li>
+        <li><m>D=\{n | n=10k </m> for some integer <m> k \}</m></li>
+      </ul></p>
     <p><ol>
       <li> <m>A \cup B</m></li>
       <li> <m>A \cap B</m></li>
+      <li> <m>C \cap D</m></li>
       <li> <m>A-B</m></li>
       <li> <m>B-A</m></li>
       <li> <m>\neg A</m></li>
@@ -80,15 +174,6 @@
     </statement>
   </exercise>
 
-  <exercise>
-    <statement><p>Calculate the following for <m>A=\{0,1,2\}</m> and <m>B=\{0,1\}.</m></p>
-    <p><ol>
-      <li> <m>\Pow(A)</m></li>
-      <li> <m>A \times B</m></li>
-      <li> <m>B \times A</m></li>
-    </ol></p>
-    </statement>
-  </exercise>
   </subsection>
 
 </section>
