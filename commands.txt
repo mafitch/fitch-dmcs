@@ -4,7 +4,9 @@ cd ../latex
 xsltproc -o discrete_cs.tex --xinclude /d/pretext/mathbook/xsl/mathbook-latex.xsl ../discrete_cs.xml
 xsltproc -o discrete_cs.tex -stringparam latex.print yes --xinclude ~/mathbook/xsl/mathbook-latex.xsl ../discrete_cs.xml
 
-/d/pretext/mathbook/pretext/pretext -c webwork -s "(http://aholiab.uaa.alaska.edu,anonymous,anonymous,unused,anonymous)" -d webwork-representations discrete_cs.xml
+~/mathbook/pretext/pretext -c webwork -s "(http://aholiab.uaa.alaska.edu,anonymous,anonymous,unused,anonymous)" -d /d/Documents/texts/discrete_cs/webwork/ discrete_cs.xml
+
+-d /d/Documents/texts/discrete_cs/webwork/
 
 /c/'Program Files'/Java/jdk-12.0.1/bin/java -classpath ~/xsltproc/jing-trang/build -Dorg.apache.xerces.xni.parser.XMLParserConfiguration=org.apache.xerces.parsers.XIncludeParserConfiguration -jar ~/xsltproc/jing-trang/build/jing.jar ~/mathbook/Schema/pretext.rng /d/Documents/texts/discrete_cs/discrete_cs.xml >/d/Documents/texts/discrete_cs/schemaerrors.txt
 

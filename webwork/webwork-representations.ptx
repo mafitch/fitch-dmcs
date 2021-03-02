@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="1" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1">
+      <statement>
+        <p>Suppose that <m>A=\{a,b,c\}</m> and <m>B=\{c,d,e,f\}\text{.}</m></p>
+        <p>What is <m>|A \cup B|\text{?}</m> <fillin name="AnSwEr0001" characters="5"/></p>
+        <p>What is <m>|A \times B|\text{?}</m> <fillin name="AnSwEr0002" characters="5"/></p>
+        <p>What is <m>|2^A|\text{?}</m> <fillin name="AnSwEr0003" characters="5"/></p>
+      </statement>
+      <answer>
+        <p><m>6</m></p>
+      </answer>
+      <answer>
+        <p><m>12</m></p>
+      </answer>
+      <answer>
+        <p><m>8</m></p>
+      </answer>
+      <solution>
+        <p>Because <m>A</m> and <m>B</m> share one element the size of their union is <m>3+4-1=6.\text{.}</m> Elements of <m>A \times B</m> look like <m>(a,b)</m> with 3 options for <m>a</m> and four options for <m>b\text{.}</m> This produces <m>3 \times 4=12</m> elements. Every element of <m>A</m> is either in or out of each subset. Thus for the each of the three elements there are two choices of <m>2 \cdot 2 \cdot 2 = 8</m> subsets.</p>
+      </solution>
+    </static>
+    <server-url hint="yes" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=1&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHRoYXQgW2BBPVx7YSxiLGNcfWBdIGFuZCBbYEI9XHtjLGQsZSxmXH1cdGV4dHsufWBdCgpXaGF0IGlzIFtgfEEgXGN1cCBCfFx0ZXh0ez99YF0gW19deyc2J317NX0KCldoYXQgaXMgW2B8QSBcdGltZXMgQnxcdGV4dHs%2FfWBdIFtfXXsnMTInfXs1fQoKV2hhdCBpcyBbYHwyXkF8XHRleHR7P31gXSBbX117JzgnfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCkJlY2F1c2UgW2BBYF0gYW5kIFtgQmBdIHNoYXJlIG9uZSBlbGVtZW50IHRoZSBzaXplIG9mIHRoZWlyIHVuaW9uIGlzIFtgMys0LTE9Ni5cdGV4dHsufWBdIEVsZW1lbnRzIG9mIFtgQSBcdGltZXMgQmBdIGxvb2sgbGlrZSBbYChhLGIpYF0gd2l0aCAzIG9wdGlvbnMgZm9yIFtgYWBdIGFuZCBmb3VyIG9wdGlvbnMgZm9yIFtgYlx0ZXh0ey59YF0gVGhpcyBwcm9kdWNlcyBbYDMgXHRpbWVzIDQ9MTJgXSBlbGVtZW50cy4gRXZlcnkgZWxlbWVudCBvZiBbYEFgXSBpcyBlaXRoZXIgaW4gb3Igb3V0IG9mIGVhY2ggc3Vic2V0LiBUaHVzIGZvciB0aGUgZWFjaCBvZiB0aGUgdGhyZWUgZWxlbWVudHMgdGhlcmUgYXJlIHR3byBjaG9pY2VzIG9mIFtgMiBcY2RvdCAyIFxjZG90IDIgPSA4YF0gc3Vic2V0cy4KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs%3D</server-url>
+    <server-url hint="yes" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=1&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHRoYXQgW2BBPVx7YSxiLGNcfWBdIGFuZCBbYEI9XHtjLGQsZSxmXH1cdGV4dHsufWBdCgpXaGF0IGlzIFtgfEEgXGN1cCBCfFx0ZXh0ez99YF0gW19deyc2J317NX0KCldoYXQgaXMgW2B8QSBcdGltZXMgQnxcdGV4dHs%2FfWBdIFtfXXsnMTInfXs1fQoKV2hhdCBpcyBbYHwyXkF8XHRleHR7P31gXSBbX117JzgnfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+    <server-url hint="no" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=1&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHRoYXQgW2BBPVx7YSxiLGNcfWBdIGFuZCBbYEI9XHtjLGQsZSxmXH1cdGV4dHsufWBdCgpXaGF0IGlzIFtgfEEgXGN1cCBCfFx0ZXh0ez99YF0gW19deyc2J317NX0KCldoYXQgaXMgW2B8QSBcdGltZXMgQnxcdGV4dHs%2FfWBdIFtfXXsnMTInfXs1fQoKV2hhdCBpcyBbYHwyXkF8XHRleHR7P31gXSBbX117JzgnfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCkJlY2F1c2UgW2BBYF0gYW5kIFtgQmBdIHNoYXJlIG9uZSBlbGVtZW50IHRoZSBzaXplIG9mIHRoZWlyIHVuaW9uIGlzIFtgMys0LTE9Ni5cdGV4dHsufWBdIEVsZW1lbnRzIG9mIFtgQSBcdGltZXMgQmBdIGxvb2sgbGlrZSBbYChhLGIpYF0gd2l0aCAzIG9wdGlvbnMgZm9yIFtgYWBdIGFuZCBmb3VyIG9wdGlvbnMgZm9yIFtgYlx0ZXh0ey59YF0gVGhpcyBwcm9kdWNlcyBbYDMgXHRpbWVzIDQ9MTJgXSBlbGVtZW50cy4gRXZlcnkgZWxlbWVudCBvZiBbYEFgXSBpcyBlaXRoZXIgaW4gb3Igb3V0IG9mIGVhY2ggc3Vic2V0LiBUaHVzIGZvciB0aGUgZWFjaCBvZiB0aGUgdGhyZWUgZWxlbWVudHMgdGhlcmUgYXJlIHR3byBjaG9pY2VzIG9mIFtgMiBcY2RvdCAyIFxjZG90IDIgPSA4YF0gc3Vic2V0cy4KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs%3D</server-url>
+    <server-url hint="no" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=1&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHRoYXQgW2BBPVx7YSxiLGNcfWBdIGFuZCBbYEI9XHtjLGQsZSxmXH1cdGV4dHsufWBdCgpXaGF0IGlzIFtgfEEgXGN1cCBCfFx0ZXh0ez99YF0gW19deyc2J317NX0KCldoYXQgaXMgW2B8QSBcdGltZXMgQnxcdGV4dHs%2FfWBdIFtfXXsnMTInfXs1fQoKV2hhdCBpcyBbYHwyXkF8XHRleHR7P31gXSBbX117JzgnfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-03-01T15:48:47-09:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.3.14)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose that [`A=\{a,b,c\}`] and [`B=\{c,d,e,f\}\text{.}`]
+
+What is [`|A \cup B|\text{?}`] [_]{'6'}{5}
+
+What is [`|A \times B|\text{?}`] [_]{'12'}{5}
+
+What is [`|2^A|\text{?}`] [_]{'8'}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Because [`A`] and [`B`] share one element the size of their union is [`3+4-1=6.\text{.}`] Elements of [`A \times B`] look like [`(a,b)`] with 3 options for [`a`] and four options for [`b\text{.}`] This produces [`3 \times 4=12`] elements. Every element of [`A`] is either in or out of each subset. Thus for the each of the three elements there are two choices of [`2 \cdot 2 \cdot 2 = 8`] subsets.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="1" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2">
+      <statement>
+        <p>Use the taxi cab metric described above to find these distances.</p>
+        <p>Between 00 and 01? <fillin name="AnSwEr0001" characters="5"/></p>
+        <p>Between 00 and 10? <fillin name="AnSwEr0002" characters="5"/></p>
+        <p>Between 00 and 11? <fillin name="AnSwEr0003" characters="5"/></p>
+        <p>Between 01 and 10? <fillin name="AnSwEr0004" characters="5"/></p>
+        <p>Between 01 and 11? <fillin name="AnSwEr0005" characters="5"/></p>
+        <p>Between 10 and 11? <fillin name="AnSwEr0006" characters="5"/></p>
+      </statement>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+      <answer>
+        <p><m>2</m></p>
+      </answer>
+      <answer>
+        <p><m>2</m></p>
+      </answer>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+    </static>
+    <server-url hint="yes" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=2&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwIGFuZCAwMT8gW19deycxJ317NX0KCkJldHdlZW4gMDAgYW5kIDEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMCBhbmQgMTE%2FIFtfXXsnMid9ezV9CgpCZXR3ZWVuIDAxIGFuZCAxMD8gW19deycyJ317NX0KCkJldHdlZW4gMDEgYW5kIDExPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMCBhbmQgMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="yes" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=2&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwIGFuZCAwMT8gW19deycxJ317NX0KCkJldHdlZW4gMDAgYW5kIDEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMCBhbmQgMTE%2FIFtfXXsnMid9ezV9CgpCZXR3ZWVuIDAxIGFuZCAxMD8gW19deycyJ317NX0KCkJldHdlZW4gMDEgYW5kIDExPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMCBhbmQgMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="no" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=2&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwIGFuZCAwMT8gW19deycxJ317NX0KCkJldHdlZW4gMDAgYW5kIDEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMCBhbmQgMTE%2FIFtfXXsnMid9ezV9CgpCZXR3ZWVuIDAxIGFuZCAxMD8gW19deycyJ317NX0KCkJldHdlZW4gMDEgYW5kIDExPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMCBhbmQgMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="no" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=2&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwIGFuZCAwMT8gW19deycxJ317NX0KCkJldHdlZW4gMDAgYW5kIDEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMCBhbmQgMTE%2FIFtfXXsnMid9ezV9CgpCZXR3ZWVuIDAxIGFuZCAxMD8gW19deycyJ317NX0KCkJldHdlZW4gMDEgYW5kIDExPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMCBhbmQgMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-03-01T15:48:47-09:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.1.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the taxi cab metric described above to find these distances.
+
+Between 00 and 01? [_]{'1'}{5}
+
+Between 00 and 10? [_]{'1'}{5}
+
+Between 00 and 11? [_]{'2'}{5}
+
+Between 01 and 10? [_]{'2'}{5}
+
+Between 01 and 11? [_]{'1'}{5}
+
+Between 10 and 11? [_]{'1'}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="1" xml:id="extracted-webwork-3" ww-id="webwork-3">
+    <static seed="3">
+      <statement>
+        <p>Use the taxi cab metric described above to find these distances.</p>
+        <p>Between 000 and 001? <fillin name="AnSwEr0001" characters="5"/></p>
+        <p>Between 000 and 010? <fillin name="AnSwEr0002" characters="5"/></p>
+        <p>Between 000 and 100? <fillin name="AnSwEr0003" characters="5"/></p>
+      </statement>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+    </static>
+    <server-url hint="yes" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=3&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwMCBhbmQgMDAxPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMDAgYW5kIDAxMD8gW19deycxJ317NX0KCkJldHdlZW4gMDAwIGFuZCAxMDA%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="yes" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=3&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwMCBhbmQgMDAxPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMDAgYW5kIDAxMD8gW19deycxJ317NX0KCkJldHdlZW4gMDAwIGFuZCAxMDA%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="no" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=3&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwMCBhbmQgMDAxPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMDAgYW5kIDAxMD8gW19deycxJ317NX0KCkJldHdlZW4gMDAwIGFuZCAxMDA%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="no" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=3&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDAwMCBhbmQgMDAxPyBbX117JzEnfXs1fQoKQmV0d2VlbiAwMDAgYW5kIDAxMD8gW19deycxJ317NX0KCkJldHdlZW4gMDAwIGFuZCAxMDA%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-03-01T15:48:47-09:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.1.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the taxi cab metric described above to find these distances.
+
+Between 000 and 001? [_]{'1'}{5}
+
+Between 000 and 010? [_]{'1'}{5}
+
+Between 000 and 100? [_]{'1'}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="1" xml:id="extracted-webwork-4" ww-id="webwork-4">
+    <static seed="4">
+      <statement>
+        <p>What is the distance between 001 and 100? <fillin name="AnSwEr0001" characters="5"/></p>
+      </statement>
+      <answer>
+        <p><m>2</m></p>
+      </answer>
+    </static>
+    <server-url hint="yes" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=4&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApXaGF0IGlzIHRoZSBkaXN0YW5jZSBiZXR3ZWVuIDAwMSBhbmQgMTAwPyBbX117JzInfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+    <server-url hint="yes" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=4&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApXaGF0IGlzIHRoZSBkaXN0YW5jZSBiZXR3ZWVuIDAwMSBhbmQgMTAwPyBbX117JzInfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+    <server-url hint="no" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=4&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApXaGF0IGlzIHRoZSBkaXN0YW5jZSBiZXR3ZWVuIDAwMSBhbmQgMTAwPyBbX117JzInfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+    <server-url hint="no" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=4&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApXaGF0IGlzIHRoZSBkaXN0YW5jZSBiZXR3ZWVuIDAwMSBhbmQgMTAwPyBbX117JzInfXs1fQoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw%3D%3D</server-url>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-03-01T15:48:47-09:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.1.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+What is the distance between 001 and 100? [_]{'2'}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="1" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5">
+      <statement>
+        <p>Use the taxi cab metric described above to find these distances.</p>
+        <p>Between 111 and 110? <fillin name="AnSwEr0001" characters="5"/></p>
+        <p>Between 111 and 101? <fillin name="AnSwEr0002" characters="5"/></p>
+        <p>Between 111 and 011? <fillin name="AnSwEr0003" characters="5"/></p>
+      </statement>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+      <answer>
+        <p><m>1</m></p>
+      </answer>
+    </static>
+    <server-url hint="yes" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=5&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDExMSBhbmQgMTEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMTEgYW5kIDEwMT8gW19deycxJ317NX0KCkJldHdlZW4gMTExIGFuZCAwMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="yes" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=5&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDExMSBhbmQgMTEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMTEgYW5kIDEwMT8gW19deycxJ317NX0KCkJldHdlZW4gMTExIGFuZCAwMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="no" solution="yes" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=5&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDExMSBhbmQgMTEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMTEgYW5kIDEwMT8gW19deycxJ317NX0KCkJldHdlZW4gMTExIGFuZCAwMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <server-url hint="no" solution="no" domain="http://aholiab.uaa.alaska.edu">http://aholiab.uaa.alaska.edu/webwork2/html2xml?courseID=anonymous&amp;amp;userID=anonymous&amp;amp;password=unused&amp;amp;course_password=anonymous&amp;amp;answersSubmitted=0&amp;amp;displayMode=MathJax&amp;amp;outputformat=simple&amp;amp;problemSeed=5&amp;amp;problemSource=RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApVc2UgdGhlIHRheGkgY2FiIG1ldHJpYyBkZXNjcmliZWQgYWJvdmUgdG8gZmluZCB0aGVzZSBkaXN0YW5jZXMuCgpCZXR3ZWVuIDExMSBhbmQgMTEwPyBbX117JzEnfXs1fQoKQmV0d2VlbiAxMTEgYW5kIDEwMT8gW19deycxJ317NX0KCkJldHdlZW4gMTExIGFuZCAwMTE%2FIFtfXXsnMSd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7</server-url>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2021-03-01T15:48:47-09:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(4.1.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the taxi cab metric described above to find these distances.
+
+Between 111 and 110? [_]{'1'}{5}
+
+Between 111 and 101? [_]{'1'}{5}
+
+Between 111 and 011? [_]{'1'}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+ </webwork-representations>

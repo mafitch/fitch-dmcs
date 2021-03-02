@@ -11,7 +11,16 @@
 			"file": "discrete_cs.xml",
 			"settings":
 			{
-				"buffer_size": 4089,
+				"buffer_size": 4266,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "relation_intro.xml",
+			"settings":
+			{
+				"buffer_size": 4229,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -62,13 +71,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/D/Documents/texts/discrete_cs"
+	],
 	"file_history":
 	[
+		"/D/Documents/texts/discrete_cs/publication.xml",
+		"/D/Documents/texts/discrete_cs/proof_contradiction.xml",
 		"/D/Documents/texts/discrete_cs/set_operations.xml",
 		"/D/Documents/kurse/math251/lessons/calculus1.ptx",
 		"/D/Documents/texts/discrete_cs/webwork-representations/webwork-representations.ptx",
 		"/D/Documents/texts/orcca_lane/src/section-domain-and-range.ptx",
-		"/D/Documents/texts/discrete_cs/publication.xml",
 		"/D/pretext/mathbook/examples/sample-book/publication.xml",
 		"/D/pretext/mathbook/examples/sample-article/sample-article.xml",
 		"/D/Documents/texts/orcca_lane/src/section-the-quadratic-formula.ptx",
@@ -269,7 +283,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -278,7 +292,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4089,
+						"buffer_size": 4266,
 						"regions":
 						{
 						},
@@ -296,7 +310,37 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "relation_intro.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4229,
+								4229
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PreTeXtual/PreTeXt.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1274.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -379,7 +423,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 178.0,

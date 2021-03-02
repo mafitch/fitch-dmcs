@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section xml:id="section-proof-contradict" >
+<title>Proof by Contradiction</title>
+
+<introduction>
+	<p>The first proofs we worked started with the condition, applied definitions, and previous theorems, one by one until we arrived at the conclusion. These are called direct proof. Now we will look at the first alternate. In these proofs we begin by supposing our conclusion is wrong and then applying definitions and previous theorems one by one until we run into a problem.</p>
+</introduction>
+
+<subsection>
+	<title>First proof using contradiction</title>
+
+	<definition xml:id="defintion-function-composition">
+		<title>Mapping Composition</title>
+		<statement><p>For two mappings <m>g:A \to B</m> and <m>f:B \to C</m>, the <term>composition</term> of those mappings, denoted <m>f \circ g</m>, is the mapping <m>h:A \to C</m> defined by <m>h(x)=f(g(x))</m>.</p></statement>
+	</definition>
+
+	<p>The following proof has two parts. The first is a direct proof, and the second is a proof by contradiction.</p>
+
+	<theorem xml:id="theorem-function-composition">
+		<title>The composition of two functions is a function.</title>
+		<statement><p>If the mappings <m>g:X \to Y</m> and <m>f:Y \to Z</m> are functions, then the composition <m>h(x)=f(g(x))</m> is a function.</p></statement>
+		<proof>
+			<p>First we show that for each element of the domain there exists an element in the codomain to which it is mapped. Let <m>x \in X</m>. Because <m>g</m> is a function there exists a <m>y \in Y</m> such that <m>g(x)=y</m>. Because <m>f</m> is a function, there exists a <m>z \in Z</m> such that <m>f(y)=z</m>. This means for all <m>x \in X</m> there exists a <m>z \in Z</m> such that <m>h(x)=z</m>.</p>
+			<p>Second we show that each element of the domain is mapped to a unique element of the codomain. Suppose for sake of contadiction that there exists <m>x \in X</m> such that <m>h(x)=z_1</m> and <m>h(x)=z_2</m>. This means that <m>f(g(x))=z_1</m> and <m>f(g(x))=z_2</m>. Because <m>g</m> is a function there exists a unique <m>y \in Y</m> such that <m>g(x)=y</m>. Thus <m>f(y)=z_1</m> and <m>f(y)=z_2</m>. But this contradicts that <m>f</m> is a function which maps an element of the domain to a unique element of the codomain.</p>
+			<p>Thus the composition of two functions is a function.</p>
+		</proof>
+	</theorem>
+
+</subsection>
+
+</section>

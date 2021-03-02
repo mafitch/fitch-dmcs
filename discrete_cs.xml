@@ -56,6 +56,7 @@ Copyright 2019 Mark A. Fitch
 
             <xi:include href="./combinations.xml" />         <!-- Enumeration: combinations  -->
 
+            <xi:include href="./proof_contradiction.xml" />         <!-- Direct proofs  -->
         </chapter>
 
         <chapter xml:id="chapter-relations" xmlns:xi="http://www.w3.org/2001/XInclude">

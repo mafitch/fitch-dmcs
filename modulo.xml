@@ -39,7 +39,7 @@
 <p>To address the issue of order of operation under modulo arithmetic consider the function <m>f(n)=n^2+3n+5 \pmod 7.</m></p>
 
 <example xml:id="example-mod-calculate1">
-	<title>Calculate function modulo n, stepwise</title>
+	<title>Calculate function modulo n, each step</title>
 	<p><md>
 		<mrow>f(4) = &amp; 4^2+3(4)+5 \pmod 7.</mrow>
 		<mrow>&amp; \text{First we calculate each term above} \pmod 7.</mrow>
@@ -54,7 +54,7 @@
 </example>
 
 <example xml:id="example-mod-calculate2">
-	<title>Calculate function modulo n, once</title>
+	<title>Calculate function modulo n, last step</title>
 	<p><md>
 		<mrow>f(4) &amp; = &amp; 4^2+3(4)+5 \pmod 7</mrow>
 		<mrow> &amp; = &amp; 33 \pmod 7</mrow>
@@ -64,7 +64,7 @@
 
 <exercise>
 	<task><p>Calculate <m>f(2)</m> and <m>f(6)</m> twice; once using <xref ref="example-mod-calculate1"/> and once using <xref ref="example-mod-calculate2"/>.</p></task>
-	<task><p>Does it matter whether we mod each term or only once at the end?</p></task>
+	<task><p>Does it matter whether we mod each term or only after the last step?</p></task>
 </exercise>
 
 <exercise><p>Complete the table below calculating <m>\pmod 7.</m></p>
@@ -108,6 +108,34 @@
 	<row left="medium" bottom="medium"><cell right="medium"> </cell> <cell right="medium"> 0 </cell><cell right="medium"> 1 </cell><cell right="medium"> 2 </cell><cell right="medium"> 3 </cell><cell right="medium"> 4 </cell></row>
 	</tabular>
 </table>
+
+</subsection>
+
+<subsection>
+	<title>Proofs</title>
+
+	<lemma>
+		<title>Negative Divides</title>
+		<statement><p>If <m>a|b</m> then <m>-a|b</m>.</p></statement>
+		<proof><p>By definition of divides <m>a|b</m> implies there exists <m>k \in \Z</m> such that <m>ak=b</m>. Consider
+		<md>
+			<mrow>(-a)(-k) &amp; = </mrow>
+			<mrow>ak &amp; = b</mrow>
+		</md>
+		Thus <m>-a|b</m> by definition of divides.</p></proof>
+	</lemma>
+
+	<lemma>
+		<title>Negative modulo</title>
+		<statement><p>If <m>a \equiv b \pmod n</m> then <m>a-n \equiv b \pmod n</m>.</p></statement>
+		<proof><p>By definition of modulo equivalence <m>a \equiv b \pmod n</m> implies that <m>n|(b-a)</m>. Thus, by definition of divides, there exists <m>k \in \Z</m> such that <m>nk=b-a</m>. Consider
+		<md>
+			<mrow>b-(a-n) &amp; =</mrow>
+			<mrow>b-a+n &amp; = nk+n</mrow>
+			<mrow> &amp; = n(k+1).</mrow>
+		</md>
+		Thus <m>n|(b-(a-n))</m> by definition of divides. This implies <m>a-n \equiv b \pmod n</m>.</p></proof>
+	</lemma>
 
 </subsection>
 

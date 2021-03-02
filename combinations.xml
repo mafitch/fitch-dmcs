@@ -42,11 +42,11 @@
 
 <exercise><p>How many permutations of the letters of the word <sq>greet</sq> are there?</p></exercise>
 
-<exercise><p>Suppose 10 people apply for three, identical jobs. How many permutations (ordered) of three selected out of ten are there?</p></exercise>
-
-<exercise><p>How many ways are there to permute three of three people?</p></exercise>
-
-<exercise><p>If the first problem counted the number of ways to order three (3) of ten (10) people and the second problem counted the number of ways any particular three can be ordered, how can these be combined to count the number of ways to select three (3) out of ten (10) people?</p></exercise>
+<exercise>
+	<task><p>Suppose 10 people apply for three, identical jobs. In how many orders can three of these 10 people be hired?</p></task>
+	<task><p>How many ways are there to permute these three people?</p></task>
+	<task><p>If the first problem counted the number of ways to order three (3) of ten (10) people and the second problem counted the number of ways any particular three can be ordered, how can these be combined to count the number of ways to select three (3) out of ten (10) people?</p></task>
+</exercise>
 
 <exercise><p>How many ways are there to select two types of ice cream from a selection of 14?</p></exercise>
 
