@@ -25,9 +25,9 @@
 
 <exercise><p>Write <m>\Pow(\{a,b,c \}).</m></p></exercise>
 
-<exercise><p>Find all sets that are related to <m>\{a,b\}.</m></p></exercise>
+<exercise><p>Find all sets that are related to <m>\{a,b\}</m> in the relation <m>(\Pow(\{a,b,c \}),\subseteq)</m>.</p></exercise>
 
-<exercise><p>Find all sets that to which <m>\{a,b\}</m> is related.</p></exercise>
+<exercise><p>Find all sets that to which <m>\{a,b\}</m> is related in the relation <m>(\Pow(\{a,b,c \}),\subseteq)</m>.</p></exercise>
 
 <definition xml:id="definition-relation-reflexive">
 	<title>Reflexive</title>

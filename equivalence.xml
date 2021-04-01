@@ -47,7 +47,7 @@
 
 <example xml:id="example-equivalence-class-elements-fraction">
 	<title>Find an Equivalence Class</title>
-	<statement><p>Consider the relation <m>R</m> on <m>\Z^+ \times \Z^+</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> Find the equivalence class <m>[(1,2)]. List at least four elements.</m></p></statement>
+	<statement><p>Consider the relation <m>R</m> on <m>\Z^+ \times \Z^+</m> defined by <m>(a,b)R(c,d)</m> if and only if <m>ad=bc.</m> Find the equivalence class <m>[(1,2)]</m>. List at least four elements.</p></statement>
 	<solution><p>Based on previous calculations we know <m>(2,4)R(1,2),</m>, <m>(3,6)R(1,2),</m> and <m>(-1,-2)R(1,2).</m> Thus <m>[(1,2)]=\{\ldots, (-1,-2), (1,2), (2,4), (3,6), \ldots \}.</m></p></solution>
 </example>
 

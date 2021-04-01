@@ -76,6 +76,11 @@
 	<statement><p>Two elements <m>a,b</m> of a poset are <term>comparable</term> if and only if either <m>a \preceq b</m> or <m>b \preceq a.</m></p></statement>
 </definition>
 
+<example xml:id="example-poset-comparable">
+	<title>Comparable Elements</title>
+	<statement><p>For the poset represented by the Hasse diagram in <xref ref="hasse1" /> the elements d and g are <term>comparable</term>. The elements b and f are incomparable.</p></statement>
+</example>
+
 <definition>
 	<title>Total Ordering</title>
 	<statement><p>A partially ordered set is a <term>totally ordered set</term> if and only if all pairs of elements are comparable.</p></statement>
@@ -86,20 +91,40 @@
 	<statement><p>An element <m>c</m> is a <term>least upper bound</term> of two elements <m>a</m> and <m>b</m>, denoted <m>a \wedge b</m>, if and only if <m>a \preceq c,</m> <m>b \preceq c</m> and if <m>a \preceq d,</m> <m>b \preceq d</m> for any other element then <m>c \preceq d.</m></p></statement>
 </definition>
 
+<example xml:id="example-poset-lub">
+	<title>LUB</title>
+	<statement><p>For the poset represented by the Hasse diagram in <xref ref="hasse1" /> <m>lub(a,b)=d</m>. Note h is another upper bound of a and b, but <m>d \preceq h</m>.</p></statement>
+</example>
+
 <definition>
 	<title>Greatest Lower Bound</title>
 	<statement><p>An element <m>c</m> is a <term>greatest lower bound</term> of two elements <m>a</m> and <m>b</m>, denoted <m>a \vee b</m>, if and only if <m>c \preceq a,</m> <m>c \preceq b</m> and if <m>d \preceq a,</m> <m>d \preceq b</m> for any other element then <m>d \preceq c.</m></p></statement>
 </definition>
+
+<example xml:id="example-poset-glb">
+	<title>GLB</title>
+	<statement><p>For the poset represented by the Hasse diagram in <xref ref="hasse1" /> <m>glb(d,e)=b</m>. There are no other lower bounds for this pair.</p></statement>
+</example>
+
+<definition>
+	<title>Minimal Element</title>
+	<statement><p>An element <m>a</m> in a poset is a <term>minimal element</term> if and only if there does not exist an element <m>b</m> such that <m>b \preceq a.</m></p></statement>
+</definition>
+
+<example xml:id="example-poset-minimal">
+	<title>Minimal Element</title>
+	<statement><p>For the poset represented by the Hasse diagram in <xref ref="hasse1" /> the minimal elements are a,b, and c. a is a minimal element because there is no element x such that <m>x \preceq a</m>. Notice where the minimal elements are in the Hasse diagram.</p></statement>
+</example>
 
 <definition>
 	<title>Maximal Element</title>
 	<statement><p>An element <m>a</m> in a poset is a <term>maximal element</term> if and only if there does not exist an element <m>b</m> such that <m>a \preceq b.</m></p></statement>
 </definition>
 
-<definition>
-	<title>Minimal Element</title>
-	<statement><p>An element <m>a</m> in a poset is a <term>minimal element</term> if and only if there does not exist an element <m>b</m> such that <m>b \preceq a.</m></p></statement>
-</definition>
+<example xml:id="example-poset-maximal">
+	<title>Maximal Element</title>
+	<statement><p>For the poset represented by the Hasse diagram in <xref ref="hasse1" /> the maximal elements are f,g, and h. f is a maximal element because there is no element x such that <m>f \preceq x</m>.</p></statement>
+</example>
 
 </subsubsection>
 
@@ -112,15 +137,14 @@
 
 <exercise><p>Find all minimal and maximal elements of the posets in Problem <xref ref="hasseprob1" />.</p></exercise>
 
-<exercise><p>Consider the poset given in <xref ref="hasse1" />.
-<ol>
-	<li>Find <m>f \vee h</m></li>
-	<li>Find <m>a \wedge e</m></li>
-	<li>Find <m>a \wedge d</m></li>
-	<li>Does <m>d \wedge e</m> exist?</li>
-	<li>Does <m>g \vee h</m> exist?</li>
-</ol>
-</p></exercise>
+<exercise>
+	<introduction><p>Consider the poset given in <xref ref="hasse1" />. Find the following upper and lower bounds.</p></introduction>
+	<task><p>Find <m>f \vee h</m></p></task>
+	<task><p>Find <m>a \wedge e</m></p></task>
+	<task><p>Find <m>a \wedge d</m></p></task>
+	<task><p>Does <m>d \wedge e</m> exist?</p></task>
+	<task><p>Does <m>g \vee h</m> exist?</p></task>
+</exercise>
 
 <definition xml:id="lattice">
 	<title>Lattice</title>

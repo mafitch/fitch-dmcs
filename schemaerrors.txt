@@ -1,2 +1,0 @@
-D:\Documents\kurse\math261\text\graph_isomorphism.xml:26:118: error: element "interactive" not allowed anywhere; expected the element end-tag or element "aside", "biographical", "blockquote", "figure", "historical", "list", "listing", "p", "pre", "sage", "sbsgroup", "sidebyside" or "table"
-D:\Documents\kurse\math261\text\graph_isomorphism.xml:31:119: error: element "interactive" not allowed anywhere; expected the element end-tag or element "aside", "biographical", "blockquote", "figure", "historical", "list", "listing", "p", "pre", "sage", "sbsgroup", "sidebyside" or "table"

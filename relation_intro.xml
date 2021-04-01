@@ -72,11 +72,11 @@
 
 	<exercise><p>If a single bit of 000 or 111 were changed (0 to 1 or 1 to 0) could you be certain whether a 000 or 111 had been sent?</p></exercise>
 
-	<exercise><p>If two bits of 000 or 111 were changed (0 to 1 or 1 to 0) could you be certain whether a 000 or 111 had been sent?</p></exercise>
-
 	<exercise><p>For the sake of reading data, two strings are considered equivalent if we are sure that they represent the same initial data. If anything distance one away is considered equivalent, what are the other representations for 000 in the code above? What are the other representations of 111 in the code above?</p></exercise>
 
-	<exercise><p>If 00, 01, 10, 11 are the possible binary strings, how many bits do we have to add in order to correct a single bit error?</p></exercise>
+	<exercise><p>If two bits of 000 or 111 were changed (0 to 1 or 1 to 0) could you be certain whether a 000 or 111 had been sent?</p></exercise>
+
+	<exercise><p>Build a code for the data 00, 01, 10, 11 that will correct one bit errors. What is the fewest number of bits that can be used for each piece of data providing single bit error correction?</p></exercise>
 </subsection>
 
 </section>

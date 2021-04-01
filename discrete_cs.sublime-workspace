@@ -16,10 +16,10 @@
 			}
 		},
 		{
-			"file": "relation_intro.xml",
+			"file": "posets.xml",
 			"settings":
 			{
-				"buffer_size": 4229,
+				"buffer_size": 7913,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -77,6 +77,9 @@
 	],
 	"file_history":
 	[
+		"/D/Documents/texts/discrete_cs/equivalence.xml",
+		"/D/Documents/texts/discrete_cs/relation_intro.xml",
+		"/D/Documents/texts/discrete_cs/relation_properties.xml",
 		"/D/Documents/texts/discrete_cs/publication.xml",
 		"/D/Documents/texts/discrete_cs/proof_contradiction.xml",
 		"/D/Documents/texts/discrete_cs/set_operations.xml",
@@ -318,29 +321,28 @@
 				},
 				{
 					"buffer": 1,
-					"file": "relation_intro.xml",
+					"file": "posets.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4229,
+						"buffer_size": 7913,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4229,
-								4229
+								7482,
+								7482
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PreTeXtual/PreTeXt.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1274.0,
+						"translation.y": 3382.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
