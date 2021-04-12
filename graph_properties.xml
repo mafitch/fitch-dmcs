@@ -42,7 +42,7 @@
 
 <example xml:id="example-vertex-degree">
 	<title>Vertex Degree</title>
-	<p>The degree of vertex A in the graph in <xref ref="regular1" /> has degree 4, because <m>\{A,B\}</m>, <m>\{A,L\}</m>, <m>\{A,K\}</m>, and <m>\{A,F\}</m> are edges incident with it.</p>
+	<p>Vertex A in the graph in <xref ref="regular1" /> has degree 4, because <m>\{A,B\}</m>, <m>\{A,L\}</m>, <m>\{A,K\}</m>, and <m>\{A,F\}</m> are edges incident with it.</p>
 </example>
 
 <p>The minimum degree of all vertices in a graph <m>G</m> is denoted <m>\delta(G)</m> and the maximum degree of all vertices in a graph <m>G</m> is denoted <m>\Delta(G).</m></p>
@@ -106,7 +106,7 @@
 
 <definition xml:id="definition-complete-bipartite">
 	<title>Complete Biparite</title>
-	<statement><p>If each vertex in any partition of a bipartite graph is adjacent to all vertices in the other partition the graph is called <term>complete bipartite</term> and is denoted <m>K_{n,m}</m> where <m>n,m</m> are the sizes of the partitions.</p></statement>
+	<statement><p>If each vertex in any partition of a bipartite graph is adjacent to all vertices in the other partition, the graph is called <term>complete bipartite</term> and is denoted <m>K_{n,m}</m> where <m>n,m</m> are the sizes of the partitions.</p></statement>
 </definition>
 
 <example xml:id="graph-example-complete-bipartite">
@@ -173,7 +173,7 @@
 
 <exercise><p>Determine which graphs in <xref ref="graphs1" /> are regular.</p></exercise>
 
-<p>Complete graphs are also known as <term>cliques</term>. The complete graph on five vertices, <m>K_5,</m> is shown in <xref ref="k5" />. The size of the largest clique in a graph is called the <term>clique number</term>, denoted <m>\Omega(G).</m></p>
+<p>Complete graphs are also known as <term>cliques</term>. The complete graph on five vertices, <m>K_5,</m> is shown in <xref ref="k5" />. The size of the largest clique that is a subgraph of a graph <m>G</m> is called the <term>clique number</term>, denoted <m>\Omega(G).</m></p>
 
 <exercise><p>Find <m>\Omega(G)</m> for every graph in <xref ref="graphs1" />.</p></exercise>
 

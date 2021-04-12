@@ -22,6 +22,29 @@
 
 <p>Because this process first includes (adds) everything, next excludes (subtracts) some things, then includes (adds) other things, the technique is called <term>inclusion/exclusion</term>.</p>
 
+<example xml:id="example-enumeration-incexc">
+	<title>Inclusion-Exclusion Count</title>
+	<statement><p>To use inclusion-exclusion to count we must know the size of each of the sets and each of the intersections. Suppose we know the following.
+		<ul>
+			<li>210 students in Calculus I</li>
+			<li>36 students in Discrete Math</li>
+			<li>32 students in Programming I</li>
+			<li>1 student is in Calculus I and Discrete Math</li>
+			<li>8 students are in Calculus I and Programming I</li>
+			<li>6 students are in Discrete Math and Programming I</li>
+			<li>0 students are taking all three</li>
+		</ul>
+	</p>
+	<p>The calculation for the total number of (distinct) students is as follows.
+		<md>
+			<mrow>|A|+|B|+|C| \amp =210+36+32 \amp \amp =278.</mrow>
+			<mrow>|A \cap B|+|A \cap C|+|B \cap C| \amp = 1+8+6 \amp \amp =15.</mrow>
+			<mrow>|A \cap B \cap C| \amp = 0.</mrow>
+			<mrow>|A \cup B \cup C| \amp = 278-15+0 \amp \amp = 263.</mrow>
+		</md></p>
+	</statement>
+</example>
+
 <definition xml:id="derangement">
 	<title>Derangement</title>
 	<statement><p>A permutation is a <term>derangement</term> if no element is in its original position.</p></statement>

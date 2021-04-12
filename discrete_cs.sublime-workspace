@@ -16,10 +16,10 @@
 			}
 		},
 		{
-			"file": "posets.xml",
+			"file": "graph_properties.xml",
 			"settings":
 			{
-				"buffer_size": 7913,
+				"buffer_size": 10235,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -77,6 +77,8 @@
 	],
 	"file_history":
 	[
+		"/D/Documents/texts/discrete_cs/inclusionexclusion.xml",
+		"/D/Documents/texts/discrete_cs/posets.xml",
 		"/D/Documents/texts/discrete_cs/equivalence.xml",
 		"/D/Documents/texts/discrete_cs/relation_intro.xml",
 		"/D/Documents/texts/discrete_cs/relation_properties.xml",
@@ -158,7 +160,7 @@
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -313,7 +315,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -321,19 +323,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "posets.xml",
+					"file": "graph_properties.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7913,
+						"buffer_size": 10235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7482,
-								7482
+								7687,
+								7687
 							]
 						],
 						"settings":
@@ -342,7 +344,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3382.0,
+						"translation.y": 3309.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -353,7 +355,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -390,7 +392,7 @@
 	"project": "discrete_cs.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
