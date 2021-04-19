@@ -14,15 +14,6 @@
 				"buffer_size": 4266,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "graph_properties.xml",
-			"settings":
-			{
-				"buffer_size": 10235,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -77,6 +68,9 @@
 	],
 	"file_history":
 	[
+		"/D/Documents/texts/discrete_cs/graph_path.xml",
+		"/D/Documents/texts/discrete_cs/graph_cycle.xml",
+		"/D/Documents/texts/discrete_cs/graph_properties.xml",
 		"/D/Documents/texts/discrete_cs/inclusionexclusion.xml",
 		"/D/Documents/texts/discrete_cs/posets.xml",
 		"/D/Documents/texts/discrete_cs/equivalence.xml",
@@ -288,7 +282,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -316,35 +310,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "graph_properties.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7687,
-								7687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PreTeXtual/PreTeXt.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3309.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

@@ -16,7 +16,7 @@
 	<statement><p>A graph is a <term>cycle</term> if and only if it is a circuit such that no vertex is used twice.</p></statement>
 </definition>
 
-<p>A cycle on <m>n</m> vertices is denoted <m>C_n.</m> Likes <term>walk</term> and <term>path</term> terminology for <term>cycles</term> vary widely.</p>
+<p>A cycle on <m>n</m> vertices is denoted <m>C_n.</m> Like <term>walk</term> and <term>path</term> terminology for <term>cycles</term> varies widely.</p>
 
 <definition>
 	<title>Eulerian Circuit</title>
@@ -35,7 +35,12 @@
 
 <exercise><p>Draw a cycle of length 4. Note this is denoted <m>C_4.</m></p></exercise>
 
-<exercise><p>Draw a circuit that is not a cycle.</p></exercise>
+<figure xml:id="figure-circuitcycle">
+	<caption>Graph Containing Circuits and Cycles</caption>
+	<image source="images/graph_bowtie" width="50%" />
+</figure>
+
+<exercise><p>Find a circuit that is not a cycle in <xref ref="figure-circuitcycle" />.</p></exercise>
 
 <exercise><p>Determine which graphs in Figure <xref ref="graphs1" /> have Eulerian circuits.</p></exercise>
 

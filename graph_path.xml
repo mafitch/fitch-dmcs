@@ -12,11 +12,11 @@
 </definition>
 
 <definition><title>Trail</title>
-	<statement><p>A graph is a <term>trail</term> if and only if it is walk such that no edge is used twice.</p></statement>
+	<statement><p>A graph is a <term>trail</term> if and only if it is a walk such that no edge is used twice.</p></statement>
 </definition>
 
 <definition><title>Path</title>
-	<statement><p>A graph is a <term>path</term> if and only if it is walk such that no vertex is used twice.</p></statement>
+	<statement><p>A graph is a <term>path</term> if and only if it is a walk such that no vertex is used twice.</p></statement>
 </definition>
 
 <p>A path on <m>n</m> vertices is denoted <m>P_n.</m> Please note that these terms (<term>walk</term>, <term>trail</term>, and <term>path</term>) vary widely including reversing the names, so always check the definition in the article, book, or other material you are reading.</p>
@@ -36,9 +36,14 @@
 
 <exercise><p>Draw a path of length 5. Note this is denoted <m>P_5.</m></p></exercise>
 
-<exercise><p>Draw a walk that is not a trail.</p></exercise>
+<figure xml:id="figure-wtp">
+	<caption>Graph Containing Walks, Trails, and Paths</caption>
+	<image source="images/wtp" width="50%" />
+</figure>
 
-<exercise><p>Draw a trail that is not a path.</p></exercise>
+<exercise><p>Find a walk that is not a trail in <xref ref="figure-wtp" />.</p></exercise>
+
+<exercise><p>Find a trail that is not a path in <xref ref="figure-wtp" />.</p></exercise>
 
 <exercise><p>Determine which graphs in <xref ref="graphs1" /> have Eulerian trails.</p></exercise>
 
